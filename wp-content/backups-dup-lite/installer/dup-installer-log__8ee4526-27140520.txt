@@ -1,0 +1,1467 @@
+********************************************************************************
+* DUPLICATOR LITE: Install-Log
+* STEP-0 START @ 02:07:13
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ ORIGINAL SERVER                        |CURRENT SERVER
+OS__________________: Linux                                 |WINNT
+PHP VERSION_________: 8.3.1                                 |8.3.4
+********************************************************************************
+CURRENT SERVER INFO
+PHP_________________: 8.3.4 | SAPI: cgi-fcgi
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+ARCHITECTURE________: 64-bit
+SERVER______________: Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev
+DOC ROOT____________: "C:/laragon/www/frellas/prefeitura-lassance"
+REQUEST URL_________: "http://localhost/frellas/prefeitura-lassance"
+********************************************************************************
+OVERWRITE PARAMS
+ *** FROM PACKAGE
+PARAM SET KEY[blogname]
+********************************************************************************
+MAINTENANCE MODE DISABLE
+INSTALLER INFO
+
+TEMPLATE____________: "base"
+SECURE MODE_________: "none"
+URL PLUGINS_________: https://pml.brenocarvalho.com.br/wp-content/plugins
+VALIDATE ON START___: "normal"
+PATH_NEW____________: "C:/laragon/www/frellas/prefeitura-lassance"
+URL_NEW_____________: "http://localhost/frellas/prefeitura-lassance"
+********************************************************************************
+ARCHIVE INFO
+
+ARCHIVE NAME________: "C:/laragon/www/frellas/prefeitura-lassance/20250211_prefeituramunicipaldelassanc_[HASH]_20250227140520_archive.zip"
+ARCHIVE SIZE________: 123.26MB
+CREATED_____________: 2025-02-27 14:05:20
+WP VERSION__________: 6.7.2
+DUP VERSION_________: 1.5.11.2
+LICENSE_____________: Free version
+DB VERSION__________: 10.11.11
+DB FILE SIZE________: 10.31MB
+DB TABLES___________: 30
+DB ROWS_____________: 2927
+URL HOME____________: https://pml.brenocarvalho.com.br
+URL CORE____________: https://pml.brenocarvalho.com.br
+URL CONTENT_________: https://pml.brenocarvalho.com.br/wp-content
+URL UPLOAD__________: https://pml.brenocarvalho.com.br/wp-content/uploads
+URL PLUGINS_________: https://pml.brenocarvalho.com.br/wp-content/plugins
+URL MU PLUGINS______: https://pml.brenocarvalho.com.br/wp-content/mu-plugins
+URL THEMES__________: https://pml.brenocarvalho.com.br/wp-content/themes
+PATH HOME___________: /home/u315784279/domains/brenocarvalho.com.br/public_html/pml
+PATH ABS____________: /home/u315784279/domains/brenocarvalho.com.br/public_html/pml
+PATH WPCONFIG_______: /home/u315784279/domains/brenocarvalho.com.br/public_html/pml
+PATH WPCONTENT______: /home/u315784279/domains/brenocarvalho.com.br/public_html/pml/wp-content
+PATH UPLOADS________: /home/u315784279/domains/brenocarvalho.com.br/public_html/pml/wp-content/uploads
+PATH PLUGINS________: /home/u315784279/domains/brenocarvalho.com.br/public_html/pml/wp-content/plugins
+PATH MUPLUGINS______: /home/u315784279/domains/brenocarvalho.com.br/public_html/pml/wp-content/mu-plugins
+PATH THEMES_________: /home/u315784279/domains/brenocarvalho.com.br/public_html/pml/wp-content/themes
+
+SUBSITES
+SUBSITE [ID:   1] "pml.brenocarvalho.com.br/"
+
+PLUGINS
+PLUGIN [SLUG:admin-menu-editor/menu-editor.php                 ][ON:true ]  Admin Menu Editor
+PLUGIN [SLUG:advanced-custom-fields-font-awesome/acf-font-awesome.php][ON:true ]  Advanced Custom Fields: Font Awesome
+PLUGIN [SLUG:advanced-custom-fields-pro/acf.php                ][ON:true ]  Advanced Custom Fields PRO
+PLUGIN [SLUG:custom-post-type-ui/custom-post-type-ui.php       ][ON:true ]  Custom Post Type UI
+PLUGIN [SLUG:duplicator/duplicator.php                         ][ON:true ]  Duplicator
+PLUGIN [SLUG:font-awesome/index.php                            ][ON:true ]  Font Awesome
+PLUGIN [SLUG:hide-admin-bar/hide_admin_bar.php                 ][ON:true ]  Hide Admin Bar
+PLUGIN [SLUG:litespeed-cache/litespeed-cache.php               ][ON:false]  LiteSpeed Cache
+PLUGIN [SLUG:oxygen/functions.php                              ][ON:true ]  Oxygen
+PLUGIN [SLUG:seo-by-rank-math/rank-math.php                    ][ON:true ]  Rank Math SEO
+PLUGIN [SLUG:svg-support/svg-support.php                       ][ON:true ]  SVG Support
+PLUGIN [SLUG:insert-headers-and-footers/ihaf.php               ][ON:true ]  WPCode Lite
+PLUGIN [SLUG:wp-mail-smtp/wp_mail_smtp.php                     ][ON:true ]  WP Mail SMTP
+PLUGIN [SLUG:wps-hide-login/wps-hide-login.php                 ][ON:true ]  WPS Hide Login
+
+********************************************************************************
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\ctrl.base.php:227][DELTA:   3.87938]  MESSAGE:END RENDER PAGE
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+DATABASE CONNECTION EXCEPTION ERROR: Access denied for user ''@'localhost' (using password: NO)
+
+INSTALLER ERROR:
+Unable to connect with the following parameters:
+HOST: "localhost"
+DBUSER: ""
+DATABASE: NULL
+MESSAGE: Error: Access denied for user ''@'localhost' (using password: NO)
+
+MAINTENANCE MODE DISABLE
+
+DATABASE CHECK CHARSET EXCEPTION:  Unable to connect with the following parameters:<br/>HOST: "localhost"
+DBUSER: ""
+DATABASE: NULL
+MESSAGE: Error: Access denied for user ''@'localhost' (using password: NO)
+	FILE:C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Utils\Log\Log.php[401]
+	TRACE:
+#0 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\database\class.db.functions.php(134): Duplicator\Installer\Utils\Log\Log::error('Unable to conne...')
+#1 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\validation\class.validation.database.service.php(71): DUPX_DB_Functions->dbConnection(Array)
+#2 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\validation\class.validation.database.service.php(725): DUPX_Validation_database_service->getDbConnection()
+#3 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.params.php(274): DUPX_Validation_database_service->caseSensitiveTablesValue()
+#4 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.params.php(147): DUPX_Ctrl_Params::setParamsDatabase()
+#5 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.ajax.php(183): DUPX_Ctrl_Params::setParamsStep1()
+#6 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.ajax.php(95): DUPX_Ctrl_ajax::actions('sparam_s1')
+#7 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\main.installer.php(60): DUPX_Ctrl_ajax::controller()
+#8 {main}
+
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+STEP ACTION: "on-validate"
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\ctrl.base.php:227][DELTA:   2.45169]  MESSAGE:END RENDER PAGE
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [validate] START
+START TEST "Archive Check" [CLASS: DUPX_Validation_test_archive_check]
+LOG-TIME[DELTA:   0.00018]  MESSAGE:TEST "Archive Check" RESULT: passed
+
+START TEST "Duplicator importer version" [CLASS: DUPX_Validation_test_importer_version]
+LOG-TIME[DELTA:   0.00005]  MESSAGE:TEST "Duplicator importer version" RESULT: skip
+
+START TEST "Overwrite Install" [CLASS: DUPX_Validation_test_owrinstall]
+LOG-TIME[DELTA:   0.00005]  MESSAGE:TEST "Overwrite Install" RESULT: soft warning
+
+START TEST "Recovery Point" [CLASS: DUPX_Validation_test_recovery]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Recovery Point" RESULT: skip
+
+START TEST "Package is Importable" [CLASS: DUPX_Validation_test_importable]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Package is Importable" RESULT: skip
+
+START TEST "REST API test" [CLASS: DUPX_Validation_test_rest_api]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "REST API test" RESULT: skip
+
+START TEST "Manual extraction detected" [CLASS: DUPX_Validation_test_manual_extraction]
+LOG-TIME[DELTA:   0.00016]  MESSAGE:TEST "Manual extraction detected" RESULT: good
+
+START TEST "Database Only" [CLASS: DUPX_Validation_test_dbonly_iswordpress]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Database Only" RESULT: skip
+
+START TEST "Package Age" [CLASS: DUPX_Validation_test_package_age]
+LOG-TIME[DELTA:   0.00006]  MESSAGE:TEST "Package Age" RESULT: good
+
+START TEST "Package Size" [CLASS: DUPX_Validation_test_package_size]
+LOG-TIME[DELTA:   0.00028]  MESSAGE:TEST "Package Size" RESULT: good
+
+START TEST "Replace PATHs in database" [CLASS: DUPX_Validation_test_replace_paths]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Replace PATHs in database" RESULT: skip
+
+START TEST "Managed hosting supported" [CLASS: DUPX_Validation_test_managed_supported]
+LOG-TIME[DELTA:   0.00039]  MESSAGE:TEST "Managed hosting supported" RESULT: skip
+
+START TEST "Siteground" [CLASS: DUPX_Validation_test_siteground]
+LOG-TIME[DELTA:   0.00028]  MESSAGE:TEST "Siteground" RESULT: skip
+
+START TEST "Addon Sites" [CLASS: DUPX_Validation_test_addon_sites]
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+LOG-TIME[DELTA:   3.92728]  MESSAGE:TEST "Addon Sites" RESULT: good
+
+START TEST "Wordfence" [CLASS: DUPX_Validation_test_wordfence]
+LOG-TIME[DELTA:   0.00078]  MESSAGE:TEST "Wordfence" RESULT: good
+
+START TEST "Table prefix of managed hosting" [CLASS: DUPX_Validation_test_managed_tprefix]
+LOG-TIME[DELTA:   0.00019]  MESSAGE:TEST "Table prefix of managed hosting" RESULT: skip
+
+START TEST "PHP Version Mismatch" [CLASS: DUPX_Validation_test_php_version]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
+
+START TEST "PHP Open Base" [CLASS: DUPX_Validation_test_open_basedir]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Open Base" RESULT: good
+
+START TEST "PHP Memory Limit" [CLASS: DUPX_Validation_test_memory_limit]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
+
+START TEST "PHP Extensions" [CLASS: DUPX_Validation_test_extensions]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Extensions" RESULT: good
+
+START TEST "PHP Mysqli" [CLASS: DUPX_Validation_test_mysql_connect]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
+
+START TEST "PHP Tokenizer" [CLASS: DUPX_Validation_test_tokenizer]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Tokenizer" RESULT: passed
+
+START TEST "PHP Timeout" [CLASS: DUPX_Validation_test_timeout]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Timeout" RESULT: good
+
+START TEST "Disk Space" [CLASS: DUPX_Validation_test_disk_space]
+LOG-TIME[DELTA:   0.01354]  MESSAGE:TEST "Disk Space" RESULT: good
+
+START TEST "Permissions: General" [CLASS: DUPX_Validation_test_iswritable]
+LOG-TIME[DELTA:   0.82125]  MESSAGE:TEST "Permissions: General" RESULT: passed
+
+START TEST "Permissions: Configs Files " [CLASS: DUPX_Validation_test_iswritable_configs]
+LOG-TIME[DELTA:   0.00328]  MESSAGE:TEST "Permissions: Configs Files " RESULT: passed
+
+START TEST "Host Name" [CLASS: DUPX_Validation_test_db_host_name]
+LOG-TIME[DELTA:   0.00009]  MESSAGE:TEST "Host Name" RESULT: passed
+
+START TEST "Host Connection" [CLASS: DUPX_Validation_test_db_connection]
+DATABASE CONNECTION EXCEPTION ERROR: Access denied for user ''@'localhost' (using password: NO)
+
+INSTALLER ERROR:
+Unable to connect with the following parameters:
+HOST: "localhost"
+DBUSER: ""
+DATABASE: NULL
+MESSAGE: Error: Access denied for user ''@'localhost' (using password: NO)
+
+MAINTENANCE MODE DISABLE
+
+      TEST "Host Connection" EXCEPTION: Unable to connect with the following parameters:<br/>HOST: "localhost"
+DBUSER: ""
+DATABASE: NULL
+MESSAGE: Error: Access denied for user ''@'localhost' (using password: NO)
+	FILE:C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Utils\Log\Log.php[401]
+	TRACE:
+#0 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\database\class.db.functions.php(134): Duplicator\Installer\Utils\Log\Log::error('Unable to conne...')
+#1 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\validation\class.validation.database.service.php(71): DUPX_DB_Functions->dbConnection(Array)
+#2 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\validation\database-tests\class.validation.test.db.connection.php(26): DUPX_Validation_database_service->getDbConnection()
+#3 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\validation\class.validation.abstract.item.php(46): DUPX_Validation_test_db_connection->runTest()
+#4 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\validation\class.validation.manager.php(232): DUPX_Validation_abstract_item->test(true)
+#5 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\validation\class.validation.manager.php(205): DUPX_Validation_manager->runTests()
+#6 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.ajax.php(173): DUPX_Validation_manager->getValidateData()
+#7 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.ajax.php(95): DUPX_Ctrl_ajax::actions('validate')
+#8 C:\laragon\www\frellas\prefeitura-lassance\dup-installer\main.installer.php(60): DUPX_Ctrl_ajax::controller()
+#9 {main}
+
+LOG-TIME[DELTA:   0.00323]  MESSAGE:TEST "Host Connection" RESULT: failed
+
+START TEST "Database Version" [CLASS: DUPX_Validation_test_db_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database Version" RESULT: skip
+
+START TEST "Create New Database" [CLASS: DUPX_Validation_test_db_create]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Create New Database" RESULT: skip
+
+START TEST "Database Engine Support" [CLASS: DUPX_Validation_test_db_supported_engine]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database Engine Support" RESULT: skip
+
+START TEST "Database GTID Mode" [CLASS: DUPX_Validation_test_db_gtid_mode]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database GTID Mode" RESULT: skip
+
+START TEST "Privileges: User Visibility" [CLASS: DUPX_Validation_test_db_visibility]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Privileges: User Visibility" RESULT: skip
+
+START TEST "Manual Table Check" [CLASS: DUPX_Validation_test_db_manual_tabels_count]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual Table Check" RESULT: skip
+
+START TEST "Multiple WordPress Installs" [CLASS: DUPX_Validation_test_db_multiple_wp_installs]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Multiple WordPress Installs" RESULT: skip
+
+START TEST "Privileges: User Resources" [CLASS: DUPX_Validation_test_db_user_resources]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Privileges: User Resources" RESULT: skip
+
+START TEST "Privileges: User Table Access" [CLASS: DUPX_Validation_test_db_user_perms]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Privileges: User Table Access" RESULT: skip
+
+START TEST "Privileges: 'Show Variables' Query" [CLASS: DUPX_Validation_test_db_custom_queries]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: skip
+
+START TEST "Source Database Triggers" [CLASS: DUPX_Validation_test_db_triggers]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Source Database Triggers" RESULT: skip
+
+START TEST "Character Set and Collation Support" [CLASS: DUPX_Validation_test_db_supported_default_charset]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Character Set and Collation Support" RESULT: skip
+
+START TEST "Character Set and  Collation Capability" [CLASS: DUPX_Validation_test_db_supported_charset]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Character Set and  Collation Capability" RESULT: skip
+
+START TEST "Tables Case Sensitivity" [CLASS: DUPX_Validation_test_db_case_sensitive_tables]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: skip
+
+START TEST "Tables Flagged for Removal or Backup" [CLASS: DUPX_Validation_test_db_affected_tables]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: skip
+
+START TEST "Prefix too long" [CLASS: DUPX_Validation_test_db_prefix_too_long]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Prefix too long" RESULT: skip
+
+START TEST "Database cleanup" [CLASS: DUPX_Validation_test_db_cleanup]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Database cleanup" RESULT: skip
+
+AJAX ACTION [validate] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+[PHP ERR][E_DEPRECATED] MSG:mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated [CODE:8192|FILE:C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\database\class.db.functions.php|LINE:498]
+DB QUERY [ERROR][C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\database\class.db.php:645] MSG: Incorrect database name ''
+	SQL: SHOW TABLES FROM `` WHERE `Tables_in_` IN ('pl_users','pl_usermeta')
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\database\class.db.functions.php[506]
+TRACE[2] CLASS___: DUPX_DB_Functions->tablesExist FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\class.installer.state.php[362]
+TRACE[3] CLASS___: DUPX_InstallerState->getAdminUsersOnOverwriteDatabase FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\class.installer.state.php[118]
+TRACE[4] CLASS___: DUPX_InstallerState->checkState FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.params.php[173]
+TRACE[5] CLASS___: DUPX_Ctrl_Params::setParamsStep1 FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.ajax.php[183]
+TRACE[6] CLASS___: DUPX_Ctrl_ajax::actions    FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.ajax.php[95]
+TRACE[7] CLASS___: DUPX_Ctrl_ajax::controller FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\main.installer.php[60]
+
+GET USERS ON CURRENT DATABASE FAILED. Users tables doesn't exist, continue with orverwrite installation but with option keep users disabled
+
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+STEP ACTION: "on-validate"
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\ctrl.base.php:227][DELTA:   2.41395]  MESSAGE:END RENDER PAGE
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [validate] START
+START TEST "Archive Check" [CLASS: DUPX_Validation_test_archive_check]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Archive Check" RESULT: passed
+
+START TEST "Duplicator importer version" [CLASS: DUPX_Validation_test_importer_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Duplicator importer version" RESULT: skip
+
+START TEST "Overwrite Install" [CLASS: DUPX_Validation_test_owrinstall]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Overwrite Install" RESULT: soft warning
+
+START TEST "Recovery Point" [CLASS: DUPX_Validation_test_recovery]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Recovery Point" RESULT: skip
+
+START TEST "Package is Importable" [CLASS: DUPX_Validation_test_importable]
+LOG-TIME[DELTA:   0.00000]  MESSAGE:TEST "Package is Importable" RESULT: skip
+
+START TEST "REST API test" [CLASS: DUPX_Validation_test_rest_api]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "REST API test" RESULT: skip
+
+START TEST "Manual extraction detected" [CLASS: DUPX_Validation_test_manual_extraction]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual extraction detected" RESULT: good
+
+START TEST "Database Only" [CLASS: DUPX_Validation_test_dbonly_iswordpress]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database Only" RESULT: skip
+
+START TEST "Package Age" [CLASS: DUPX_Validation_test_package_age]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Package Age" RESULT: good
+
+START TEST "Package Size" [CLASS: DUPX_Validation_test_package_size]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Package Size" RESULT: good
+
+START TEST "Replace PATHs in database" [CLASS: DUPX_Validation_test_replace_paths]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Replace PATHs in database" RESULT: skip
+
+START TEST "Managed hosting supported" [CLASS: DUPX_Validation_test_managed_supported]
+LOG-TIME[DELTA:   0.00008]  MESSAGE:TEST "Managed hosting supported" RESULT: skip
+
+START TEST "Siteground" [CLASS: DUPX_Validation_test_siteground]
+LOG-TIME[DELTA:   0.00006]  MESSAGE:TEST "Siteground" RESULT: skip
+
+START TEST "Addon Sites" [CLASS: DUPX_Validation_test_addon_sites]
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+LOG-TIME[DELTA:   1.47347]  MESSAGE:TEST "Addon Sites" RESULT: good
+
+START TEST "Wordfence" [CLASS: DUPX_Validation_test_wordfence]
+LOG-TIME[DELTA:   0.00195]  MESSAGE:TEST "Wordfence" RESULT: good
+
+START TEST "Table prefix of managed hosting" [CLASS: DUPX_Validation_test_managed_tprefix]
+LOG-TIME[DELTA:   0.00048]  MESSAGE:TEST "Table prefix of managed hosting" RESULT: skip
+
+START TEST "PHP Version Mismatch" [CLASS: DUPX_Validation_test_php_version]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
+
+START TEST "PHP Open Base" [CLASS: DUPX_Validation_test_open_basedir]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Open Base" RESULT: good
+
+START TEST "PHP Memory Limit" [CLASS: DUPX_Validation_test_memory_limit]
+LOG-TIME[DELTA:   0.00007]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
+
+START TEST "PHP Extensions" [CLASS: DUPX_Validation_test_extensions]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "PHP Extensions" RESULT: good
+
+START TEST "PHP Mysqli" [CLASS: DUPX_Validation_test_mysql_connect]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
+
+START TEST "PHP Tokenizer" [CLASS: DUPX_Validation_test_tokenizer]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Tokenizer" RESULT: passed
+
+START TEST "PHP Timeout" [CLASS: DUPX_Validation_test_timeout]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Timeout" RESULT: good
+
+START TEST "Disk Space" [CLASS: DUPX_Validation_test_disk_space]
+LOG-TIME[DELTA:   0.01548]  MESSAGE:TEST "Disk Space" RESULT: good
+
+START TEST "Permissions: General" [CLASS: DUPX_Validation_test_iswritable]
+LOG-TIME[DELTA:   0.81149]  MESSAGE:TEST "Permissions: General" RESULT: passed
+
+START TEST "Permissions: Configs Files " [CLASS: DUPX_Validation_test_iswritable_configs]
+LOG-TIME[DELTA:   0.00264]  MESSAGE:TEST "Permissions: Configs Files " RESULT: passed
+
+START TEST "Host Name" [CLASS: DUPX_Validation_test_db_host_name]
+LOG-TIME[DELTA:   0.00010]  MESSAGE:TEST "Host Name" RESULT: passed
+
+START TEST "Host Connection" [CLASS: DUPX_Validation_test_db_connection]
+LOG-TIME[DELTA:   0.01445]  MESSAGE:TEST "Host Connection" RESULT: passed
+
+START TEST "Database Version" [CLASS: DUPX_Validation_test_db_version]
+LOG-TIME[DELTA:   0.00359]  MESSAGE:TEST "Database Version" RESULT: soft warning
+
+START TEST "Create New Database" [CLASS: DUPX_Validation_test_db_create]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Create New Database" RESULT: skip
+
+START TEST "Database Engine Support" [CLASS: DUPX_Validation_test_db_supported_engine]
+LOG-TIME[DELTA:   0.00065]  MESSAGE:TEST "Database Engine Support" RESULT: passed
+
+START TEST "Database GTID Mode" [CLASS: DUPX_Validation_test_db_gtid_mode]
+LOG-TIME[DELTA:   0.00021]  MESSAGE:TEST "Database GTID Mode" RESULT: passed
+
+START TEST "Privileges: User Visibility" [CLASS: DUPX_Validation_test_db_visibility]
+LOG-TIME[DELTA:   0.00008]  MESSAGE:TEST "Privileges: User Visibility" RESULT: passed
+
+START TEST "Manual Table Check" [CLASS: DUPX_Validation_test_db_manual_tabels_count]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual Table Check" RESULT: skip
+
+START TEST "Multiple WordPress Installs" [CLASS: DUPX_Validation_test_db_multiple_wp_installs]
+LOG-TIME[DELTA:   0.00372]  MESSAGE:TEST "Multiple WordPress Installs" RESULT: passed
+
+START TEST "Privileges: User Resources" [CLASS: DUPX_Validation_test_db_user_resources]
+LOG-TIME[DELTA:   0.00148]  MESSAGE:TEST "Privileges: User Resources" RESULT: passed
+
+START TEST "Privileges: User Table Access" [CLASS: DUPX_Validation_test_db_user_perms]
+LOG-TIME[DELTA:   0.04298]  MESSAGE:TEST "Privileges: User Table Access" RESULT: passed
+
+START TEST "Privileges: 'Show Variables' Query" [CLASS: DUPX_Validation_test_db_custom_queries]
+LOG-TIME[DELTA:   0.00090]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: passed
+
+START TEST "Source Database Triggers" [CLASS: DUPX_Validation_test_db_triggers]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Source Database Triggers" RESULT: passed
+
+START TEST "Character Set and Collation Support" [CLASS: DUPX_Validation_test_db_supported_default_charset]
+LOG-TIME[DELTA:   0.00142]  MESSAGE:TEST "Character Set and Collation Support" RESULT: passed
+
+START TEST "Character Set and  Collation Capability" [CLASS: DUPX_Validation_test_db_supported_charset]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Character Set and  Collation Capability" RESULT: passed
+
+START TEST "Tables Case Sensitivity" [CLASS: DUPX_Validation_test_db_case_sensitive_tables]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: skip
+
+START TEST "Tables Flagged for Removal or Backup" [CLASS: DUPX_Validation_test_db_affected_tables]
+LOG-TIME[DELTA:   0.00112]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: soft warning
+
+START TEST "Prefix too long" [CLASS: DUPX_Validation_test_db_prefix_too_long]
+LOG-TIME[DELTA:   0.00005]  MESSAGE:TEST "Prefix too long" RESULT: passed
+
+START TEST "Database cleanup" [CLASS: DUPX_Validation_test_db_cleanup]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database cleanup" RESULT: skip
+
+
+CTRL PARAMS AFTER VALIDATION
+AJAX ACTION [validate] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [proceed_confirm_dialog] START
+AJAX ACTION [proceed_confirm_dialog] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+[PHP ERR][E_DEPRECATED] MSG:mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated [CODE:8192|FILE:C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\database\class.db.functions.php|LINE:498]
+DB QUERY [ERROR][C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\database\class.db.php:645] MSG: Incorrect database name ''
+	SQL: SHOW TABLES FROM `` WHERE `Tables_in_` IN ('pl_users','pl_usermeta')
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\database\class.db.functions.php[506]
+TRACE[2] CLASS___: DUPX_DB_Functions->tablesExist FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\class.installer.state.php[362]
+TRACE[3] CLASS___: DUPX_InstallerState->getAdminUsersOnOverwriteDatabase FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\classes\class.installer.state.php[118]
+TRACE[4] CLASS___: DUPX_InstallerState->checkState FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.params.php[173]
+TRACE[5] CLASS___: DUPX_Ctrl_Params::setParamsStep1 FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.ajax.php[183]
+TRACE[6] CLASS___: DUPX_Ctrl_ajax::actions    FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\classes\class.ctrl.ajax.php[95]
+TRACE[7] CLASS___: DUPX_Ctrl_ajax::controller FILE: C:\laragon\www\frellas\prefeitura-lassance\dup-installer\main.installer.php[60]
+
+GET USERS ON CURRENT DATABASE FAILED. Users tables doesn't exist, continue with orverwrite installation but with option keep users disabled
+
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+INITIALIZE FILTERS
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+********************************************************************************
+* DUPLICATOR LITE: Install-Log
+* STEP-1 START @ 02:08:06
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+INSTALL TYPE________: single site
+BLOG NAME___________: "Prefeitura Municipal de Lassance"
+HOME URL NEW________: "http://localhost/frellas/prefeitura-lassance"
+SITE URL NEW________: "http://localhost/frellas/prefeitura-lassance"
+CONTENT URL NEW_____: "http://localhost/frellas/prefeitura-lassance/wp-content"
+UPLOAD URL NEW______: "http://localhost/frellas/prefeitura-lassance/wp-content/uploads"
+PLUGINS URL NEW_____: "http://localhost/frellas/prefeitura-lassance/wp-content/plugins"
+MUPLUGINS URL NEW___: "http://localhost/frellas/prefeitura-lassance/wp-content/mu-plugins"
+HOME PATH NEW_______: "C:/laragon/www/frellas/prefeitura-lassance"
+SITE PATH NEW_______: "C:/laragon/www/frellas/prefeitura-lassance"
+CONTENT PATH NEW____: "C:/laragon/www/frellas/prefeitura-lassance/wp-content"
+UPLOAD PATH NEW_____: "C:/laragon/www/frellas/prefeitura-lassance/wp-content/uploads"
+PLUGINS PATH NEW____: "C:/laragon/www/frellas/prefeitura-lassance/wp-content/plugins"
+MUPLUGINS PATH NEW__: "C:/laragon/www/frellas/prefeitura-lassance/wp-content/mu-plugins"
+ARCHIVE ACTION______: "donothing"
+SKIP WP FILES_______: "none"
+ARCHIVE ENGINE______: "ziparchivechunking"
+SET DIR PERMS_______: false
+DIR PERMS VALUE_____: 0755
+SET FILE PERMS______: false
+FILE PERMS VALUE____: 0644
+SAFE MODE___________: 0
+LOGGING_____________: 1
+ZIP THROTTLING______: false
+WP CONFIG___________: "modify"
+HTACCESS CONFIG_____: "new"
+OTHER CONFIG________: "new"
+FILE TIME___________: "current"
+********************************************************************************
+
+REMOVE FILTERS
+	DIR : "C:/laragon/www/frellas/prefeitura-lassance/dup-installer"
+	FILE: "C:/laragon/www/frellas/prefeitura-lassance/20250211_prefeituramunicipaldelassanc_[HASH]_20250227140520_installer-backup.php"
+	FILE: "C:/laragon/www/frellas/prefeitura-lassance/20250211_prefeituramunicipaldelassanc_[HASH]_20250227140520_archive.zip"
+	FILE: "C:/laragon/www/frellas/prefeitura-lassance/installer.php"
+	FILE: "C:/laragon/www/frellas/prefeitura-lassance/dup-installer-bootlog__8ee4526-27140520.txt"
+EXTRACTION FILTERS
+	DIR : "dup-installer"
+	FILE: "20250211_prefeituramunicipaldelassanc_[HASH]_20250227140520_installer-backup.php"
+--------------------------------------
+
+
+EXTRACTION: ZIP CHUNKING >>> START
+MAINTENANCE MODE ENABLE
+BEFORE EXTRACION ACTIONS
+
+*** RESET CONFIG FILES IN CURRENT HOSTING >>> START
+RESET CONFIG FILES: I'M GOING TO MOVE CONFIG FILE "wp-config.php" IN ORIGINAL FOLDER
+	CONFIG FILE HAS BEEN RESET
+RESET CONFIG FILES: I'M GOING TO MOVE CONFIG FILE ".htaccess" IN ORIGINAL FOLDER
+	CONFIG FILE HAS BEEN RESET
+
+*** RESET CONFIG FILES IN CURRENT HOSTING >>> END
+MAINTENANCE MODE ENABLE
+
+*** CREATE FOLDER AND PERMISSION PREPARE
+FOLDER PREPARE DONE
+ARCHIVE OFFSET 0
+CHUNK COMPLETE - RUNTIME: 5.0343 sec. - Files processed: 1,400 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 1400
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0600 sec. - Files processed: 1,722 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 1722
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0516 sec. - Files processed: 1,997 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 1997
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.1747 sec. - Files processed: 2,282 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 2282
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0273 sec. - Files processed: 2,659 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 2659
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0643 sec. - Files processed: 3,116 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 3116
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0601 sec. - Files processed: 3,458 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 3458
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0275 sec. - Files processed: 3,699 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 3699
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0104 sec. - Files processed: 4,010 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 4010
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0328 sec. - Files processed: 4,297 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 4297
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0871 sec. - Files processed: 4,606 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 4606
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0690 sec. - Files processed: 5,041 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 5041
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0560 sec. - Files processed: 5,369 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 5369
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0473 sec. - Files processed: 5,704 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 5704
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0683 sec. - Files processed: 5,970 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 5970
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0973 sec. - Files processed: 6,281 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 6281
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0834 sec. - Files processed: 6,503 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 6503
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0173 sec. - Files processed: 6,807 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 6807
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.2099 sec. - Files processed: 7,026 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 7026
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.2014 sec. - Files processed: 7,192 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 7192
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0490 sec. - Files processed: 7,501 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 7501
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0542 sec. - Files processed: 7,701 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 7701
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.3864 sec. - Files processed: 7,966 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 7966
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0298 sec. - Files processed: 8,270 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 8270
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0477 sec. - Files processed: 8,696 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 8696
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.3228 sec. - Files processed: 8,970 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 8970
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.2348 sec. - Files processed: 9,236 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 9236
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0589 sec. - Files processed: 9,520 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 9520
+--------------------------------------
+PATHS MAPPING : "C:/laragon/www/frellas/prefeitura-lassance"
+--------------------------------------
+FILE EXTRACTION: done processing last file in list of 10351
+
+EXTRACTION: ZIP CHUNKING >>> DONE
+
+EXTRACTION COMPLETE @ 02:11:12 - RUNTIME: 187.5816 sec. - Files processed: 9,744 of 9,744
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [dbinstall] START
+ADD PREFIX META MAP ID 0 pl_
+
+
+
+********************************************************************************
+* DUPLICATOR LITE: INSTALL-LOG
+* STEP-2 START @ 02:11:13
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+DB ENGINE___________: "chunk"
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+USER MODE___________: "overwrite"
+TABLE PREFIX________: "pl_"
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8mb4"
+COLLATE_____________: ""
+CUNKING_____________: true
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+FUNCTIONS___________: true
+REMOVE DEFINER______: false
+SPLIT CREATES_______: true
+--------------------------------------
+TABLES
+--------------------------------------
+TABLE "pl_actionscheduler_actions"______________________[ROWS:      40] [EXTRACT|REPLACE] [INST NAME: pl_actionscheduler_actions]
+TABLE "pl_actionscheduler_claims"_______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: pl_actionscheduler_claims]
+TABLE "pl_actionscheduler_groups"_______________________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: pl_actionscheduler_groups]
+TABLE "pl_actionscheduler_logs"_________________________[ROWS:     114] [EXTRACT|REPLACE] [INST NAME: pl_actionscheduler_logs]
+TABLE "pl_commentmeta"__________________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: pl_commentmeta]
+TABLE "pl_comments"_____________________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: pl_comments]
+TABLE "pl_duplicator_packages"__________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: pl_duplicator_packages]
+TABLE "pl_links"________________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: pl_links]
+TABLE "pl_litespeed_avatar"_____________________________[ROWS:       7] [EXTRACT|REPLACE] [INST NAME: pl_litespeed_avatar]
+TABLE "pl_litespeed_url"________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: pl_litespeed_url]
+TABLE "pl_litespeed_url_file"___________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: pl_litespeed_url_file]
+TABLE "pl_options"______________________________________[ROWS:     606] [EXTRACT|REPLACE] [INST NAME: pl_options]
+TABLE "pl_postmeta"_____________________________________[ROWS:    1709] [EXTRACT|REPLACE] [INST NAME: pl_postmeta]
+TABLE "pl_posts"________________________________________[ROWS:     161] [EXTRACT|REPLACE] [INST NAME: pl_posts]
+TABLE "pl_rank_math_404_logs"___________________________[ROWS:      47] [EXTRACT|REPLACE] [INST NAME: pl_rank_math_404_logs]
+TABLE "pl_rank_math_analytics_gsc"______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: pl_rank_math_analytics_gsc]
+TABLE "pl_rank_math_analytics_inspections"______________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: pl_rank_math_analytics_inspections]
+TABLE "pl_rank_math_analytics_objects"__________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: pl_rank_math_analytics_objects]
+TABLE "pl_rank_math_internal_links"_____________________[ROWS:      20] [EXTRACT|REPLACE] [INST NAME: pl_rank_math_internal_links]
+TABLE "pl_rank_math_internal_meta"______________________[ROWS:      66] [EXTRACT|REPLACE] [INST NAME: pl_rank_math_internal_meta]
+TABLE "pl_rank_math_redirections"_______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: pl_rank_math_redirections]
+TABLE "pl_rank_math_redirections_cache"_________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: pl_rank_math_redirections_cache]
+TABLE "pl_termmeta"_____________________________________[ROWS:      13] [EXTRACT|REPLACE] [INST NAME: pl_termmeta]
+TABLE "pl_terms"________________________________________[ROWS:      18] [EXTRACT|REPLACE] [INST NAME: pl_terms]
+TABLE "pl_term_relationships"___________________________[ROWS:      42] [EXTRACT|REPLACE] [INST NAME: pl_term_relationships]
+TABLE "pl_term_taxonomy"________________________________[ROWS:      18] [EXTRACT|REPLACE] [INST NAME: pl_term_taxonomy]
+TABLE "pl_usermeta"_____________________________________[ROWS:      80] [EXTRACT|REPLACE] [INST NAME: pl_usermeta]
+TABLE "pl_users"________________________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: pl_users]
+TABLE "pl_wpmailsmtp_debug_events"______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: pl_wpmailsmtp_debug_events]
+TABLE "pl_wpmailsmtp_tasks_meta"________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: pl_wpmailsmtp_tasks_meta]
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 8.0.30 -- Build Server: 10.11.11
+FILE SIZE:	dup-database__[HASH].sql (5.57MB)
+TIMEOUT:	5000
+MAXPACK:	536870912
+SQLMODE-GLOBAL:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+SQLMODE-SESSION:NO_AUTO_VALUE_ON_ZERO
+DROP ALL TABLES
+DROP TABLE pl_actionscheduler_actions
+DROP TABLE pl_actionscheduler_claims
+DROP TABLE pl_actionscheduler_groups
+DROP TABLE pl_actionscheduler_logs
+DROP TABLE pl_commentmeta
+DROP TABLE pl_comments
+DROP TABLE pl_duplicator_packages
+DROP TABLE pl_links
+DROP TABLE pl_options
+DROP TABLE pl_postmeta
+DROP TABLE pl_posts
+DROP TABLE pl_rank_math_404_logs
+DROP TABLE pl_rank_math_analytics_gsc
+DROP TABLE pl_rank_math_analytics_inspections
+DROP TABLE pl_rank_math_analytics_objects
+DROP TABLE pl_rank_math_internal_links
+DROP TABLE pl_rank_math_internal_meta
+DROP TABLE pl_rank_math_redirections
+DROP TABLE pl_rank_math_redirections_cache
+DROP TABLE pl_term_relationships
+DROP TABLE pl_term_taxonomy
+DROP TABLE pl_termmeta
+DROP TABLE pl_terms
+DROP TABLE pl_usermeta
+DROP TABLE pl_users
+DROP TABLE pl_wpmailsmtp_debug_events
+DROP TABLE pl_wpmailsmtp_tasks_meta
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+QUERY FIXES
+GLOBAL RULES ADDED: PROC AND VIEWS
+
+QUERY FIXES GLOBAL RULES
+	SEARCH  => /^(\s*(?:\/\*!\d+\s)?\s*(?:CREATE.+)?DEFINER\s*=)([^\*\s]+)(.*)$/m
+	REPLACE => $1`breno.miranda`@`localhost`$3
+
+	SEARCH  => /^(\s*CREATE.+(?:PROCEDURE|FUNCTION)[\s\S]*)(BEGIN)([\s\S]*)$/
+	REPLACE => $1SQL SECURITY INVOKER
+$2$3
+
+--------------------------------------
+** DATABASE CHUNK install start
+--------------------------------------
+DATABASE CHUNK SEEK POSITION: 0
+Auto Commit set to false successfully
+NO TABLE TO SKIP
+Auto Commit set to true successfully
+--------------------------------------
+** DATABASE CHUNK install end
+--------------------------------------
+ERRORS FOUND:	0
+DROPPED TABLES:	27
+RENAMED TABLES:	0
+QUERIES RAN:	276
+
+TABLES ROWS IN DATABASE AFTER EXTRACTION
+
+TABLE "pl_actionscheduler_actions"______________________[ROWS:    40]
+TABLE "pl_actionscheduler_claims"_______________________[ROWS:     0]
+TABLE "pl_actionscheduler_groups"_______________________[ROWS:     3]
+TABLE "pl_actionscheduler_logs"_________________________[ROWS:   114]
+TABLE "pl_commentmeta"__________________________________[ROWS:     2]
+TABLE "pl_comments"_____________________________________[ROWS:     1]
+TABLE "pl_duplicator_packages"__________________________[ROWS:     1]
+TABLE "pl_links"________________________________________[ROWS:     0]
+TABLE "pl_litespeed_avatar"_____________________________[ROWS:     7]
+TABLE "pl_litespeed_url"________________________________[ROWS:     0]
+TABLE "pl_litespeed_url_file"___________________________[ROWS:     0]
+TABLE "pl_options"______________________________________[ROWS:   606]
+TABLE "pl_postmeta"_____________________________________[ROWS:  1709]
+TABLE "pl_posts"________________________________________[ROWS:   161]
+TABLE "pl_rank_math_404_logs"___________________________[ROWS:    47]
+TABLE "pl_rank_math_analytics_gsc"______________________[ROWS:     0]
+TABLE "pl_rank_math_analytics_inspections"______________[ROWS:     0]
+TABLE "pl_rank_math_analytics_objects"__________________[ROWS:     2]
+TABLE "pl_rank_math_internal_links"_____________________[ROWS:    20]
+TABLE "pl_rank_math_internal_meta"______________________[ROWS:    66]
+TABLE "pl_rank_math_redirections"_______________________[ROWS:     0]
+TABLE "pl_rank_math_redirections_cache"_________________[ROWS:     0]
+TABLE "pl_term_relationships"___________________________[ROWS:    42]
+TABLE "pl_term_taxonomy"________________________________[ROWS:    18]
+TABLE "pl_termmeta"_____________________________________[ROWS:    13]
+TABLE "pl_terms"________________________________________[ROWS:    18]
+TABLE "pl_usermeta"_____________________________________[ROWS:    80]
+TABLE "pl_users"________________________________________[ROWS:     1]
+TABLE "pl_wpmailsmtp_debug_events"______________________[ROWS:     0]
+TABLE "pl_wpmailsmtp_tasks_meta"________________________[ROWS:     1]
+
+INSERT DATA RUNTIME: 1.2012 sec.
+STEP-2 COMPLETE @ 02:11:14 - RUNTIME: 1.2017 sec.
+AJAX ACTION [dbinstall] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+
+====================================
+SET SEARCH AND REPLACE LIST INSTALL TYPE single site
+====================================
+SEARCH ITEM[T:path |P:12] SEARCH: /home/u315784279/domains/brenocarvalho.com.br/public_html/pml REPLACE: C:/laragon/www/frellas/prefeitura-lassance [SCOPE: ALL]
+SEARCH ITEM[T:urlnd|P:12] SEARCH: https://pml.brenocarvalho.com.br REPLACE: http://localhost/frellas/prefeitura-lassance [SCOPE: ALL]
+CHUNK LOAD DATA: IS NULL 
+CHUNK ACTION: CURRENT [start][][]
+
+
+********************************************************************************
+DUPLICATOR LITE: INSTALL-LOG
+STEP-3 START @ 02:11:14
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8mb4"
+CHARSET CLIENT:	"utf8mb4"
+********************************************************************************
+OPTIONS:
+SKIP PATH REPLACE_____: false
+DISALLOW_FILE_EDIT____: [value = ], [inWpConfig = ]
+DISALLOW_FILE_MODS____: [value = ], [inWpConfig = ]
+AUTOSAVE_INTERVAL_____: [value = 60], [inWpConfig = ]
+WP_POST_REVISIONS_____: [value = 1], [inWpConfig = ]
+FORCE_SSL_ADMIN_______: [value = 1], [inWpConfig = ]
+WP_AUTO_UPDATE_CORE___: [value = false], [inWpConfig = ]
+WP_CACHE______________: [value = ], [inWpConfig = ]
+WPCACHEHOME___________: [value = /], [inWpConfig = ]
+WP_DEBUG______________: [value = ], [inWpConfig = 1]
+WP_DEBUG_LOG__________: [value = ], [inWpConfig = ]
+WP_DEBUG_DISPLAY______: [value = 1], [inWpConfig = ]
+WP_DISABLE_FATAL_ERROR_HANDLER: [value = ], [inWpConfig = ]
+SCRIPT_DEBUG__________: [value = ], [inWpConfig = ]
+CONCATENATE_SCRIPTS___: [value = ], [inWpConfig = ]
+SAVEQUERIES___________: [value = ], [inWpConfig = ]
+ALTERNATE_WP_CRON_____: [value = ], [inWpConfig = ]
+DISABLE_WP_CRON_______: [value = ], [inWpConfig = ]
+WP_CRON_LOCK_TIMEOUT__: [value = 60], [inWpConfig = ]
+COOKIE_DOMAIN_________: [value = ], [inWpConfig = ]
+WP_MEMORY_LIMIT_______: [value = 40M], [inWpConfig = ]
+WP_MAX_MEMORY_LIMIT___: [value = 1536M], [inWpConfig = ]
+WP_TEMP_DIR___________: [value = ], [inWpConfig = ]
+********************************************************************************
+
+********************************************************************************
+CHUNK PARAMS:
+maxIteration__________: 0
+timeOut_______________: 5000
+throttling____________: 2
+rowsPerPage___________: 1000
+********************************************************************************
+
+CHUNK ACTION: CURRENT [cleanup_trans][][]
+[PHP ERR][E_WARNING] MSG:foreach() argument must be of type array|object, string given [CODE:2|FILE:C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Deploy\Database\DbCleanup.php|LINE:95]
+CLEAN OPTIONS [pl_options]
+	`option_name` = "duplicator_plugin_data_stats"
+	`option_name` LIKE "\_transient%"
+	`option_name` LIKE "\_site\_transient%"
+DATABASE OPTIONS DELETED [ROWS:    31]
+CHUNK ACTION: CURRENT [cleanup_extra][][]
+CLEANUP EXTRA
+	- SKIP DROP VIEWS
+	- SKIP DROP PROCS
+	- SKIP DROP FUNCS
+CHUNK ACTION: CURRENT [cleanup_packages][][]
+EMPTY PACKAGES TABLE
+CLEAN PACKAGES
+DATABASE PACKAGE DELETED [ROWS:     1]
+CHUNK ACTION: CURRENT [init][][]
+
+EVALUATE TABLE: "pl_actionscheduler_actions"______________________[ROWS:    40][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_actionscheduler_actions][0]
+
+EVALUATE TABLE: "pl_actionscheduler_claims"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_actionscheduler_groups"_______________________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_actionscheduler_groups][0]
+
+EVALUATE TABLE: "pl_actionscheduler_logs"_________________________[ROWS:   114][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_actionscheduler_logs][0]
+
+EVALUATE TABLE: "pl_commentmeta"__________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_commentmeta][0]
+
+EVALUATE TABLE: "pl_comments"_____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_comments][0]
+
+EVALUATE TABLE: "pl_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_litespeed_avatar"_____________________________[ROWS:     7][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_litespeed_avatar][0]
+
+EVALUATE TABLE: "pl_litespeed_url"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_litespeed_url_file"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_options"______________________________________[ROWS:   575][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_options][0]
+
+EVALUATE TABLE: "pl_postmeta"_____________________________________[ROWS:  1709][PG:   2][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_postmeta][0]
+	CHUNK ACTION: CURRENT [search_replace][pl_postmeta][1]
+
+EVALUATE TABLE: "pl_posts"________________________________________[ROWS:   161][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_posts][0]
+
+EVALUATE TABLE: "pl_rank_math_404_logs"___________________________[ROWS:    47][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_rank_math_404_logs][0]
+
+EVALUATE TABLE: "pl_rank_math_analytics_gsc"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_rank_math_analytics_inspections"______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_rank_math_analytics_objects"__________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_rank_math_analytics_objects][0]
+
+EVALUATE TABLE: "pl_rank_math_internal_links"_____________________[ROWS:    20][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_rank_math_internal_links][0]
+
+EVALUATE TABLE: "pl_rank_math_internal_meta"______________________[ROWS:    66][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_rank_math_redirections"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_rank_math_redirections_cache"_________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_termmeta"_____________________________________[ROWS:    13][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_termmeta][0]
+
+EVALUATE TABLE: "pl_terms"________________________________________[ROWS:    18][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_terms][0]
+
+EVALUATE TABLE: "pl_term_relationships"___________________________[ROWS:    42][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_term_taxonomy"________________________________[ROWS:    18][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_term_taxonomy][0]
+
+EVALUATE TABLE: "pl_usermeta"_____________________________________[ROWS:    80][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_usermeta][0]
+
+EVALUATE TABLE: "pl_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_users][0]
+
+EVALUATE TABLE: "pl_wpmailsmtp_debug_events"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "pl_wpmailsmtp_tasks_meta"________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/u315784279/domains/brenocarvalho.com.br/public_html/pml" => "C:/laragon/www/frellas/prefeitura-lassance"
+	SEARCH[urlnd]  2:"https://pml.brenocarvalho.com.br" ================> "http://localhost/frellas/prefeitura-lassance"
+	CHUNK ACTION: CURRENT [search_replace][pl_wpmailsmtp_tasks_meta][0]
+--------------------------------------
+SCANNED:	Tables:30 	|	 Rows:2812 	|	 Cells:15008 
+UPDATED:	Tables:4 	|	 Rows:296 	|	 Cells:298 
+ERRORS:		0 
+RUNTIME:	0.905500 sec
+CHUNK ACTION: CURRENT [rem_maintenance][][]
+
+====================================
+REMOVE MAINTENANCE MODE
+====================================
+MAINTENANCE MODE DISABLE
+CHUNK ACTION: CURRENT [config_update][][]
+SET CONFIG FILES
+Retained original entry wpconfig target:C:/laragon/www/frellas/prefeitura-lassance/wp-config.php
+New htaccess file created:C:/laragon/www/frellas/prefeitura-lassance/.htaccess
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE ABSPATH "dirname(__FILE__) . '/'"
+	UPDATE DB_NAME ""wp_prefeituralassance""
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	UPDATE DB_CHARSET "utf8mb4"
+	UPDATE DB_COLLATE ""
+	WP CONFIG UPDATE WP_DEBUG "false"
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE
+====================================
+
+WEB SERVER CONFIGURATION FILE UPDATED:
+- Preparing .htaccess file with basic setup.
+HTACCESS FILE - Successfully updated the .htaccess file setting.
+
+====================================
+INDEX.PHP UPDATE
+====================================
+INDEX.PHP updated with new blog header "dirname(__FILE__) . '/wp-blog-header.php'"
+
+CHUNK ACTION: CURRENT [gen_update][][]
+
+====================================
+GENERAL UPDATES
+====================================
+
+====================================
+MANAGE PLUGINS
+====================================
+CHUNK ACTION: CURRENT [gen_clean][][]
+
+====================================
+GENERAL CLEANUP
+====================================
+RESET ALL USERS SESSION TOKENS
+MIGRATION INFO SET
+CHUNK ACTION: CURRENT [create_admin][][]
+
+====================================
+RESET USERS PASSWORD
+====================================
+CHUNK ACTION: CURRENT [notice_test][][]
+
+====================================
+CHECK FOR INDEX.HTML
+====================================
+NO INDEX.HTML WAS FOUND
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+CHUNK ACTION: CURRENT [cleanup_tmp_files][][]
+
+====================================
+CLEANUP TMP FILES
+====================================
+CHUNK ACTION: CURRENT [set_files_perms][][]
+
+====================================
+SET PARAMS PERMISSION
+====================================
+\n SKIP FOLDER PERMISSION AFTER EXTRACTION
+CHUNK ACTION: CURRENT [final_report][][]
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 02:11:16 - RUNTIME: 1.4076 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [finalpre] START
+AJAX ACTION [finalpre] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [finalafter] START
+AJAX ACTION [finalafter] SUCCESS
+-------------------------
+
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\src\Core\Bootstrap.php:71] RESET TIME
+
+====================================
+NEXT STEP NOTICES
+====================================
+-----------------------
+[NOTICE] Plugin WPS Hide Login disabled by default
+	SECTIONS: plugins
+	LONG MSG: This plugin is deactivated by default automatically due to issues that one may encounter when migrating. You must reactivate from the WordPress admin panel after completing the installation or from the plugins tab. Your site's frontend will render properly after reactivating the plugin.
+
+====================================
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[NOTICE] WPS Hide Login has been deactivated
+	SECTIONS: plugins
+
+-----------------------
+[NOTICE] Activate WPS Hide Login after you login.
+	SECTIONS: plugins
+
+-----------------------
+[NOTICE] Warnings or notices on WordPress front-end tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: C:/laragon/www/frellas/prefeitura-lassance/index.php
+E_DEPRECATED Creation of dynamic property Oxygen_VSB_Dynamic_Shortcodes::$custom_dynamic_datas is deprecated
+	FILE: C:\laragon\www\frellas\prefeitura-lassance\wp-content\plugins\oxygen\component-framework\includes\oxygen-dynamic-shortcodes.php[18]
+	--- TRACE ---
+	CLASS___: Oxygen_VSB_Dynamic_Shortcodes->init_custom_dynamic_dataFILE: C:\laragon\www\frellas\prefeitura-lassance\wp-includes\class-wp-hook.php[324]
+	CLASS___: WP_Hook->apply_filters        FILE: C:\laragon\www\frellas\prefeitura-lassance\wp-includes\class-wp-hook.php[348]
+	CLASS___: WP_Hook->do_action            FILE: C:\laragon\www\frellas\prefeitura-lassance\wp-includes\plugin.php[565]
+	FUNCTION: do_action_ref_array           FILE: C:\laragon\www\frellas\prefeitura-lassance\wp-includes\class-wp.php[830]
+	CLASS___: WP->main                      FILE: C:\laragon\www\frellas\prefeitura-lassance\wp-includes\functions.php[1336]
+	FUNCTION: wp                            FILE: C:\laragon\www\frellas\prefeitura-lassance\wp-blog-header.php[16]
+	FUNCTION: require                       FILE: C:\laragon\www\frellas\prefeitura-lassance\index.php[17]
+	FUNCTION: require_once                  FILE: C:\laragon\www\frellas\prefeitura-lassance\wp-content\wp_test_script_8ee4526-27140520.php[117]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base/ 
+
+
+====================================
+LOG-TIME[C:\laragon\www\frellas\prefeitura-lassance\dup-installer\ctrls\ctrl.base.php:227][DELTA:   0.17337]  MESSAGE:END RENDER PAGE
