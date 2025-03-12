@@ -1,4 +1,5 @@
 <?php
+define( 'WP_CACHE', true );
 
 /**
  * The base configuration for WordPress
@@ -90,13 +91,21 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+define( 'WP_HOME', 'http://localhost/frellas/prefeitura-lassance' );
+define( 'WP_SITEURL', 'http://localhost/frellas/prefeitura-lassance' );
+define( 'WP_MEMORY_LIMIT', '2048M' );
+define( 'WP_MAX_MEMORY_LIMIT', '2048M' );
+
+@ini_set( 'upload_max_filesize',"256M" ) ;
+@ini_set( 'upload_max_size' , '256M' );
+@ini_set( 'post_max_size' , '256M' );
 
 
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', dirname(__FILE__) . '/' );
+	define( 'ABSPATH', __DIR__ . '/' );
 }
 
 /** Sets up WordPress vars and included files. */

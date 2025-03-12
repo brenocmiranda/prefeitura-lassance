@@ -11,7 +11,7 @@ define(
 );
 
 if (function_exists('plugin_dir_url')) {
-    define('DUPLICATOR_VERSION', '1.5.11.2');
+    define('DUPLICATOR_VERSION', '1.5.12');
     define('DUPLICATOR_PLUGIN_URL', plugin_dir_url(__FILE__));
     define('DUPLICATOR_SITE_URL', get_site_url());
 
@@ -20,7 +20,7 @@ if (function_exists('plugin_dir_url')) {
       win:  D:/home/path/file.txt
       SSDIR = SnapShot Directory */
     if (!defined('ABSPATH')) {
-        define('ABSPATH', dirname(__FILE__));
+        define('ABSPATH', __DIR__);
     }
 
     //PATH CONSTANTS

@@ -169,7 +169,7 @@ class WPCode_Upgrade_Welcome {
 		?>
 		<div class="wpcode-welcome-content">
 			<div class="wpcode-welcome-logo">
-				<img src="<?php echo esc_url( $logo_src ); ?>" width="132" alt="<?php echo esc_attr( $logo_alt ); ?>"/>
+				<img src="<?php echo esc_url( $logo_src ); ?>" width="132" alt="<?php echo esc_attr( $logo_alt ); // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage?>"/>
 			</div>
 			<div class="wpcode-welcome-box">
 				<h2><?php esc_html_e( 'Insert Headers and Footers is now WPCode', 'insert-headers-and-footers' ); ?></h2>
@@ -209,7 +209,7 @@ class WPCode_Upgrade_Welcome {
 				<div class="wpcode-welcome-syed-mircea">
 					<div class="wpcode-welcome-person">
 						<div class="wpcode-welcome-person-image">
-							<img src="<?php echo esc_attr( $syed_photo ); ?>" alt="Syed" width="48"/>
+							<img src="<?php echo esc_attr( $syed_photo ); // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage ?>" alt="Syed" width="48"/>
 						</div>
 						<div class="wpcode-welcome-person-text">
 							<h4>Syed Balkhi</h4>
@@ -224,7 +224,7 @@ class WPCode_Upgrade_Welcome {
 					</div>
 					<div class="wpcode-welcome-person">
 						<div class="wpcode-welcome-person-image">
-							<img src="<?php echo esc_attr( $mircea_photo ); ?>" alt="Mircea" width="48"/>
+							<img src="<?php echo esc_attr( $mircea_photo ); // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage ?>" alt="Mircea" width="48"/>
 						</div>
 						<div class="wpcode-welcome-person-text">
 							<h4>Mircea Sandu</h4>
@@ -254,7 +254,7 @@ class WPCode_Upgrade_Welcome {
 			<div class="wpcode-welcome-box">
 				<div class="wpcode-welcome-highlight">
 					<div class="wpcode-welcome-highlight-column">
-						<img src="<?php echo esc_url( $image_generator ); ?>" alt="<?php esc_attr_e( 'WPCode Generator Screen capture', 'insert-headers-and-footers' ); ?>"/>
+						<img src="<?php echo esc_url( $image_generator ); // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage?>" alt="<?php esc_attr_e( 'WPCode Generator Screen capture', 'insert-headers-and-footers' ); ?>"/>
 					</div>
 					<div class="wpcode-welcome-highlight-column">
 						<h3><?php esc_html_e( 'Snippet Generator', 'insert-headers-and-footers' ); ?></h3>
@@ -297,14 +297,14 @@ class WPCode_Upgrade_Welcome {
 						</p>
 					</div>
 					<div class="wpcode-welcome-highlight-column">
-						<img src="<?php echo esc_url( $image_cloud ); ?>" alt="<?php esc_attr_e( 'WPCode Cloud Screen capture', 'insert-headers-and-footers' ); ?>"/>
+						<img src="<?php echo esc_url( $image_cloud ); // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage?>" alt="<?php esc_attr_e( 'WPCode Cloud Screen capture', 'insert-headers-and-footers' ); ?>"/>
 					</div>
 				</div>
 			</div>
 			<div class="wpcode-welcome-box">
 				<div class="wpcode-welcome-highlight" id="old_interface">
 					<div class="wpcode-welcome-highlight-column">
-						<img src="<?php echo esc_url( $image_settings ); ?>" alt="<?php esc_attr_e( 'WPCode Generator Screen capture', 'insert-headers-and-footers' ); ?>"/>
+						<img src="<?php echo esc_url( $image_settings ); // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage?>" alt="<?php esc_attr_e( 'WPCode Generator Screen capture', 'insert-headers-and-footers' ); ?>"/>
 					</div>
 					<div class="wpcode-welcome-highlight-column">
 						<h3><?php esc_html_e( 'Not ready for the new interface?', 'insert-headers-and-footers' ); ?></h3>

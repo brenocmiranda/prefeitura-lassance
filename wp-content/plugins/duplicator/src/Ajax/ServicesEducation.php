@@ -14,6 +14,7 @@ use Duplicator\Libs\OneClickUpgrade\PluginSilentUpgrader;
 use Duplicator\Libs\OneClickUpgrade\ConnectSkin;
 use DUP_Log;
 use DUP_Settings;
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Libs\Snap\SnapJson;
 use Duplicator\Libs\Snap\SnapUtil;
 
@@ -197,17 +198,9 @@ class ServicesEducation extends AbstractAjaxService
         );
 
         if (($data = self::licenseUpgradeRequests($requestParam, $requestError)) === false) {
-            $returnData["success"]   = false;
-            $returnData["error_msg"] = self::licenseUpgradeMessageError($requestError);
-            return $returnData;
+            throw new Exception($requestError['message']);
         } elseif (!isset($data->license) || $data->license != 'valid') {
-            $returnData["success"]   = false;
-            $returnData["error_msg"] = self::licenseUpgradeMessageError(array(
-                'code'    => 0,
-                'message' => 'License key in invalid',
-                'details' => ''
-            ));
-            return $returnData;
+            throw new Exception(__('Invalid license key.', 'duplicator'));
         }
 
         // Fetch direct url and set $returnData["file"]. It is a direct url to download Pro version.
@@ -231,17 +224,9 @@ class ServicesEducation extends AbstractAjaxService
         );
 
         if (($data = self::licenseUpgradeRequests($requestParam, $requestError)) === false) {
-            $returnData["success"]   = false;
-            $returnData["error_msg"] = self::licenseUpgradeMessageError($requestError);
-            return $returnData;
+            throw new Exception($requestError['message']);
         } elseif (!isset($data->download_link) || empty($data->download_link)) {
-            $returnData["success"]   = false;
-            $returnData["error_msg"] = self::licenseUpgradeMessageError(array(
-                'code'    => 0,
-                'message' => 'License key download URL is invalid',
-                'details' => ''
-            ));
-            return $returnData;
+            throw new Exception('License key download URL is invalid');
         }
 
         $returnData["file"] = base64_encode($data->download_link);
@@ -305,28 +290,6 @@ class ServicesEducation extends AbstractAjaxService
         }
 
         return false;
-    }
-
-    /**
-     * License upgrade message error
-     *
-     * @param array $requestError Request error
-     *
-     * @return void
-     */
-    protected static function licenseUpgradeMessageError($requestError)
-    {
-        ob_start();
-        ?>
-        <p>
-            <b><?php _e('Failed to activate license for this website.', 'duplicator'); ?></b>
-        </p>
-        <p>
-            <?php echo __('Message:', 'duplicator') . ' ' . $requestError['message']; ?><br>
-            <?php _e('Check the license key and try again, if the error persists proceed with manual activation.', 'duplicator'); ?>
-        </p>
-        <?php
-        return ob_get_clean();
     }
 
     /**
@@ -395,9 +358,6 @@ class ServicesEducation extends AbstractAjaxService
             die();
         }
         DUP_Log::trace("Oth token verified.");
-
-        // Here we know oth is fine, so we can continue
-        delete_option(self::OPTION_KEY_ONE_CLICK_UPGRADE_OTH);
 
         // Verify Pro is not installed (check if directory exists)
         if (!is_dir(WP_PLUGIN_DIR . "/duplicator-pro")) {
@@ -474,12 +434,26 @@ class ServicesEducation extends AbstractAjaxService
     public function finalizeOneClickUpgrade()
     {
         DUP_Log::trace("Running finalization of One Click Upgrade.");
+        $othReceived = sanitize_text_field($_REQUEST["oth"]);
+        $oth         = get_option(self::OPTION_KEY_ONE_CLICK_UPGRADE_OTH);
+        if (!current_user_can('activate_plugins') || (self::hashOth($oth) !== $othReceived)) {
+            $duplicatorPage = ControllersManager::getMenuLink(
+                ControllersManager::PACKAGES_SUBMENU_SLUG,
+                null,
+                null,
+                ['action' => 'upgrade_finalize_fail']
+            );
+            wp_safe_redirect($duplicatorPage);
+            exit;
+        }
+        delete_option(self::OPTION_KEY_ONE_CLICK_UPGRADE_OTH);
 
         if (!is_dir(WP_PLUGIN_DIR . "/duplicator-pro")) {
             DUP_Log::trace("plugins/duplicator-pro folder does not exist, redirect to Lite settings license page.");
-            $licensePageUrl = is_multisite() ?
-                network_admin_url('admin.php?page=duplicator-settings&tab=license') :
-                admin_url('admin.php?page=duplicator-settings&tab=license');
+            $licensePageUrl = ControllersManager::getMenuLink(
+                ControllersManager::SETTINGS_SUBMENU_SLUG,
+                'license'
+            );
             header("Location: $licensePageUrl");
             die();
         }

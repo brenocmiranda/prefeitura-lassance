@@ -288,13 +288,11 @@ class WPCode_Generator_Style extends WPCode_Generator_Type {
 			}
 		}
 
-		return <<<EOD
-// Add custom styles
-function {$this->get_value( 'function_name' )}() {
-$code
+		return '// Add custom styles
+function ' . $this->get_value( 'function_name' ) . '() {
+' . $code . '
 }
-add_action( '{$this->get_value( 'hook' )}', '{$this->get_value( 'function_name' )}' );
-EOD;
+add_action( \'' . $this->get_value( 'hook' ) . '\', \'' . $this->get_value( 'function_name' ) . '\' );';
 	}
 
 }

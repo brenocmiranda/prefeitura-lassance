@@ -8,6 +8,8 @@ use Duplicator\Core\MigrationMng;
 use Duplicator\Utils\LinkManager;
 use Duplicator\Libs\Snap\SnapUtil;
 use Duplicator\Core\Controllers\ControllersManager;
+use Duplicator\Core\Notifications\Notice;
+use Duplicator\Core\Views\TplMng;
 use Duplicator\Utils\Autoloader;
 use Exception;
 
@@ -50,6 +52,7 @@ class AdminNotices
         $notices = array();
         if (is_multisite()) {
             $noCapabilitiesNotice = is_super_admin() && !current_user_can('export');
+            $notices[]            = array(__CLASS__, 'multisiteNotice');
         } else {
             $noCapabilitiesNotice = in_array('administrator', $GLOBALS['current_user']->roles) && !current_user_can('export');
         }
@@ -68,6 +71,7 @@ class AdminNotices
             $notices[] = array(__CLASS__, 'clearInstallerFilesAction'); // BEFORE MIGRATION SUCCESS NOTICE
             $notices[] = array(__CLASS__, 'migrationSuccessNotice');
             $notices[] = array(__CLASS__, 'installAutoDeactivatePlugins');
+            $notices[] = array(__CLASS__, 'failedOneClickUpgradeNotice');
         }
 
         $action = is_multisite() ? 'network_admin_notices' : 'admin_notices';
@@ -226,7 +230,16 @@ class AdminNotices
                 );
 
                 $nonce = wp_create_nonce('duplicator_cleanup_page');
-                $url   = self_admin_url('admin.php?page=duplicator-tools&tab=diagnostics&section=info&_wpnonce=' . $nonce);
+                $url   = ControllersManager::getMenuLink(
+                    ControllersManager::TOOLS_SUBMENU_SLUG,
+                    'diagnostics',
+                    null,
+                    array(
+                        'section'   => 'info',
+                        '_wpnonce' => $nonce,
+                    ),
+                    true
+                );
                 echo "<b>{$title}</b><br/> {$safe_html} {$msg}";
                 @printf("<br/><a href='{$url}'>%s</a>", __('Take me there now!', 'duplicator'));
             }
@@ -314,6 +327,20 @@ class AdminNotices
     }
 
     /**
+     * Shows install deactivated function
+     *
+     * @return void
+     */
+    public static function failedOneClickUpgradeNotice()
+    {
+        if (SnapUtil::sanitizeTextInput(SnapUtil::INPUT_REQUEST, 'action') !== 'upgrade_finalize_fail') {
+            return;
+        }
+
+        Notice::error(__('Upgrade failed. Please check if you have the necessary permissions to activate plugins.', 'duplicator'), 'upgrade_finalize_fail');
+    }
+
+    /**
      * Shows feedback notices after certain no. of packages successfully created.
      *
      * @return void
@@ -342,12 +369,14 @@ class AdminNotices
             return;
         }
 
+        global $wpdb;
         // not using DUP_Util::getTablePrefix() in place of $tablePrefix because AdminNotices included initially (Duplicator\Lite\Requirement
         // is depended on the AdminNotices)
         $tablePrefix   = (is_multisite() && is_plugin_active_for_network('duplicator/duplicator.php')) ?
-            $GLOBALS['wpdb']->base_prefix :
-            $GLOBALS['wpdb']->prefix;
-        $packagesCount = $GLOBALS['wpdb']->get_var('SELECT count(id) FROM ' . $tablePrefix . 'duplicator_packages WHERE status=100');
+            $wpdb->base_prefix :
+            $wpdb->prefix;
+        $tableName     = esc_sql($tablePrefix . 'duplicator_packages');
+        $packagesCount = $wpdb->get_var("SELECT count(id) FROM `{$tableName}` WHERE status=100");
 
         if ($packagesCount < DUPLICATOR_FEEDBACK_NOTICE_SHOW_AFTER_NO_PACKAGE) {
             return;
@@ -434,6 +463,25 @@ class AdminNotices
             );
             self::displayGeneralAdminNotice($errorMessage, self::GEN_ERROR_NOTICE, true);
         }
+    }
+
+    /**
+     * Display multisite notice
+     *
+     * @return void
+     */
+    public static function multisiteNotice()
+    {
+        if (
+            !ControllersManager::isDuplicatorPage() ||
+            ControllersManager::isCurrentPage(ControllersManager::ABOUT_US_SUBMENU_SLUG) ||
+            ControllersManager::isCurrentPage(ControllersManager::SETTINGS_SUBMENU_SLUG, 'license')
+        ) {
+            return;
+        }
+
+        $message = TplMng::getInstance()->render('parts/notices/drm_multisite_msg', array(), false);
+        self::displayGeneralAdminNotice($message, self::GEN_ERROR_NOTICE, false, ['duplicator-multisite-notice']);
     }
 
     /**

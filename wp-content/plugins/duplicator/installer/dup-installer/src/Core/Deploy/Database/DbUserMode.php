@@ -258,7 +258,7 @@ class DbUserMode extends AbstractJsonSerializable
                 $this->usersAutoIncrement = $rowId;
             }
         }
-        $this->usersAutoIncrement ++;
+        $this->usersAutoIncrement++;
         $queryRes->free_result();
         Log::info('EXISTING USERS COUNT ' . count($this->targetUsersById), Log::LV_DETAILED);
         Log::info('USERS TABLE AUTOINCREMENT VALUE ' . $this->usersAutoIncrement, Log::LV_DETAILED);
@@ -462,7 +462,7 @@ class DbUserMode extends AbstractJsonSerializable
                 }
             } else {
                 $rowVals[0] = $targetId = $this->usersAutoIncrement;
-                $this->usersAutoIncrement ++;
+                $this->usersAutoIncrement++;
 
                 if ($rowId != $targetId) {
                     $this->mappingIds[$rowId] = $targetId;
@@ -564,7 +564,7 @@ class DbUserMode extends AbstractJsonSerializable
                     )
                 ) {
                     $rowVals[0] = $this->usersMetaAutoIncrement;
-                    $this->usersMetaAutoIncrement ++;
+                    $this->usersMetaAutoIncrement++;
                     $rowVals[1] = $user->getId();
 
                     if ($rowMetakey == 'nickname') {

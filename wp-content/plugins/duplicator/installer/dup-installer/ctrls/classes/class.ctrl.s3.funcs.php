@@ -692,7 +692,7 @@ final class DUPX_S3_Funcs
             $blogHeaderValue = "'" . $paramsManager->getValue(PrmMng::PARAM_PATH_WP_CORE_NEW) . "/wp-blog-header.php'";
         } else {
             $relativeAbsPath = strlen($relativeAbsPath) ? '/' . $relativeAbsPath : '';
-            $blogHeaderValue = "dirname(__FILE__) . '" . $relativeAbsPath . "/wp-blog-header.php'";
+            $blogHeaderValue = "__DIR__ . '" . $relativeAbsPath . "/wp-blog-header.php'";
         }
 
         if (($indexContent = file_get_contents($indexPath)) === false) {
@@ -904,7 +904,7 @@ LONGMSG;
             if (($relativeAbsPath = SnapIO::getRelativePath($paramsManager->getValue(PrmMng::PARAM_PATH_WP_CORE_NEW), $pathNew)) === false) {
                 $absPathValue = "'" . $paramsManager->getValue(PrmMng::PARAM_PATH_WP_CORE_NEW) . "'";
             } else {
-                $absPathValue = "dirname(__FILE__) . '/" . $relativeAbsPath . "'";
+                $absPathValue = "__DIR__ . '/" . $relativeAbsPath . "'";
             }
             $confTransformer->update('constant', 'ABSPATH', $absPathValue, array('raw' => true));
             Log::info('UPDATE ABSPATH ' . Log::v2str($absPathValue));

@@ -1,6 +1,7 @@
 <?php
 
 use Duplicator\Controllers\StorageController;
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Libs\Snap\SnapUtil;
 
 defined('ABSPATH') || defined('DUPXABSPATH') || exit;
@@ -58,8 +59,9 @@ defined('ABSPATH') || defined('DUPXABSPATH') || exit;
     <?php
     $storage_position     = DUP_Settings::Get('storage_position');
     $storage_htaccess_off = DUP_Settings::Get('storage_htaccess_off');
+    $actionUrl            = ControllersManager::getMenuLink(ControllersManager::SETTINGS_SUBMENU_SLUG, 'storage');
     ?>
-    <form id="dup-settings-form" action="<?php echo admin_url('admin.php?page=duplicator-settings&tab=storage'); ?>" method="post">
+    <form id="dup-settings-form" action="<?php echo esc_url($actionUrl); ?>" method="post">
         <?php wp_nonce_field('dup_settings_save', 'dup_storage_settings_save_nonce_field', false); ?>
         <input type="hidden" name="action" value="save">
         <input type="hidden" name="page"   value="duplicator-settings">

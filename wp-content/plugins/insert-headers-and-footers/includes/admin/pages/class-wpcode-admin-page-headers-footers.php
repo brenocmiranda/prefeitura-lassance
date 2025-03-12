@@ -283,9 +283,9 @@ class WPCode_Admin_Page_Headers_Footers extends WPCode_Admin_Page {
 
 		if ( $this->can_edit && isset( $_REQUEST['ihaf_insert_header'] ) && isset( $_REQUEST['ihaf_insert_footer'] ) ) {
 			// If they are not allowed to edit the page these should not be processed but we still allow them to save to disable the simple mode.
-			update_option( 'ihaf_insert_header', $_REQUEST['ihaf_insert_header'] );
-			update_option( 'ihaf_insert_footer', $_REQUEST['ihaf_insert_footer'] );
-			update_option( 'ihaf_insert_body', isset( $_REQUEST['ihaf_insert_body'] ) ? $_REQUEST['ihaf_insert_body'] : '' );
+			update_option( 'ihaf_insert_header', $_REQUEST['ihaf_insert_header'] );  // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+			update_option( 'ihaf_insert_footer', $_REQUEST['ihaf_insert_footer'] );  // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+			update_option( 'ihaf_insert_body', isset( $_REQUEST['ihaf_insert_body'] ) ? $_REQUEST['ihaf_insert_body'] : '' );  // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 
 			// Clear the cache.
 			if ( apply_filters( 'wpcode_clear_cache_on_global_save', true ) ) {

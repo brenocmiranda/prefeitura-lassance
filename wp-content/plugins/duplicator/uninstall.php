@@ -81,12 +81,14 @@ class DuplicatorLiteUninstall // phpcs:ignore
      */
     private static function removePackages()
     {
+        global $wpdb;
+
         if (get_option(self::UNINSTALL_PACKAGE_OPTION_KEY) != true) {
             return;
         }
 
-        $tableName = $GLOBALS['wpdb']->base_prefix . self::PACKAGES_TABLE_NAME;
-        $GLOBALS['wpdb']->query('DROP TABLE IF EXISTS ' . $tableName);
+        $tableName = esc_sql($wpdb->base_prefix . self::PACKAGES_TABLE_NAME);
+        $wpdb->query("DROP TABLE IF EXISTS {$tableName}");
 
         $fsystem = new WP_Filesystem_Direct(true);
         $fsystem->rmdir(self::getSsdirPathWpCont(), true);
@@ -119,7 +121,7 @@ class DuplicatorLiteUninstall // phpcs:ignore
         /** @var wpdb */
         global $wpdb;
 
-        $wpdb->query("DELETE FROM " . $wpdb->usermeta . " WHERE meta_key REGEXP '^duplicator_(?!pro_)'");
+        $wpdb->query("DELETE FROM `{$wpdb->usermeta}` WHERE meta_key REGEXP '^duplicator_(?!pro_)'");
     }
 
     /**
@@ -129,8 +131,11 @@ class DuplicatorLiteUninstall // phpcs:ignore
      */
     private static function deleteOptions()
     {
-        $optionsTableName = $GLOBALS['wpdb']->base_prefix . "options";
-        $dupOptionNames   = $GLOBALS['wpdb']->get_col(
+        /** @var wpdb */
+        global $wpdb;
+
+        $optionsTableName = esc_sql($wpdb->base_prefix . "options");
+        $dupOptionNames   = $wpdb->get_col(
             "SELECT `option_name` FROM `{$optionsTableName}` WHERE `option_name` REGEXP '^duplicator_(?!pro_)'"
         );
 
@@ -146,8 +151,10 @@ class DuplicatorLiteUninstall // phpcs:ignore
      */
     private static function deleteTransients()
     {
-        $optionsTableName        = $GLOBALS['wpdb']->base_prefix . "options";
-        $dupOptionTransientNames = $GLOBALS['wpdb']->get_col(
+        global $wpdb;
+
+        $optionsTableName        = esc_sql($wpdb->base_prefix . "options");
+        $dupOptionTransientNames = $wpdb->get_col(
             "SELECT `option_name` FROM `{$optionsTableName}` WHERE `option_name` REGEXP '^_transient_duplicator_(?!pro_)'"
         );
 

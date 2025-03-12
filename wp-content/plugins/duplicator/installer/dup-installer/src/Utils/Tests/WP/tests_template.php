@@ -13,7 +13,7 @@ use Exception;
 die(); // [REMOVE LINE BY SCRIPT] don't remove/change this *********************************
 
 if (!defined('DUPXABSPATH')) {
-    define('DUPXABSPATH', dirname(__FILE__));
+    define('DUPXABSPATH', __DIR__);
 }
 
 if (!defined('DUPX_INIT')) {

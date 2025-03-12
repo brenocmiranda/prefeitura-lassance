@@ -132,7 +132,7 @@ class TestsExecuter implements TestInterface
      */
     public static function getExecFileContent()
     {
-        $result = file_get_contents(dirname(__FILE__) . '/tests_template.php');
+        $result = file_get_contents(__DIR__ . '/tests_template.php');
         $result = preg_replace('/^.*\[REMOVE LINE BY SCRIPT].*\n/m', '', $result);  // remove first line with die
         return str_replace(
             array(

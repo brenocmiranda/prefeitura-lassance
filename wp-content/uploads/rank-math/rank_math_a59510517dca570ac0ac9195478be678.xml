@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//lassance.mg.gov.br/main-sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>https://lassance.mg.gov.br/post-sitemap.xml</loc>
+		<lastmod>2025-03-12T18:34:38+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://lassance.mg.gov.br/page-sitemap.xml</loc>
+		<lastmod>2025-03-11T14:22:03+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://lassance.mg.gov.br/category-sitemap.xml</loc>
+		<lastmod>2025-03-12T18:34:38+00:00</lastmod>
+	</sitemap>
+</sitemapindex>

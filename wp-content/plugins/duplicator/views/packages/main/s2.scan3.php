@@ -1,5 +1,6 @@
 <?php
 
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Utils\LinkManager;
 use Duplicator\Utils\Upsell;
 
@@ -19,6 +20,8 @@ $archive_type_extension =  DUP_Settings::Get('archive_build_mode') == DUP_Archiv
 $duparchive_max_limit   = DUP_Util::readableByteSize(DUPLICATOR_MAX_DUPARCHIVE_SIZE);
 $skip_archive_scan      = DUP_Settings::Get('skip_archive_scan');
 $dbbuild_mode           = DUP_DB::getBuildMode();
+
+global $wpdb;
 ?>
 
 <!-- ================================================================
@@ -471,7 +474,7 @@ DATABASE -->
         </div>
     </div>
     <?php
-    $triggers = $GLOBALS['wpdb']->get_col("SHOW TRIGGERS", 1);
+    $triggers = $wpdb->get_col("SHOW TRIGGERS", 1);
     if (count($triggers)) { ?>
         <div class="scan-item">
             <div class='title' onclick="Duplicator.Pack.toggleScanItem(this);">
@@ -497,8 +500,10 @@ DATABASE -->
         </div>
     <?php } ?>
     <?php
-    $procedures = $GLOBALS['wpdb']->get_col("SHOW PROCEDURE STATUS WHERE `Db` = '{$GLOBALS['wpdb']->dbname}'", 1);
-    $functions  = $GLOBALS['wpdb']->get_col("SHOW FUNCTION STATUS WHERE `Db` = '{$GLOBALS['wpdb']->dbname}'", 1);
+    $procQuery  = $wpdb->prepare("SHOW PROCEDURE STATUS WHERE `Db` = %s", $wpdb->dbname);
+    $procedures = $wpdb->get_col($procQuery, 1);
+    $funcQuery  = $wpdb->prepare("SHOW FUNCTION STATUS WHERE `Db`  = %s", $wpdb->dbname);
+    $functions  = $wpdb->get_col($funcQuery, 1);
     if (count($procedures) || count($functions)) { ?>
     <div id="showcreateprocfunc-block"  class="scan-item">
         <div class='title' onclick="Duplicator.Pack.toggleScanItem(this);">
@@ -566,7 +571,10 @@ DATABASE -->
             echo '<b>' . esc_html__('RECOMMENDATIONS:', 'duplicator') . '</b><br/>';
             echo '<div style="padding:5px">';
 
-            $new1_package_url       = admin_url('admin.php?page=duplicator&tab=new1');
+            $new1_package_url       = ControllersManager::getMenuLink(
+                ControllersManager::PACKAGES_SUBMENU_SLUG,
+                'new1'
+            );
             $new1_package_nonce_url = wp_nonce_url($new1_package_url, 'new1-package');
             $lnk                    = '<a href="' . $new1_package_nonce_url . '">' . esc_html__('Step 1', 'duplicator') . '</a>';
             printf(__('- Add data filters to get the Backup size under %s: ', 'duplicator'), $duparchive_max_limit);

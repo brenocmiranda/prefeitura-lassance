@@ -27,7 +27,7 @@ $disabledDirs = array(
     '/backups-dup-lite',
     '/wp-snapshots'
 );
-$currentDir   = str_replace('\\', '/', dirname(__FILE__));
+$currentDir   = str_replace('\\', '/', __DIR__);
 foreach ($disabledDirs as $disableDir) {
     if (strpos($currentDir, $disableDir) === (strlen($currentDir) - strlen($disableDir))) {
         exit;
@@ -35,11 +35,11 @@ foreach ($disabledDirs as $disableDir) {
 }
 
 if (!defined('DUPXABSPATH')) {
-    define('DUPXABSPATH', dirname(__FILE__));
+    define('DUPXABSPATH', __DIR__);
 }
 
-define('DUPX_VERSION', '1.5.11.2');
-define('DUPX_INIT', str_replace('\\', '/', dirname(__FILE__)));
+define('DUPX_VERSION', '1.5.12');
+define('DUPX_INIT', str_replace('\\', '/', __DIR__));
 define('DUPX_ROOT', preg_match('/^[\\\\\/]?$/', dirname(DUPX_INIT)) ? '/' : dirname(DUPX_INIT));
 
 use Duplicator\Installer\Utils\Log\Log;

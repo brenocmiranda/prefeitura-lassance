@@ -1,6 +1,7 @@
 <?php
 defined('ABSPATH') || defined('DUPXABSPATH') || exit;
 
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Views\AdminNotices;
 
     //Nonce Check
@@ -8,32 +9,38 @@ if (! isset($_POST['dup_form_opts_nonce_field']) || ! wp_verify_nonce(sanitize_t
     AdminNotices::redirect('admin.php?page=duplicator&tab=new1&_wpnonce=' . wp_create_nonce('new1-package'));
 }
 
-    global $wp_version;
-    wp_enqueue_script('dup-handlebars');
+global $wp_version;
+wp_enqueue_script('dup-handlebars');
 
 if (empty($_POST)) {
     //F5 Refresh Check
-    $redirect           = admin_url('admin.php?page=duplicator&tab=new1');
+    $redirect           = ControllersManager::getMenuLink(
+        ControllersManager::PACKAGES_SUBMENU_SLUG,
+        'new1'
+    );
     $redirect_nonce_url = wp_nonce_url($redirect, 'new1-package');
     die("<script>window.location.href = '{$reredirect_nonce_url}'</script>");
 }
 
-    $Package = new DUP_Package();
-    $Package->saveActive($_POST);
+$Package = new DUP_Package();
+$Package->saveActive($_POST);
 
-    DUP_Settings::Set('active_package_id', -1);
-    DUP_Settings::Save();
+DUP_Settings::Set('active_package_id', -1);
+DUP_Settings::Save();
 
-    $Package = DUP_Package::getActive();
+$Package = DUP_Package::getActive();
 
-    $mysqldump_on   = DUP_Settings::Get('package_mysqldump') && DUP_DB::getMySqlDumpPath();
-    $mysqlcompat_on = isset($Package->Database->Compatible) && strlen($Package->Database->Compatible);
-    $mysqlcompat_on = ($mysqldump_on && $mysqlcompat_on) ? true : false;
-    $dbbuild_mode   = ($mysqldump_on) ? 'mysqldump' : 'PHP';
-    $zip_check      = DUP_Util::getZipPath();
+$mysqldump_on   = DUP_Settings::Get('package_mysqldump') && DUP_DB::getMySqlDumpPath();
+$mysqlcompat_on = isset($Package->Database->Compatible) && strlen($Package->Database->Compatible);
+$mysqlcompat_on = ($mysqldump_on && $mysqlcompat_on) ? true : false;
+$dbbuild_mode   = ($mysqldump_on) ? 'mysqldump' : 'PHP';
+$zip_check      = DUP_Util::getZipPath();
 
-    $action_url       = admin_url('admin.php?page=duplicator&tab=new3');
-    $action_nonce_url = wp_nonce_url($action_url, 'new3-package');
+$action_url       = ControllersManager::getMenuLink(
+    ControllersManager::PACKAGES_SUBMENU_SLUG,
+    'new3'
+);
+$action_nonce_url = wp_nonce_url($action_url, 'new3-package');
 ?>
 
 <style>

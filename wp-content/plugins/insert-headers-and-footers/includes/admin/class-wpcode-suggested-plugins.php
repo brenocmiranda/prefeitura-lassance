@@ -362,7 +362,7 @@ class WPCode_Suggested_Plugins {
 			<?php foreach ( $suggested_plugins as $slug => $plugin ) { ?>
 				<div class="wpcode-plugin-suggestion-plugin">
 					<div class="wpcode-plugin-suggestion-plugin-icon">
-						<img width="72" src="<?php echo esc_url( add_query_arg( 'v', WPCODE_VERSION, WPCODE_PLUGIN_URL . 'admin/images/' . $plugin['icon'] ) ); ?>" alt="<?php echo esc_attr( $plugin['name'] ); ?>"/>
+						<img width="72" src="<?php echo esc_url( add_query_arg( 'v', WPCODE_VERSION, WPCODE_PLUGIN_URL . 'admin/images/' . $plugin['icon'] ) ); ?>" alt="<?php echo esc_attr( $plugin['name'] );  // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage ?>"/>
 					</div>
 					<div class="wpcode-plugin-suggesion-plugin-text">
 						<h3><?php echo esc_html( $plugin['name'] ); ?></h3>

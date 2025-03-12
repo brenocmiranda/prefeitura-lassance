@@ -200,8 +200,8 @@ class WPCode_File_Logger {
 			$this->close( $rename_from );
 		}
 
-		if ( is_writable( $rename_from ) ) { // phpcs:ignore WordPress.VIP.FileSystemWritesDisallow.file_ops_is_writable
-			return rename( $rename_from, $rename_to ); // phpcs:ignore WordPress.VIP.FileSystemWritesDisallow.file_ops_rename
+		if ( is_writable( $rename_from ) ) { // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_is_writable
+			return rename( $rename_from, $rename_to ); // phpcs:ignore WordPress.WP.AlternativeFunctions.rename_rename
 		} else {
 			return false;
 		}

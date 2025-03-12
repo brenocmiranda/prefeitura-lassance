@@ -170,9 +170,6 @@ class LogHandler
             default:
                 break;
         }
-        if (defined('E_STRICT') && $errno === E_STRICT) {
-            return 'E_STRICT';
-        }
         if (defined('E_RECOVERABLE_ERROR') && $errno === E_RECOVERABLE_ERROR) {
             return 'E_RECOVERABLE_ERROR';
         }

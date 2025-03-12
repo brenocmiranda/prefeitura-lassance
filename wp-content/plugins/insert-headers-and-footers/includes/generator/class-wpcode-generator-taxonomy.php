@@ -451,7 +451,7 @@ class WPCode_Generator_Taxonomy extends WPCode_Generator_Type {
 						array(
 							'type'    => 'description',
 							'label'   => __( 'Custom Capabilities', 'insert-headers-and-footers' ),
-							'content' => __( 'Use the fields on the right to assign custom capabilities for this taxonomy.' ),
+							'content' => __( 'Use the fields on the right to assign custom capabilities for this taxonomy.', 'insert-headers-and-footers' ),
 						),
 					),
 					// Column 2.
@@ -573,52 +573,50 @@ class WPCode_Generator_Taxonomy extends WPCode_Generator_Type {
 			$capabilities = '';
 		}
 
-		return <<<EOD
-// Register Custom Taxonomy
-function {$this->get_value( 'function_name' )}() {
+		return '// Register Custom Taxonomy
+function ' . $this->get_value( 'function_name' ) . '() {
 
-	\$labels = array(
-		'name'                       => _x( '{$this->get_value( 'label_count' )}', 'Taxonomy General Name', '{$this->get_value( 'text_domain' )}' ),
-		'singular_name'              => _x( '{$this->get_value( 'label' )}', 'Taxonomy Singular Name', '{$this->get_value( 'text_domain' )}' ),
-		'menu_name'                  => __( '{$this->get_value( 'label_menu_name' )}', '{$this->get_value( 'text_domain' )}' ),
-		'all_items'                  => __( '{$this->get_value( 'label_all_items' )}', '{$this->get_value( 'text_domain' )}' ),
-		'parent_item'                => __( '{$this->get_value( 'label_parent_item' )}', '{$this->get_value( 'text_domain' )}' ),
-		'parent_item_colon'          => __( '{$this->get_value( 'label_parent_item_colon' )}', '{$this->get_value( 'text_domain' )}' ),
-		'new_item_name'              => __( '{$this->get_value( 'label_new_item' )}', '{$this->get_value( 'text_domain' )}' ),
-		'add_new_item'               => __( '{$this->get_value( 'label_add_new_item' )}', '{$this->get_value( 'text_domain' )}' ),
-		'edit_item'                  => __( '{$this->get_value( 'label_edit_item' )}', '{$this->get_value( 'text_domain' )}' ),
-		'update_item'                => __( '{$this->get_value( 'label_update_item' )}', '{$this->get_value( 'text_domain' )}' ),
-		'view_item'                  => __( '{$this->get_value( 'label_view_item' )}', '{$this->get_value( 'text_domain' )}' ),
-		'separate_items_with_commas' => __( '{$this->get_value( 'label_separate_items_with_commas' )}', '{$this->get_value( 'text_domain' )}' ),
-		'add_or_remove_items'        => __( '{$this->get_value( 'label_add_or_remove_items' )}', '{$this->get_value( 'text_domain' )}' ),
-		'choose_from_most_used'      => __( '{$this->get_value( 'label_choose_from_most_used' )}', '{$this->get_value( 'text_domain' )}' ),
-		'popular_items'              => __( '{$this->get_value( 'label_popular_items' )}', '{$this->get_value( 'text_domain' )}' ),
-		'search_items'               => __( '{$this->get_value( 'label_search_items' )}', '{$this->get_value( 'text_domain' )}' ),
-		'not_found'                  => __( '{$this->get_value( 'label_not_found' )}', '{$this->get_value( 'text_domain' )}' ),
-		'no_terms'                   => __( '{$this->get_value( 'label_no_items' )}', '{$this->get_value( 'text_domain' )}' ),
-		'items_list'                 => __( '{$this->get_value( 'label_items_list' )}', '{$this->get_value( 'text_domain' )}' ),
-		'items_list_navigation'      => __( '{$this->get_value( 'label_items_list_navigation' )}', '{$this->get_value( 'text_domain' )}' ),
-	);
-	$rewrite_options
-	$custom_capabilities
-	\$args = array(
-		'labels'                => \$labels,
-		'hierarchical'          => {$this->get_value( 'hierarchical' )},
-		'public'                => {$this->get_value( 'public' )},
-		'show_ui'               => {$this->get_value( 'show_ui' )},
-		'show_admin_column'     => {$this->get_value( 'show_admin_column' )},
-		'show_in_nav_menus'     => {$this->get_value( 'show_in_nav_menus' )},
-		'show_tagcloud'         => {$this->get_value( 'show_tagcloud' )},
-		'show_in_rest'          => {$this->get_value( 'show_in_rest' )},
-$rewrite
-$capabilities
-{$this->get_optional_value( 'show_in_rest' )}{$this->get_optional_value( 'rest_base', true )}{$this->get_optional_value( 'rest_controller_class', true )}
-	);
-	register_taxonomy( '{$this->get_value( 'taxonomy' )}', {$this->get_value_comma_separated( 'post_types' )}, \$args );
+    $labels = array(
+        \'name\'                       => _x( \'' . $this->get_value( 'label_count' ) . '\', \'Taxonomy General Name\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'singular_name\'              => _x( \'' . $this->get_value( 'label' ) . '\', \'Taxonomy Singular Name\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'menu_name\'                  => __( \'' . $this->get_value( 'label_menu_name' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'all_items\'                  => __( \'' . $this->get_value( 'label_all_items' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'parent_item\'                => __( \'' . $this->get_value( 'label_parent_item' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'parent_item_colon\'          => __( \'' . $this->get_value( 'label_parent_item_colon' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'new_item_name\'              => __( \'' . $this->get_value( 'label_new_item' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'add_new_item\'               => __( \'' . $this->get_value( 'label_add_new_item' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'edit_item\'                  => __( \'' . $this->get_value( 'label_edit_item' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'update_item\'                => __( \'' . $this->get_value( 'label_update_item' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'view_item\'                  => __( \'' . $this->get_value( 'label_view_item' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'separate_items_with_commas\' => __( \'' . $this->get_value( 'label_separate_items_with_commas' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'add_or_remove_items\'        => __( \'' . $this->get_value( 'label_add_or_remove_items' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'choose_from_most_used\'      => __( \'' . $this->get_value( 'label_choose_from_most_used' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'popular_items\'              => __( \'' . $this->get_value( 'label_popular_items' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'search_items\'               => __( \'' . $this->get_value( 'label_search_items' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'not_found\'                  => __( \'' . $this->get_value( 'label_not_found' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'no_terms\'                   => __( \'' . $this->get_value( 'label_no_items' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'items_list\'                 => __( \'' . $this->get_value( 'label_items_list' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+        \'items_list_navigation\'      => __( \'' . $this->get_value( 'label_items_list_navigation' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+    );
+    ' . $rewrite_options . '
+    ' . $custom_capabilities . '
+    $args = array(
+        \'labels\'                => $labels,
+        \'hierarchical\'          => ' . $this->get_value( 'hierarchical' ) . ',
+        \'public\'                => ' . $this->get_value( 'public' ) . ',
+        \'show_ui\'               => ' . $this->get_value( 'show_ui' ) . ',
+        \'show_admin_column\'     => ' . $this->get_value( 'show_admin_column' ) . ',
+        \'show_in_nav_menus\'     => ' . $this->get_value( 'show_in_nav_menus' ) . ',
+        \'show_tagcloud\'         => ' . $this->get_value( 'show_tagcloud' ) . ',
+        \'show_in_rest\'          => ' . $this->get_value( 'show_in_rest' ) . ',
+' . $rewrite . '
+' . $capabilities . '
+' . $this->get_optional_value( 'show_in_rest' ) . $this->get_optional_value( 'rest_base', true ) . $this->get_optional_value( 'rest_controller_class', true ) . '
+    );
+    register_taxonomy( \'' . $this->get_value( 'taxonomy' ) . '\', ' . $this->get_value_comma_separated( 'post_types' ) . ', $args );
 
 }
-add_action( 'init', '{$this->get_value( 'function_name' )}', 5 );
-EOD;
+add_action( \'init\', \'' . $this->get_value( 'function_name' ) . '\', 5 );';
 	}
 
 }

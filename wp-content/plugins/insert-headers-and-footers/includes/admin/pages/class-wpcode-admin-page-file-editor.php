@@ -59,7 +59,7 @@ class WPCode_Admin_Page_File_Editor extends WPCode_Admin_Page {
 		echo '<div class="wpcode-blur-area" style="min-height: 700px">';
 		$this->file_editor_area();
 		echo '</div>';
-		echo $this->get_pixel_overlay();
+		echo $this->get_pixel_overlay();  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**
@@ -91,9 +91,9 @@ class WPCode_Admin_Page_File_Editor extends WPCode_Admin_Page {
 							<?php esc_html_e( 'Enable file output', 'insert-headers-and-footers' ); ?>
 						</label>
 						<?php
-						echo $this->get_checkbox_toggle(
+						echo $this->get_checkbox_toggle( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 							$value['enabled'],
-							'wpcode_file_' . $this->view . '[enabled]'
+							esc_attr( 'wpcode_file_' . $this->view . '[enabled]' )
 						)
 						?>
 					</div>

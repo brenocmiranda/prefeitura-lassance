@@ -49,42 +49,61 @@ if (!class_exists('DuplicatorPhpVersionCheck')) {
          */
         public static function notice()
         {
+            if (preg_match('/^(\d+\.\d+(?:\.\d+)?)/', PHP_VERSION, $matches) === 1) {
+                $phpVersion = $matches[1];
+            } else {
+                $phpVersion = PHP_VERSION;
+            }
             ?>
             <div class="error notice">
                 <p>
-                    
                     <?php
-                    printf(
-                        __(
-                            'DUPLICATOR: Your system is running a very old version of PHP (%s) that is no longer supported by Duplicator.  ',
-                            'duplicator'
-                        ),
-                        PHP_VERSION
-                    );
-                    ?><br><br>
-                    <b>
-                    <?php
-                        printf(
+                    echo wp_kses(
+                        sprintf(
                             __(
-                                'Please ask your host or server administrator to update to PHP %1s or greater.',
+                                'DUPLICATOR: Action Required - <b>PHP Version Update Needed</b>, Your site is running PHP version %s.',
                                 'duplicator'
                             ),
-                            self::$suggestedVer
-                        );
-                    ?></b><br>
-                    <?php
-                    printf(
-                        __(
-                            'If this is not possible, please visit the FAQ link titled 
-                            %1$s"What version of PHP Does Duplicator Support?"%2$s
-                            for instructions on how to download a previous version of Duplicator compatible with PHP %3$s.',
-                            'duplicator'
+                            esc_html($phpVersion)
                         ),
-                        '<a href="' . esc_url('https://duplicator.com/knowledge-base/system-requirements') . '" target="blank">',
-                        '</a>',
-                        self::$minVer
+                        [
+                            'b' => [],
+                        ]
+                    );
+                    ?><br><br>
+                    <?php
+                    echo wp_kses(
+                        sprintf(
+                            __(
+                                'Starting from <b>Duplicator %1$s</b>, Duplicator will require <b>PHP %2$s or higher</b> to receive new updates.',
+                                'duplicator'
+                            ),
+                            '1.5.12',
+                            esc_html(self::$minVer)
+                        ),
+                        [
+                            'b' => [],
+                        ]
+                    );
+                    ?><br>
+                    <?php
+                    esc_html_e(
+                        'While your current version of Duplicator will continue to work, 
+                        you\'ll need to upgrade your PHP version to receive future features, improvements, and security updates.',
+                        'duplicator'
+                    );
+                    ?><br>
+                    <?php
+                    esc_html_e(
+                        'Please contact your hosting provider to upgrade your PHP version.',
+                        'duplicator'
                     );
                     ?>
+                </p>
+                <p>
+                    <a href="https://duplicator.com/knowledge-base/updating-your-php-version-in-wordpress/" target="_blank">
+                        <?php esc_html_e('Learn more about this change and how to upgrade', 'duplicator'); ?>
+                    </a>
                 </p>
             </div>
             <?php

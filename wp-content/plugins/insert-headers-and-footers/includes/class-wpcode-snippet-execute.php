@@ -416,7 +416,7 @@ class WPCode_Snippet_Execute {
 		if ( ! empty( $this->snippet_executed->attributes ) ) {
 			extract( $this->snippet_executed->attributes, EXTR_SKIP ); // phpcs:ignore WordPress.PHP.DontExtract.extract_extract
 		}
-		eval( $code ); // phpcs:ignore Squiz.PHP.Eval.Discouraged
+		eval( $code ); // phpcs:ignore Generic.PHP.ForbiddenFunctions.Found
 	}
 
 	/**

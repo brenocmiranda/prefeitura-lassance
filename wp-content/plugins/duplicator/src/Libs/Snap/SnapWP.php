@@ -495,7 +495,7 @@ class SnapWP
     public static function getCorePathsList()
     {
         if (is_null(self::$corePathList)) {
-            require_once(dirname(__FILE__) . '/wordpress_core_files.php');
+            require_once(__DIR__ . '/wordpress_core_files.php');
         }
         return self::$corePathList;
     }
@@ -525,21 +525,7 @@ class SnapWP
      */
     public static function getMainSiteId($network_id = null)
     {
-        // For > WP 4.9.0
-        if (function_exists('get_main_site_id')) {
-            return get_main_site_id($network_id);
-        }
-
-        if (!is_multisite()) {
-            return get_current_blog_id();
-        }
-
-        $network = function_exists('get_network') ? get_network($network_id) : wp_get_network($network_id);
-        if (!$network) {
-            return 0;
-        }
-
-        return $network->site_id;
+        get_main_site_id($network_id);
     }
 
     /**
@@ -754,8 +740,8 @@ class SnapWP
     public static function getUsersCount()
     {
         global $wpdb;
-        $sql = "SELECT COUNT(ID) FROM $wpdb->users";
-        return (int) $wpdb->get_var($sql);
+        $table = esc_sql($wpdb->users);
+        return (int) $wpdb->get_var("SELECT COUNT(ID) FROM {$table}");
     }
 
     /**

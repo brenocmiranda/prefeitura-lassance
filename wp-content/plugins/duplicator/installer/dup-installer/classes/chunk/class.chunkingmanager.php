@@ -90,7 +90,7 @@ abstract class DUPX_ChunkingManager
          * Iterate
          */
         for (; $this->it->valid(); $this->it->next()) {
-            $this->itCount ++;
+            $this->itCount++;
 
             /**
              * excetute action for current item

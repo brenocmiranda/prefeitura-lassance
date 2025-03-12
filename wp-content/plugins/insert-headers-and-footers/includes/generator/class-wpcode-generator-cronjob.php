@@ -216,22 +216,20 @@ add_filter( 'cron_schedules', '$recurrence_function_name' );
 			";
 		}
 
-		return <<<EOD
-// Schedule a cron event.
-function $hook_name() {
-	{$this->get_value( 'code' )}
+		return '// Schedule a cron event.
+function ' . $hook_name . '() {
+    ' . $this->get_value( 'code' ) . '
 }
-add_action( '$hook_name', '$hook_name' );
+add_action( \'' . $hook_name . '\', \'' . $hook_name . '\' );
 
-$custom_recurrence
+' . $custom_recurrence . '
  
-function $function_name() {
-	if ( ! wp_next_scheduled( '$hook_name' ) ) {
-		wp_schedule_event( time(), '$interval', '$hook_name' );
-	}
+function ' . $function_name . '() {
+    if ( ! wp_next_scheduled( \'' . $hook_name . '\' ) ) {
+        wp_schedule_event( time(), \'' . $interval . '\', \'' . $hook_name . '\' );
+    }
 }
-add_action( 'wp', '$function_name' );
-EOD;
+add_action( \'wp\', \'' . $function_name . '\' );';
 	}
 
 }

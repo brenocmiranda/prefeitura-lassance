@@ -392,7 +392,7 @@ class WPCode_Admin_Page_Settings extends WPCode_Admin_Page {
 		?>
 		<div class="wpcode-metabox-form">
 			<p><?php esc_html_e( 'You\'re using WPCode Lite - no license needed. Enjoy!', 'insert-headers-and-footers' ); ?>
-				<img draggable="false" role="img" class="emoji" alt="🙂" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f642.svg">
+				<img draggable="false" role="img" class="emoji" alt="🙂" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f642.svg"> <?php // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage ?>
 			</p>
 			<p>
 				<?php
@@ -444,7 +444,7 @@ class WPCode_Admin_Page_Settings extends WPCode_Admin_Page {
 		echo '<div class="wpcode-blur-area">';
 		$this->access_view_content();
 		echo '</div>';
-		echo $this->get_access_overlay();
+		echo $this->get_access_overlay(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**
@@ -489,14 +489,14 @@ class WPCode_Admin_Page_Settings extends WPCode_Admin_Page {
 				?>
 			</div>
 			<?php
-			echo self::get_upsell_box(
+			echo self::get_upsell_box( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				esc_html__( 'Email Notifications is a Pro Feature', 'insert-headers-and-footers' ),
 				'<p>' . esc_html__( 'Do you want to get email notifications the moment your snippets throw an error or are automatically deactivated? Upgrade today and improve your workflow with WPCode Error Email Notifications.', 'insert-headers-and-footers' ) . '</p>',
 				array(
 					'text' => esc_html__( 'Upgrade to WPCode PRO', 'insert-headers-and-footers' ),
 					'url'  => esc_url( wpcode_utm_url( 'https://wpcode.com/lite/', 'settings', 'tab-' . $this->view, 'email' ) ),
 				)
-			);
+			); 
 			?>
 		</div>
 		<?php

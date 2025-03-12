@@ -134,15 +134,12 @@ final class ExpireOptions
         /** @var \wpdb $wpdb */
         global $wpdb;
 
-        $optionsTableName = $wpdb->base_prefix . "options";
-        /** @var literal-string */
-        $prepare = 'SELECT `option_name` FROM `' . $optionsTableName . '` WHERE `option_name` REGEXP %s';
-        /** @var string */
-        $query          = $wpdb->prepare(
-            $prepare,
+        $optionsTableName = esc_sql($wpdb->base_prefix . "options");
+        $query            = $wpdb->prepare(
+            "SELECT `option_name` FROM `{$optionsTableName}` WHERE `option_name` REGEXP %s",
             SnapDB::quoteRegex(self::OPTION_PREFIX)
         );
-        $dupOptionNames = $wpdb->get_col($query);
+        $dupOptionNames   = $wpdb->get_col($query);
 
         foreach ($dupOptionNames as $dupOptionName) {
             delete_option($dupOptionName);

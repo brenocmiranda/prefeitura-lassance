@@ -35,7 +35,7 @@ class DawsExpandState extends DupArchiveExpandState
      */
     public static function purgeStatefile()
     {
-        $stateFilepath = dirname(__FILE__) . '/' . self::STATE_FILE;
+        $stateFilepath = __DIR__ . '/' . self::STATE_FILE;
         if (!file_exists($stateFilepath)) {
             return true;
         }
@@ -51,7 +51,7 @@ class DawsExpandState extends DupArchiveExpandState
     public static function getInstance($reset = false)
     {
         if ((self::$instance == null) && (!$reset)) {
-            $stateFilepath = dirname(__FILE__) . '/' . self::STATE_FILE;
+            $stateFilepath = __DIR__ . '/' . self::STATE_FILE;
 
             self::$instance = new self();
 
@@ -103,7 +103,7 @@ class DawsExpandState extends DupArchiveExpandState
      */
     public function reset()
     {
-        $stateFilepath = dirname(__FILE__) . '/' . self::STATE_FILE;
+        $stateFilepath = __DIR__ . '/' . self::STATE_FILE;
         $stateHandle   = SnapIO::fopen($stateFilepath, 'w');
         SnapIO::flock($stateHandle, LOCK_EX);
 
@@ -120,7 +120,7 @@ class DawsExpandState extends DupArchiveExpandState
      */
     public function save()
     {
-        $stateFilepath = dirname(__FILE__) . '/' . self::STATE_FILE;
+        $stateFilepath = __DIR__ . '/' . self::STATE_FILE;
         $stateHandle   = SnapIO::fopen($stateFilepath, 'w');
         SnapIO::flock($stateHandle, LOCK_EX);
 

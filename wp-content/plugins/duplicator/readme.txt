@@ -1,10 +1,10 @@
 === Duplicator - Backups & Migration Plugin - Cloud Backups, Scheduled Backups, & More  ===
 Contributors: seedprod, smub, andreamk
 Tags: backup, database backup, wordpress backup, cloud backup, migration
-Requires at least: 4.9
+Requires at least: 5.3
 Tested up to: 6.7
-Requires PHP: 5.6.20
-Stable tag: 1.5.11.2
+Requires PHP: 7.4
+Stable tag: 1.5.12
 License: GPLv2
 
 The best WordPress backup and migration plugin. Quickly and easily backup ,migrate, copy, move, or clone your site from one location to another. Simplify backups & migrations without limits.
@@ -20,7 +20,7 @@ At Duplicator, reliabilty, security, and ease of use are our top priorities. Our
 > <strong>Duplicator Pro</strong><br />
 > This plugin is the Lite version of Duplicator Pro, which comes with scheduled backups, cloud storage integrations, multisite support, and more. [Get Duplicator Pro for the complete migration and backup solution](https://duplicator.com/?utm_source=wprepo&utm_medium=link&utm_campaign=duplicator_lite&utm_content=get_duplicator_pro).
 
-https://www.youtube.com/watch?v=94wzCqPkQY0
+https://www.youtube.com/watch?v=MSa83NkLDmU
 
 
 = Easy Site Migration, Backup, and Cloning =

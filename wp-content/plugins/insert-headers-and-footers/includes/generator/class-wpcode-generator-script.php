@@ -286,13 +286,11 @@ class WPCode_Generator_Script extends WPCode_Generator_Type {
 			}
 		}
 
-		return <<<EOD
-// Add custom scripts
-function {$this->get_value( 'function_name' )}() {
-$code
+		return '// Add custom scripts
+function ' . $this->get_value( 'function_name' ) . '() {
+' . $code . '
 }
-add_action( '{$this->get_value( 'hook' )}', '{$this->get_value( 'function_name' )}' );
-EOD;
+add_action( \'' . $this->get_value( 'hook' ) . '\', \'' . $this->get_value( 'function_name' ) . '\' );';
 	}
 
 }

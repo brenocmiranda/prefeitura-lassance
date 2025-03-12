@@ -1,5 +1,6 @@
 <?php
 
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Utils\LinkManager;
 use Duplicator\Utils\Upsell;
 use Duplicator\Views\EducationElements;
@@ -125,7 +126,10 @@ TOOL BAR:STEPS -->
                 </a>
             </span>
             <?php
-            $package_url       = admin_url('admin.php?page=duplicator&tab=new1');
+            $package_url       = ControllersManager::getMenuLink(
+                ControllersManager::PACKAGES_SUBMENU_SLUG,
+                'new1'
+            );
             $package_nonce_url = wp_nonce_url($package_url, 'new1-package');
             ?>
             <a id="dup-create-new"

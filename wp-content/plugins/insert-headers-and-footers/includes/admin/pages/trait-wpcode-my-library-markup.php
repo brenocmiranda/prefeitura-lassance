@@ -226,7 +226,7 @@ trait WPCode_My_Library_Markup_Lite {
 	public function get_my_library_markup() {
 		$this->blurred_placeholder_items();
 		// Show upsell.
-		echo WPCode_Admin_Page::get_upsell_box(
+		echo WPCode_Admin_Page::get_upsell_box( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			esc_html__( 'My Library is a PRO Feature', 'insert-headers-and-footers' ),
 			'<p>' . esc_html__( 'Upgrade to WPCode PRO today and save your snippets in your private library directly from the plugin and import them with 1-click on other sites.', 'insert-headers-and-footers' ) . '</p>',
 			array(

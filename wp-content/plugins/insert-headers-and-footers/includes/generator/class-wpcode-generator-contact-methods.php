@@ -174,18 +174,16 @@ class WPCode_Generator_Contact_Methods extends WPCode_Generator_Type {
 			}
 		}
 
-		return <<<EOD
-// Add custom contact methods
+		return '// Add custom contact methods
 
-function {$this->get_value( 'function_name' )}( \$contact_methods ) {
-	$contact_methods_code
-	
-	return \$contact_methods;
+function ' . $this->get_value('function_name') . '( $contact_methods ) {
+    ' . $contact_methods_code . '
+    
+    return $contact_methods;
 }
 
-add_filter( 'user_contactmethods', '{$this->get_value( 'function_name' )}' );
-
-EOD;
+add_filter( \'user_contactmethods\', \'' . $this->get_value('function_name') . '\' );
+';
 	}
 
 }

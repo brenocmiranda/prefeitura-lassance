@@ -258,7 +258,7 @@ class WPCode_Conditional_Page extends WPCode_Conditional_Type {
 	 * @return string
 	 */
 	public function get_referer() {
-		return isset( $_SERVER['HTTP_REFERER'] ) ? $_SERVER['HTTP_REFERER'] : '';
+		return isset( $_SERVER['HTTP_REFERER'] ) ? $_SERVER['HTTP_REFERER'] : '';  // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 	}
 
 	/**

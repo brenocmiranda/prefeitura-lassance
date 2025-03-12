@@ -77,7 +77,6 @@ class Notice
      */
     public static function init()
     {
-
         static::hooks();
     }
 
@@ -88,7 +87,6 @@ class Notice
      */
     public static function hooks()
     {
-
         add_action('admin_notices', array(__CLASS__, 'display'), PHP_INT_MAX);
         add_action('wp_ajax_dup_notice_dismiss', array(__CLASS__, 'dismissAjax'));
     }
@@ -100,7 +98,6 @@ class Notice
      */
     private static function enqueues()
     {
-
         wp_enqueue_script(
             'dup-admin-notices',
             DUPLICATOR_PLUGIN_URL . "assets/js/notifications/notices.js",

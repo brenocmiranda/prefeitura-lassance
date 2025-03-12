@@ -208,7 +208,7 @@ class WPCode_Admin_Page_Library extends WPCode_Admin_Page {
 	public function output_view_my_favorites() {
 		$this->blurred_placeholder_items();
 		// Show upsell.
-		echo WPCode_Admin_Page::get_upsell_box(
+		echo WPCode_Admin_Page::get_upsell_box( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			esc_html__( 'My Favorites is a PRO Feature', 'insert-headers-and-footers' ),
 			'<p>' . esc_html__( 'Upgrade to WPCode PRO today and see the snippets you starred in the WPCode Library directly in the plugin.', 'insert-headers-and-footers' ) . '</p>',
 			array(

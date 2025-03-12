@@ -89,7 +89,7 @@ class WPCode_Admin_Page_Search_Replace extends WPCode_Admin_Page {
 			</div>
 			<section class="wpcode-plugin-screenshot">
 				<div class="wpcode-plugin-screenshot-image">
-					<img src="<?php echo esc_url( WPCODE_PLUGIN_URL ); ?>admin/images/sr-screenshot-thumb.jpg" alt="<?php esc_attr_e( 'Search & Replace Everything Screenshot', 'insert-headers-and-footers' ); ?>"/>
+					<img src="<?php echo esc_url( WPCODE_PLUGIN_URL ); // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage?>admin/images/sr-screenshot-thumb.jpg" alt="<?php esc_attr_e( 'Search & Replace Everything Screenshot', 'insert-headers-and-footers' ); ?>"/>
 					<a href="<?php echo esc_url( WPCODE_PLUGIN_URL ); ?>admin/images/sr-screenshot.jpg" data-lity>
 						<?php wpcode_icon( 'search', 16, 16 ); ?>
 					</a>

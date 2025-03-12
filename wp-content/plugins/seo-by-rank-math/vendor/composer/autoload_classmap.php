@@ -250,7 +250,6 @@ return array(
     'RankMath\\Rollback_Version' => $baseDir . '/includes/modules/version-control/class-rollback-version.php',
     'RankMath\\Runner' => $baseDir . '/includes/interface-runner.php',
     'RankMath\\SEO_Analysis\\Admin' => $baseDir . '/includes/modules/seo-analysis/class-admin.php',
-    'RankMath\\SEO_Analysis\\Admin_Tabs' => $baseDir . '/includes/modules/seo-analysis/class-admin-tabs.php',
     'RankMath\\SEO_Analysis\\Result' => $baseDir . '/includes/modules/seo-analysis/class-result.php',
     'RankMath\\SEO_Analysis\\SEO_Analysis' => $baseDir . '/includes/modules/seo-analysis/class-seo-analysis.php',
     'RankMath\\SEO_Analysis\\SEO_Analyzer' => $baseDir . '/includes/modules/seo-analysis/class-seo-analyzer.php',

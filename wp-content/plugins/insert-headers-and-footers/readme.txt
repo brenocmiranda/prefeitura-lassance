@@ -4,7 +4,7 @@ Tags: code, css, php, header, code snippets
 Requires at least: 4.6
 Tested up to: 6.7
 Requires PHP: 5.5
-Stable tag: 2.2.5
+Stable tag: 2.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -231,6 +231,12 @@ WPCode comes with a ready-made code snippets library that allows you to replace 
 ... and basically any plugin that adds a functionality which can be added via custom code snippets.
 
 == Changelog ==
+
+= 2.2.6 =
+* New: Easily find where your snippet is used as a shortcode with our new shortcode finder tool. 1-click search through your site.
+* New: Improved editor for snippet notes. You can now add links and format text with a WYSIWYG editor.
+* New: Snippet notes column. Display the notes for each snippet in the list of snippets.
+* Fix: We improved the code snippets list filtering in the admin to avoid issues when JS errors are encountered on the page from other scripts.
 
 = 2.2.5 =
 * New: We added a new way to quickly filter snippets by code type in the list of snippets.

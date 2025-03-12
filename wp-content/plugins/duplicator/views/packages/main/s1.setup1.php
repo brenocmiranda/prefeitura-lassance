@@ -1,4 +1,7 @@
 <?php
+
+use Duplicator\Core\Controllers\ControllersManager;
+
 defined('ABSPATH') || defined('DUPXABSPATH') || exit;
 global $wpdb;
 
@@ -285,10 +288,13 @@ refresh page in-case any filters where set while on the scanner page -->
             } else {
                 $state.val("cached");
                 <?php
-                $redirect           = admin_url('admin.php?page=duplicator&tab=new1');
-                $redirect_nonce_url = wp_nonce_url($redirect, 'new1-package');
-                echo "window.location.href = '{$redirect_nonce_url}'";
-                ?>
+                    $redirect           = ControllersManager::getMenuLink(
+                        ControllersManager::PACKAGES_SUBMENU_SLUG,
+                        'new1'
+                    );
+                    $redirect_nonce_url = wp_nonce_url($redirect, 'new1-package');
+                    echo "window.location.href = '{$redirect_nonce_url}'";
+                    ?>
             }
         }
 

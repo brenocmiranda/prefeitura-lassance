@@ -20,7 +20,7 @@ class Bootstrap
 {
     const ARCHIVE_PREFIX      = 'dup-archive__';
     const ARCHIVE_EXTENSION   = '.txt';
-    const MINIMUM_PHP_VERSION = '5.6.20';
+    const MINIMUM_PHP_VERSION = '7.4';
 
     /**
      * this variable becomes false after the installer is initialized by skipping the shutdown function defined in the boot class
@@ -243,7 +243,7 @@ class Bootstrap
         }
 
         if (function_exists('error_reporting')) {
-            error_reporting(E_ALL | E_STRICT);  // E_STRICT for PHP 5.3
+            error_reporting(E_ALL);
         }
 
         @ini_set("log_errors", 1);

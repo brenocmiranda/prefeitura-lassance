@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Rank Math SEO – AI SEO Tools to Dominate SEO Rankings - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-02-26 09:08:43+0000\n"
+"PO-Revision-Date: 2025-03-12 10:41:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,202 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: pt_BR\n"
 "Project-Id-Version: Plugins - Rank Math SEO – AI SEO Tools to Dominate SEO Rankings - Stable (latest release)\n"
+
+#: includes/rest/class-shared.php:277
+msgid "Redirection URL"
+msgstr "URL de redirecionamento"
+
+#: includes/rest/class-shared.php:272
+msgid "Redirection ID"
+msgstr "ID do redirecionamento"
+
+#: includes/rest/class-shared.php:266
+msgid "Whether the object has a redirect or not"
+msgstr "Se o objeto tem um redirecionamento ou não"
+
+#: includes/rest/class-rest-helper.php:291
+msgid "Sorry, the field contains invalid characters."
+msgstr "O campo contém caracteres inválidos."
+
+#: includes/rest/class-post.php:156
+msgid "Selected posts to update the data for."
+msgstr "Posts selecionados para atualizar os dados."
+
+#: includes/rest/class-admin.php:440
+msgid "Mode to set"
+msgstr "Modo a ser definido"
+
+#: includes/rest/class-admin.php:423
+msgid "Action to perform"
+msgstr "Ação a ser executada"
+
+#: includes/rest/class-admin.php:406
+msgid "Setting value"
+msgstr "Valor de configuração"
+
+#: includes/rest/class-admin.php:397
+msgid "Setting key"
+msgstr "Chave da configuração"
+
+#: includes/rest/class-admin.php:380
+msgid "Post scores"
+msgstr "Pontuações dos posts"
+
+#: includes/rest/class-admin.php:353
+msgid "Invalid module"
+msgstr "Módulo inválido"
+
+#: includes/modules/instant-indexing/class-rest.php:94
+msgid "Clear log by type."
+msgstr "Limpar registro por tipo."
+
+#: includes/modules/instant-indexing/class-rest.php:74
+msgid "Filter log by type."
+msgstr "Filtrar registro por tipo."
+
+#: includes/modules/instant-indexing/class-rest.php:55
+msgid "The list of urls to submit to the Instant Indexing API."
+msgstr "A lista de URLs a serem enviados para a API do Instant Indexing."
+
+#: includes/modules/content-ai/class-rest.php:412
+msgid "If true, forces a fresh research request."
+msgstr "Se for verdadeiro, força uma nova solicitação de pesquisa."
+
+#: includes/modules/content-ai/class-rest.php:407
+msgid "The ID of the post initiating the keyword research request."
+msgstr "O ID do post que iniciou a solicitação de pesquisa de palavras-chave."
+
+#: includes/modules/content-ai/class-rest.php:402
+msgid "The country for which the keyword should be researched."
+msgstr "O país para o qual a palavra-chave deve ser pesquisada."
+
+#: includes/modules/content-ai/class-rest.php:397
+msgid "The keyword to be researched."
+msgstr "A palavra-chave a ser pesquisada."
+
+#: includes/modules/content-ai/class-rest.php:232
+msgid "List of attachment IDs for which to generate alt text."
+msgstr "Lista de IDs de anexos para os quais gerar texto alternativo."
+
+#: includes/modules/content-ai/class-rest.php:215
+msgid "Content AI reset date to update in the Database"
+msgstr "Data de redefinição do \"Conteúdo com IA\" a ser atualizada no banco de dados"
+
+#: includes/modules/content-ai/class-rest.php:210
+msgid "Content AI plan to update in the Database."
+msgstr "Plano do \"Conteúdo com IA\" a ser atualizado no Banco de Dados."
+
+#: includes/modules/content-ai/class-rest.php:193
+msgid "A list of prompts received from the API to be saved in the database."
+msgstr "Uma lista de prompts recebidos da API a serem salvos no banco de dados."
+
+#: includes/modules/content-ai/class-rest.php:176
+msgid "The prompt data to be saved in the database."
+msgstr "Os dados do prompt a serem salvos no banco de dados."
+
+#: includes/modules/content-ai/class-rest.php:159
+msgid "The selected prompt to be updated in the recent prompts."
+msgstr "O prompt selecionado a ser atualizado nos prompts recentes."
+
+#: includes/modules/content-ai/class-rest.php:142
+msgid "The output index to delete, applicable only to the Chat endpoint."
+msgstr "O índice de saída a ser excluído, aplicável apenas ao ponto de extremidade do bate-papo."
+
+#: includes/modules/content-ai/class-rest.php:137
+msgid "Indicates if the request to delete the output was for the Chat endpoint."
+msgstr "Indica se a solicitação para excluir a saída foi para o ponto de extremidade do bate-papo."
+
+#: includes/modules/content-ai/class-rest.php:120
+#: includes/modules/content-ai/class-rest.php:249
+msgid "Credit usage details returned by the API."
+msgstr "Detalhes do uso do crédito retornados pela API."
+
+#: includes/modules/content-ai/class-rest.php:115
+msgid "The parameters used to generate the AI output."
+msgstr "Os parâmetros usados para gerar a saída da IA."
+
+#: includes/modules/content-ai/class-rest.php:110
+msgid "Indicates if the request was for the Chat endpoint."
+msgstr "Indica se a solicitação foi para o ponto de extremidade do bate-papo."
+
+#: includes/modules/content-ai/class-rest.php:105
+msgid "The API endpoint for which the output was generated."
+msgstr "O ponto de extremidade da API para o qual a saída foi gerada."
+
+#: includes/modules/content-ai/class-rest.php:100
+msgid "An array of AI-generated and existing outputs to be saved."
+msgstr "Uma array de saídas geradas por IA e existentes a serem salvas."
+
+#: includes/modules/content-ai/class-rest.php:83
+msgid "The title of the new post."
+msgstr "O título do novo post."
+
+#: includes/modules/content-ai/class-rest.php:78
+msgid "The content of the new post."
+msgstr "O conteúdo do novo post."
+
+#: includes/modules/analytics/rest/class-rest.php:165
+msgid "Hide."
+msgstr "Ocultar."
+
+#: includes/modules/analytics/rest/class-rest.php:160
+msgid "Toggle bar."
+msgstr "Barra de alternância."
+
+#: includes/modules/analytics/rest/class-rest.php:149
+msgid "Filter type."
+msgstr "Tipo de filtro."
+
+#: includes/modules/analytics/rest/class-rest.php:144
+msgid "Filter."
+msgstr "Filtro."
+
+#: includes/modules/analytics/rest/class-rest.php:109
+msgid "User preferences."
+msgstr "Preferências do usuário."
+
+#: includes/modules/analytics/rest/class-rest.php:98
+#: includes/modules/analytics/rest/class-rest.php:139
+msgid "Search."
+msgstr "Pesquisar."
+
+#: includes/modules/analytics/rest/class-rest.php:93
+#: includes/modules/analytics/rest/class-rest.php:134
+msgid "Order."
+msgstr "Ordem."
+
+#: includes/modules/analytics/rest/class-rest.php:88
+#: includes/modules/analytics/rest/class-rest.php:129
+msgid "Order by."
+msgstr "Ordenar por."
+
+#: includes/modules/analytics/rest/class-rest.php:83
+#: includes/modules/analytics/rest/class-rest.php:124
+msgid "Results per page."
+msgstr "Resultados por página."
+
+#: includes/modules/analytics/rest/class-rest.php:78
+#: includes/modules/analytics/rest/class-rest.php:119
+msgid "Page number."
+msgstr "Número da página."
+
+#: includes/modules/analytics/rest/class-rest.php:69
+msgid "Post Type."
+msgstr "Tipo de post."
+
+#: includes/modules/analytics/rest/class-rest.php:56
+msgid "Post ID."
+msgstr "ID do post."
+
+#. Translators: placeholders are opening and closing tags for connect analytics
+#. setting and using ga4 property doc.
+#: includes/updates/update-1.0.239.php:35
+msgid "Universal Analytics (UA) is no longer supported. Please connect your Google Analytics GA4 account by navigating to %1$sGeneral Settings → Analytics%2$s. For more details, refer to this guide: %3$sHow to Use Google Analytics 4 (GA4) Property with Rank Math%4$s."
+msgstr "O Universal Analytics (UA) não é mais compatível. Conecte sua conta do Google Analytics GA4, acessando %1$sConfigurações gerais → Analytics%2$s. Para mais detalhes, consulte este guia: %3$sComo usar a propriedade do Google Analytics 4 (GA4) com o Rank Math%4$s."
+
+#: includes/admin/wizard/views/search-console-ui.php:347
+msgid "Select Account"
+msgstr "Selecionar conta"
 
 #: includes/modules/sitemap/settings/authors.php:52
 msgid "Enable this option to include authors in the sitemap even if they have not created any posts. This ensures all author archives are listed, regardless of content availability."
@@ -282,39 +478,39 @@ msgid "Invalid API key. Please check your API key or reconnect the site and try 
 msgstr "Chave de API inválida. Verifique sua chave de API ou reconecte o site e tente novamente."
 
 #. Translators: placeholder is the default Schema type setting.
-#: includes/admin/class-bulk-actions.php:101
+#: includes/admin/class-bulk-actions.php:102
 msgid "Set Schema: Default (%s)"
 msgstr "Definir os dados estruturados (Schema): O padrão é (%s)"
 
-#: includes/admin/class-bulk-actions.php:95
+#: includes/admin/class-bulk-actions.php:96
 msgid "Set Schema: None"
 msgstr "Definir os dados estruturados (Schema): Nenhum"
 
-#: includes/admin/class-bulk-actions.php:90
+#: includes/admin/class-bulk-actions.php:91
 msgid "Remove redirection"
 msgstr "Remover redirecionamento"
 
-#: includes/admin/class-bulk-actions.php:86
+#: includes/admin/class-bulk-actions.php:87
 msgid "Remove custom canonical URL"
 msgstr "Remover URL canônico personalizado"
 
-#: includes/admin/class-bulk-actions.php:85
+#: includes/admin/class-bulk-actions.php:86
 msgid "Set to follow"
 msgstr "Definir como seguir (follow)"
 
-#: includes/admin/class-bulk-actions.php:84
+#: includes/admin/class-bulk-actions.php:85
 msgid "Set to nofollow"
 msgstr "Definir como não seguir (nofollow)"
 
-#: includes/admin/class-bulk-actions.php:83
+#: includes/admin/class-bulk-actions.php:84
 msgid "Set to index"
 msgstr "Definir como indexar (index)"
 
-#: includes/admin/class-bulk-actions.php:82
+#: includes/admin/class-bulk-actions.php:83
 msgid "Set to noindex"
 msgstr "Definir como não indexar (noindex)"
 
-#: includes/admin/class-bulk-actions.php:79
+#: includes/admin/class-bulk-actions.php:80
 msgid "&#8595; Rank Math"
 msgstr "&#8595; Rank Math"
 
@@ -980,20 +1176,20 @@ msgstr "Tags de webmaster personalizadas"
 msgid "Selected roles will be excluded from the XML &amp; HTML sitemaps."
 msgstr "As funções selecionadas serão excluídas dos sitemaps XML e HTML."
 
-#: includes/modules/content-ai/class-rest.php:513
+#: includes/modules/content-ai/class-rest.php:640
 msgid "Please update"
 msgstr "Atualizar"
 
 #. Translators: link to the update page.
-#: includes/modules/content-ai/class-rest.php:512
+#: includes/modules/content-ai/class-rest.php:639
 msgid "There is a new version of Content AI available! %s the Rank Math SEO plugin to use this feature."
 msgstr "Há uma nova versão do \"Conteúdo com IA\" disponível! Acesse %s para usar este recurso do plugin Rank Math SEO."
 
-#: includes/rest/class-admin.php:297
+#: includes/rest/class-admin.php:300
 msgid "The redirection you are trying to update may cause an infinite loop. Please check the source and destination URLs."
 msgstr "O redirecionamento que você está tentando atualizar pode causar um loop infinito. Verifique os URLs de origem e destino."
 
-#: includes/rest/class-admin.php:290
+#: includes/rest/class-admin.php:293
 msgid "The redirection you are trying to create may cause an infinite loop. Please check the source and destination URLs. The redirection has been deactivated."
 msgstr "O redirecionamento que você está tentando criar pode causar um loop infinito. Verifique os URLs de origem e destino. O redirecionamento foi desativado."
 
@@ -1005,7 +1201,7 @@ msgstr "Você não pode ativar o recurso \"Testador beta\" porque a opção de a
 msgid "You cannot turn on auto-updates to automatically update to stable versions of Rank Math as soon as they are released, because site wide plugins auto-update option is disabled on your site."
 msgstr "Você não pode ativar as atualizações automáticas para atualizar automaticamente para versões estáveis do Rank Math assim que elas forem lançadas, pois a opção de atualização automática de plugins em todo o site está desativada em seu site."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:180
+#: includes/modules/seo-analysis/seo-analysis-tests.php:179
 msgid "Site wide plugins auto-update option is disabled on your site."
 msgstr "A opção de atualização automática de plugins em todo o site está desativada em seu site."
 
@@ -1051,7 +1247,7 @@ msgstr "Importe os URLs sociais das suas páginas de arquivo de autor."
 msgid "Add social account information to your website's Schema and Open Graph. %s."
 msgstr "Adicione informações de suas contas sociais ao \"Schema\" e ao \"Open Graph\" do site. %s."
 
-#: includes/admin/class-admin.php:451 includes/settings/titles/social.php:88
+#: includes/admin/class-admin.php:453 includes/settings/titles/social.php:88
 msgid "Additional Profiles to add in the <code>sameAs</code> Schema property."
 msgstr "Perfis adicionais a serem adicionados na propriedade de Schema <code>sameAs</code>."
 
@@ -1059,106 +1255,55 @@ msgstr "Perfis adicionais a serem adicionados na propriedade de Schema <code>sam
 msgid "Additional profile URLs"
 msgstr "URLs de perfil adicionais"
 
-#: includes/modules/seo-analysis/views/serp-preview.php:38
+#: includes/modules/seo-analysis/class-seo-analyzer.php:535
 msgid "(No Description)"
 msgstr "(Sem descrição)"
 
-#: includes/modules/seo-analysis/views/serp-preview.php:30
+#: includes/modules/seo-analysis/class-seo-analyzer.php:527
 msgid "(No Title)"
 msgstr "(Sem título)"
 
-#: includes/modules/seo-analysis/views/seo-analyzer.php:23
-msgid "View Issues"
-msgstr "Ver problemas"
-
-#: includes/modules/seo-analysis/views/seo-analyzer.php:22
-msgid "Restart SEO Analyzer"
-msgstr "Reiniciar o analisador de SEO"
-
-#: includes/modules/seo-analysis/views/seo-analyzer.php:18
-msgid "SEO Analysis for"
-msgstr "Análise de SEO para"
-
-#: includes/modules/seo-analysis/views/form.php:32
-msgid "Start SEO Analyzer"
-msgstr "Iniciar o analisador de SEO"
-
-#: includes/modules/seo-analysis/views/competitor-analysis.php:216
-msgid "Make more informed decisions & strategy"
-msgstr "Tome decisões e estratégias mais informadas"
-
-#: includes/modules/seo-analysis/views/competitor-analysis.php:215
-msgid "Explore new keywords and opportunities"
-msgstr "Explore novas palavras-chave e oportunidades"
-
-#: includes/modules/seo-analysis/views/competitor-analysis.php:214
-msgid "Evaluate strengths and weaknesses"
-msgstr "Avalie os pontos fortes e fracos"
-
-#: includes/modules/seo-analysis/views/competitor-analysis.php:213
-msgid "Analyze competitor websites to gain an edge"
-msgstr "Analise os sites dos concorrentes para estar em vantagem"
-
-#: includes/modules/seo-analysis/seo-analysis-tests.php:161
+#: includes/modules/seo-analysis/seo-analysis-tests.php:160
 msgid "Verify auto-updates are enabled for Rank Math"
 msgstr "Verifique se as atualizações automáticas estão ativadas para o Rank Math."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:138
+#: includes/modules/seo-analysis/seo-analysis-tests.php:137
 msgid "Check the presence of sitemaps on your website"
 msgstr "Verifique a presença de sitemaps em seu site"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:128
+#: includes/modules/seo-analysis/seo-analysis-tests.php:127
 msgid "Confirm if Rank Math is connected to Search Console"
 msgstr "Confirme se o Rank Math está conectado ao Search Console"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:90
+#: includes/modules/seo-analysis/seo-analysis-tests.php:89
 msgid "Verify the presence of focus keywords in your post titles"
 msgstr "Verifique a presença de palavras-chave de foco nos títulos dos seus posts"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:81
+#: includes/modules/seo-analysis/seo-analysis-tests.php:80
 msgid "Confirm focus keywords are set for all your posts"
 msgstr "Confirme se as palavras-chave de foco estão definidas para todos os seus posts"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:70
+#: includes/modules/seo-analysis/seo-analysis-tests.php:69
 msgid "Check your site for SEO-friendly permalink structure"
 msgstr "Verifique se a estrutura de links permanentes do seu site é compatível com SEO"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:56
+#: includes/modules/seo-analysis/seo-analysis-tests.php:55
 msgid "Check your site's visibility to search engines"
 msgstr "Verifique a visibilidade do seu site para os mecanismos de pesquisa"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:40
+#: includes/modules/seo-analysis/seo-analysis-tests.php:39
 msgid "Confirm custom tagline is set for your site"
 msgstr "Confirme se o slogan (frase de efeito) personalizado está definido para seu site"
 
-#. translators: 1: Date, 2: Time.
-#: includes/modules/seo-analysis/class-seo-analyzer.php:342
-msgid "%1$s at %2$s"
-msgstr "%1$s às %2$s"
-
-#. translators: 1: Date, 2: Time.
-#: includes/modules/seo-analysis/class-seo-analyzer.php:342
-msgid "Last checked:"
-msgstr "Última verificação:"
-
-#: includes/modules/seo-analysis/class-admin.php:116
-msgid "Print"
-msgstr "Imprimir"
-
 #. Translators: placeholder is the new Rank Math label.
-#: includes/modules/seo-analysis/class-admin.php:88
+#: includes/modules/seo-analysis/class-admin.php:90
 msgid "SEO Analyzer %s"
 msgstr "Analisador de SEO %s"
 
-#: includes/modules/seo-analysis/class-admin-tabs.php:97
-#: includes/modules/seo-analysis/views/competitor-analysis.php:211
-msgid "Competitor Analyzer"
-msgstr "Analisador de concorrentes"
-
 #: includes/module/class-manager.php:244
-#: includes/modules/seo-analysis/class-admin-tabs.php:89
-#: includes/modules/seo-analysis/class-seo-analysis.php:61
-#: includes/modules/seo-analysis/class-seo-analysis.php:74
+#: includes/modules/seo-analysis/class-seo-analysis.php:59
+#: includes/modules/seo-analysis/class-seo-analysis.php:72
+#: includes/modules/seo-analysis/assets/js/seo-analysis.js:1
 msgid "SEO Analyzer"
 msgstr "Analisador de SEO"
 
@@ -1301,6 +1446,7 @@ msgid "Selected page: <a href=\"%s\" target=\"_blank\" class=\"rank-math-selecte
 msgstr "Página selecionada: <a href=\"%s\" target=\"_blank\" class=\"rank-math-selected-page\">%s</a>"
 
 #: includes/modules/sitemap/settings/html-sitemap.php:59
+#: includes/modules/seo-analysis/assets/js/seo-analysis.js:1
 msgid "Selected page: "
 msgstr "Página selecionada: "
 
@@ -1348,7 +1494,7 @@ msgstr "Sitemap HTML"
 msgid "Ctrl/Cmd + Enter"
 msgstr "Ctrl/Cmd + Enter"
 
-#: includes/admin/class-admin.php:437
+#: includes/admin/class-admin.php:439
 msgid "Exclusive Offer!"
 msgstr "Oferta exclusiva!"
 
@@ -1577,7 +1723,7 @@ msgid "To configure meta tags for your media attachment pages, you need to first
 msgstr "Para configurar as meta tags para suas páginas de anexos de mídia, primeiro você precisa %s para principal (ascendente)."
 
 #. translators: %1$s: opening tag of the link, %2$s: the closing tag
-#: includes/modules/seo-analysis/seo-analysis-tests.php:513
+#: includes/modules/seo-analysis/seo-analysis-tests.php:512
 msgid "Navigate to %1$sSettings > Reading%2$s and turn off this option: \"Discourage search engines from indexing this site\"."
 msgstr "Acesse %1$sConfigurações > Leitura%2$s e desative esta opção: \"Desencorajar os mecanismos de pesquisa a indexar este site\"."
 
@@ -1739,6 +1885,7 @@ msgstr "Suporte Premium 24 horas por dia, 7 dias por semana"
 
 #: includes/admin/class-pro-notice.php:219
 #: includes/admin/class-pro-notice.php:238 assets/admin/js/post-list.js:1
+#: assets/admin/js/rank-math-app.js:1
 #: includes/modules/content-ai/assets/js/content-ai-media.js:1
 #: includes/modules/content-ai/assets/js/content-ai-page.js:1
 #: includes/modules/content-ai/assets/js/content-ai.js:1
@@ -1852,26 +1999,26 @@ msgid "Insert URLs to send to the IndexNow API (one per line, up to 10,000):"
 msgstr "Insira URLs para enviar para a API do IndexNow (uma por linha, até 10.000):"
 
 #. Translators: placeholder is human-readable time, e.g. "1 hour".
-#: includes/modules/instant-indexing/class-rest.php:155
+#: includes/modules/instant-indexing/class-rest.php:174
 msgid "%s ago"
 msgstr "%s atrás"
 
 #. Translators: %s is the number of URLs submitted.
-#: includes/modules/instant-indexing/class-rest.php:129
+#: includes/modules/instant-indexing/class-rest.php:148
 msgid "Successfully submitted %s URL."
 msgid_plural "Successfully submitted %s URLs."
 msgstr[0] "%s URL enviado."
 msgstr[1] "%s URLs enviados."
 
-#: includes/modules/instant-indexing/class-rest.php:120
+#: includes/modules/instant-indexing/class-rest.php:139
 msgid "Failed to submit URLs. See details in the History tab."
 msgstr "Falha ao enviar URLs. Veja os detalhes na aba \"Histórico\"."
 
-#: includes/modules/instant-indexing/class-rest.php:115
+#: includes/modules/instant-indexing/class-rest.php:134
 msgid "Invalid URLs provided."
 msgstr "URLs fornecidos inválidos."
 
-#: includes/modules/instant-indexing/class-rest.php:108
+#: includes/modules/instant-indexing/class-rest.php:127
 msgid "No URLs provided."
 msgstr "Nenhum URL fornecido."
 
@@ -2068,7 +2215,7 @@ msgid "Click to refresh the available credits."
 msgstr "Clique para atualizar os créditos disponíveis."
 
 #: includes/modules/content-ai/class-content-ai-page.php:88
-#: includes/modules/seo-analysis/class-admin.php:82
+#: includes/modules/seo-analysis/class-admin.php:84
 #: includes/modules/content-ai/assets/js/content-ai.js:1
 msgid "New!"
 msgstr "Novo!"
@@ -2081,23 +2228,23 @@ msgstr "Selecionar tipo de post"
 msgid "Default Country"
 msgstr "País padrão"
 
-#: includes/modules/content-ai/class-rest.php:553
+#: includes/modules/content-ai/class-rest.php:680
 msgid "You have used all the free credits which are allowed to this domain."
 msgstr "Você usou todos os créditos gratuitos permitidos para este domínio."
 
-#: includes/modules/content-ai/class-rest.php:547
+#: includes/modules/content-ai/class-rest.php:674
 msgid "This feature is not available on the localhost."
 msgstr "Este recurso não está disponível no localhost."
 
-#: includes/modules/content-ai/class-rest.php:524
+#: includes/modules/content-ai/class-rest.php:651
 msgid "No data found for the researched keyword."
 msgstr "Nenhum dado encontrado para a palavra-chave pesquisada."
 
-#: includes/modules/content-ai/class-rest.php:229
+#: includes/modules/content-ai/class-rest.php:326
 msgid "Content AI is not enabled on this Post type."
 msgstr "O \"Conteúdo com IA\" não está ativado neste tipo de post."
 
-#: includes/modules/content-ai/class-rest.php:183
+#: includes/modules/content-ai/class-rest.php:282
 msgid "Sorry, only authenticated users can research the keyword."
 msgstr "Apenas usuários autenticados podem pesquisar a palavra-chave."
 
@@ -2334,7 +2481,7 @@ msgstr "Quando uma imagem destacada ou uma imagem OpenGraph não for definida pa
 msgid "Uploaded file could not be read."
 msgstr "O arquivo enviado não pôde ser lido."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:318
+#: includes/modules/seo-analysis/seo-analysis-tests.php:317
 msgid "Could not check Focus Keywords in posts - the post meta table exceeds the size limit."
 msgstr "Não foi possível verificar as palavras-chave de foco nos posts - a tabela de metadados do post excede o limite de tamanho."
 
@@ -2515,10 +2662,6 @@ msgstr "O Rank Math detectou um novo tipo de post: %1$s. Você pode querer verif
 #: includes/admin/importers/class-plugin-importer.php:154
 msgid "Import all the redirections you have already set up in Yoast Premium."
 msgstr "Importe todos os redirecionamentos que você já configurou no Yoast Premium."
-
-#: includes/modules/seo-analysis/class-seo-analyzer.php:436
-msgid "Rank Math SEO Analyzer error: "
-msgstr "Erro do analisador de SEO do Rank Math: "
 
 #. Translators: the placeholder is for the sitemap base url.
 #: includes/modules/sitemap/class-admin.php:339
@@ -2710,7 +2853,6 @@ msgstr "NOVO"
 
 #. translators: %s is the reconnect link.
 #: includes/modules/analytics/google/class-permissions.php:132
-#: assets/admin/js/components.js:1
 msgid "You have not given the permission to fetch this data. Please <a href=\"%s\">reconnect</a> with all required permissions."
 msgstr "Você não deu permissão para coletar esses dados. <a href=\"%s\">Reconecte</a> com todas as permissões necessárias."
 
@@ -2988,12 +3130,12 @@ msgstr "Entre as posições de 4 a 10"
 msgid "Top 3 Positions"
 msgstr "Entre as 3 primeiras posições"
 
-#: includes/admin/metabox/class-screen.php:170
-#: includes/modules/seo-analysis/views/competitor-analysis.php:218
+#: includes/admin/metabox/class-screen.php:171
 #: includes/modules/analytics/assets/js/admin-bar.js:1
 #: includes/modules/analytics/assets/js/stats.js:1
 #: includes/modules/schema/assets/js/schema-gutenberg.js:1
 #: includes/modules/schema/assets/js/schema-template.js:1
+#: includes/modules/seo-analysis/assets/js/seo-analysis.js:1
 msgid "Upgrade"
 msgstr "Atualizar"
 
@@ -3452,11 +3594,11 @@ msgstr[1] "%s anos"
 msgid "Rank Math is importing latest data from connected Google Services, %1$s remaining."
 msgstr "O Rank Math está importando os dados mais recentes dos serviços conectados do Google, %1$s restantes."
 
-#: includes/modules/analytics/rest/class-rest.php:145
+#: includes/modules/analytics/rest/class-rest.php:241
 msgid "Sorry, no post id found."
 msgstr "Nenhum ID de post encontrado."
 
-#: includes/modules/analytics/rest/class-rest.php:120
+#: includes/modules/analytics/rest/class-rest.php:216
 msgid "Sorry, no preference found."
 msgstr "Nenhuma preferência encontrada."
 
@@ -3539,7 +3681,7 @@ msgstr "E-mail:"
 msgid "Telephone"
 msgstr "Telefone"
 
-#: includes/rest/class-shared.php:353
+#: includes/rest/class-shared.php:413
 msgid "schemas to add or update data."
 msgstr "dados estruturados (schemas) para adicionar ou atualizar dados."
 
@@ -3603,19 +3745,14 @@ msgstr "Importe ou exporte suas configurações do Rank Math. Esta opção é ú
 msgid "Plugin Settings"
 msgstr "Configurações do plugin"
 
-#: includes/modules/seo-analysis/class-seo-analyzer.php:558
+#: includes/modules/seo-analysis/class-seo-analyzer.php:421
 msgid "Unexpected API response."
 msgstr "Resposta inesperada da API."
 
 #. Translators: placeholder is a HTTP error code.
-#: includes/modules/seo-analysis/class-seo-analyzer.php:551
+#: includes/modules/seo-analysis/class-seo-analyzer.php:414
 msgid "HTTP %d error."
 msgstr "Erro HTTP %d."
-
-#. Translators: placeholders are opening and closing tag for link.
-#: includes/modules/seo-analysis/views/seo-analyzer.php:45
-msgid "Analyze your site by %1$s linking your Rank Math account %2$s"
-msgstr "Analise seu site %1$s vinculando sua conta do Rank Math %2$s"
 
 #: includes/admin/wizard/views/compatibility.php:110
 msgid "PHP OpenSSL Extension missing"
@@ -3647,6 +3784,7 @@ msgid "Disconnect Account"
 msgstr "Desconectar conta"
 
 #: includes/admin/views/plugin-activation.php:42 assets/admin/js/post-list.js:1
+#: assets/admin/js/rank-math-app.js:1
 #: includes/modules/content-ai/assets/js/content-ai-media.js:1
 #: includes/modules/content-ai/assets/js/content-ai-page.js:1
 #: includes/modules/content-ai/assets/js/content-ai.js:1
@@ -3807,11 +3945,11 @@ msgstr "Aqui você pode configurar a função de caminhos de navegação (breadc
 msgid "Change how some of the links open and operate on your website. %s."
 msgstr "Altere a forma como alguns dos links abrem e funcionam no seu site. %s."
 
-#: includes/admin/class-admin-header.php:109
+#: includes/admin/class-admin-header.php:113
 msgid "Advanced Mode"
 msgstr "Modo avançado"
 
-#: includes/admin/class-admin-header.php:108
+#: includes/admin/class-admin-header.php:112
 msgid "Easy Mode"
 msgstr "Modo fácil"
 
@@ -3894,7 +4032,7 @@ msgid "Choose how you want Rank Math to handle your WooCommerce SEO. %s."
 msgstr "Escolha como você quer que o Rank Math lide com o SEO do seu WooCommerce. %s."
 
 #. Translators: placeholder is an activate button.
-#: includes/modules/seo-analysis/seo-analysis-tests.php:195
+#: includes/modules/seo-analysis/seo-analysis-tests.php:194
 msgid "Automatic updates are not enabled on your site. %s"
 msgstr "As atualizações automáticas não estão ativadas no seu site. %s"
 
@@ -3964,25 +4102,21 @@ msgstr "Se você estiver exibindo as pontuações de SEO na interface, esta opç
 msgid "Remove prefix like %1$s from product URL chosen at %2$s"
 msgstr "Remova o prefixo como %1$s do URL do produto escolhido em %2$s"
 
-#: includes/modules/seo-analysis/class-seo-analyzer.php:637
-msgid "Priority"
-msgstr "Prioridade"
-
-#: includes/modules/seo-analysis/seo-analysis-tests.php:196
+#: includes/modules/seo-analysis/seo-analysis-tests.php:195
 msgid "Enable Auto Updates"
 msgstr "Ativar atualizações automáticas"
 
-#: includes/modules/seo-analysis/class-seo-analyzer.php:486
-#: includes/modules/seo-analysis/seo-analysis-tests.php:187
-#: includes/modules/seo-analysis/seo-analysis-tests.php:199
+#: includes/modules/seo-analysis/class-seo-analyzer.php:349
+#: includes/modules/seo-analysis/seo-analysis-tests.php:186
+#: includes/modules/seo-analysis/seo-analysis-tests.php:198
 msgid "Rank Math auto-update option is enabled on your site."
 msgstr "A opção de atualização automática do Rank Math está ativada no seu site."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:158
+#: includes/modules/seo-analysis/seo-analysis-tests.php:157
 msgid "Enable automatic updates to ensure you are always using the latest version of Rank Math."
 msgstr "Ative as atualizações automáticas para garantir que você esteja sempre usando a versão mais recente do Rank Math."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:157
+#: includes/modules/seo-analysis/seo-analysis-tests.php:156
 msgid "Automatic Updates"
 msgstr "Atualizações automáticas"
 
@@ -4183,6 +4317,9 @@ msgid "This is the latest version of the plugin."
 msgstr "Esta é a versão mais recente do plugin."
 
 #: includes/modules/version-control/views/version-control-panel.php:49
+#: assets/admin/js/post-list.js:1 assets/admin/js/rank-math-app.js:1
+#: includes/modules/content-ai/assets/js/content-ai-media.js:1
+#: includes/modules/content-ai/assets/js/content-ai.js:1
 msgid "Update Now"
 msgstr "Atualizar agora"
 
@@ -4216,7 +4353,6 @@ msgstr "Sua versão"
 #. translators: placeholder is the word "warning".
 #: includes/modules/version-control/views/beta-optin-panel.php:29
 #: includes/modules/version-control/views/version-control-panel.php:22
-#: assets/admin/js/components.js:1
 msgid "Warning: "
 msgstr "Atenção: "
 
@@ -4332,10 +4468,6 @@ msgstr "Dados estruturados (schema)"
 msgid "This tab contains SEO options for BuddyPress Group pages."
 msgstr "Esta aba contém opções de SEO para as páginas de grupos do BuddyPress."
 
-#: includes/rest/class-post.php:156
-msgid "No meta rows found to update."
-msgstr "Não foram encontradas linhas de metadados para atualizar."
-
 #: includes/replace-variables/class-post-variables.php:94
 msgid "Custom or Generated SEO Description of the current post/page"
 msgstr "Descrição de SEO personalizada ou gerada do post/página atual"
@@ -4369,24 +4501,26 @@ msgid "Close"
 msgstr "Fechar"
 
 #. Translators: placeholder is a link to "Read more".
-#: includes/modules/seo-analysis/class-result.php:98
-#: includes/settings/general/others.php:20 assets/admin/js/rank-math-app.js:1
+#: includes/settings/general/others.php:20 assets/admin/js/components.js:1
+#: assets/admin/js/rank-math-app.js:1
 msgid "Read more"
 msgstr "Leia mais"
 
-#: includes/rest/class-shared.php:270
+#: includes/rest/class-shared.php:330
 msgid "Meta to add or update data."
 msgstr "Metadados para adicionar ou atualizar dados."
 
-#: includes/rest/class-shared.php:256 includes/rest/class-shared.php:348
+#: includes/rest/class-shared.php:252 includes/rest/class-shared.php:316
+#: includes/rest/class-shared.php:408
 msgid "Object unique id"
 msgstr "ID único do objeto"
 
-#: includes/rest/class-shared.php:250 includes/rest/class-shared.php:342
+#: includes/rest/class-shared.php:259 includes/rest/class-shared.php:310
+#: includes/rest/class-shared.php:402
 msgid "Object Type i.e. post, term, user"
 msgstr "Tipo de objeto, ou seja, post, termo, usuário"
 
-#: includes/admin/metabox/class-screen.php:279
+#: includes/admin/metabox/class-screen.php:280
 msgid "username"
 msgstr "nome de usuário"
 
@@ -4531,7 +4665,7 @@ msgstr "Grande"
 
 #. translators: %1$s link to the customize settings, %2$s closing tag for the
 #. link
-#: includes/modules/seo-analysis/seo-analysis-tests.php:217
+#: includes/modules/seo-analysis/seo-analysis-tests.php:216
 msgid "You have not entered a tagline yet. It is a good idea to choose one. %1$sYou can fix this in the customizer%2$s."
 msgstr "Você ainda não inseriu um slogan (frase de efeito). É uma boa ideia escolher um. %1$sVocê pode corrigir isso no personalizador%2$s."
 
@@ -4806,11 +4940,11 @@ msgstr "Descrição de %s"
 msgid "%s Title"
 msgstr "Título de %s"
 
-#: includes/rest/class-front.php:150
+#: includes/rest/class-front.php:167
 msgid "Site token"
 msgstr "Token do site"
 
-#: includes/rest/class-front.php:88
+#: includes/rest/class-front.php:89
 msgid "Site disconnected successfully."
 msgstr "Site desconectado."
 
@@ -5097,20 +5231,21 @@ msgstr "Imagem exibida quando sua página é compartilhada no Facebook e em outr
 msgid "Thumbnail for Facebook"
 msgstr "Miniatura para o Facebook"
 
-#: includes/rest/class-rest-helper.php:244 includes/rest/class-shared.php:261
+#: includes/rest/class-rest-helper.php:244
+#: includes/rest/class-rest-helper.php:273 includes/rest/class-shared.php:321
 msgid "Sorry, field is empty which is not allowed."
 msgstr "O campo está vazio, o que não é permitido."
 
-#: includes/rest/class-admin.php:351
+#: includes/rest/class-admin.php:362
 msgid "Module state either on or off"
 msgstr "Estado do módulo, ativado ou desativado"
 
-#: includes/rest/class-admin.php:345
+#: includes/rest/class-admin.php:348
 msgid "Module slug"
 msgstr "Slug do módulo"
 
 #. translators: API error
-#: includes/modules/seo-analysis/class-seo-analyzer.php:403
+#: includes/modules/seo-analysis/class-seo-analyzer.php:302
 msgid "<strong>API Error:</strong> %s"
 msgstr "<strong>Erro de API:</strong> %s"
 
@@ -5150,26 +5285,26 @@ msgstr "Acima do conteúdo"
 msgid "Below Content"
 msgstr "Abaixo do conteúdo"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:521
+#: includes/modules/seo-analysis/seo-analysis-tests.php:520
 msgid "Your site is accessible by search engine."
 msgstr "Seu site está acessível aos mecanismos de pesquisa."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:510
+#: includes/modules/seo-analysis/seo-analysis-tests.php:509
 msgid "Attention: Search Engines can't see your website."
 msgstr "Atenção: Os mecanismos de pesquisa não podem ver seu site."
 
 #. translators: %1$s link to the reading settings, %2$s closing tag for the
 #. link
-#: includes/modules/seo-analysis/seo-analysis-tests.php:50
+#: includes/modules/seo-analysis/seo-analysis-tests.php:49
 msgid "You must %1$sgo to your Reading Settings%2$s and uncheck the box for Search Engine Visibility."
 msgstr "Você deve %1$sir para \"Configurações de leitura\"%2$s e desmarcar a caixa de visibilidade para os \"Mecanismos de pesquisa\"."
 
 #. translators: link to general setting screen
-#: includes/modules/seo-analysis/seo-analysis-tests.php:46
+#: includes/modules/seo-analysis/seo-analysis-tests.php:45
 msgid "Your site may not be visible to search engine."
 msgstr "Seu site pode não estar visível para os mecanismos de pesquisa."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:44
+#: includes/modules/seo-analysis/seo-analysis-tests.php:43
 msgid "Blog Public"
 msgstr "Público do blog"
 
@@ -5194,7 +5329,7 @@ msgstr "É pilar (principal)"
 msgid "Performer"
 msgstr "Artista/intérprete"
 
-#: includes/admin/class-post-columns.php:242
+#: includes/admin/class-post-columns.php:244
 msgid "Not Set"
 msgstr "Não definido"
 
@@ -6111,278 +6246,211 @@ msgstr "Defina as opções do sitemap para as páginas de arquivo de autor. %s."
 msgid "This tab contains General settings related to the XML sitemaps."
 msgstr "Esta aba contém configurações gerais relacionadas aos sitemaps XML."
 
-#: includes/modules/seo-analysis/views/form.php:40
-msgid "Complete"
-msgstr "Concluído"
-
-#: includes/modules/seo-analysis/views/form.php:34
-msgid "Analysing Website&hellip;"
-msgstr "Analisando o site&hellip;"
-
-#: includes/modules/seo-analysis/views/form.php:29
-msgid "Analysing Page&hellip;"
-msgstr "Analisando a página&hellip;"
-
-#: includes/modules/seo-analysis/views/form.php:27
-msgid "Start Page Analysis"
-msgstr "Iniciar análise da página"
-
-#: includes/modules/seo-analysis/views/form.php:25
-msgid "Change URL"
-msgstr "Alterar URL"
-
-#: includes/modules/seo-analysis/views/form.php:22
-msgid "Selected page: %s"
-msgstr "Página selecionada: %s"
-
-#: includes/modules/seo-analysis/seo-analysis-tests.php:501
+#: includes/modules/seo-analysis/seo-analysis-tests.php:500
 msgid "No sitemaps found."
 msgstr "Nenhum sitemap encontrado."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:501
+#: includes/modules/seo-analysis/seo-analysis-tests.php:500
 msgid "Your site has one or more sitemaps."
 msgstr "Seu site tem um ou mais sitemaps."
 
 #. translators: post ID count
-#: includes/modules/seo-analysis/seo-analysis-tests.php:397
+#: includes/modules/seo-analysis/seo-analysis-tests.php:396
 msgid "+%d More..."
 msgstr "+%d A mais..."
 
 #. translators: post type links
-#: includes/modules/seo-analysis/seo-analysis-tests.php:403
+#: includes/modules/seo-analysis/seo-analysis-tests.php:402
 msgid "There are %s published posts where the primary focus keyword does not appear in the post title."
 msgstr "Há %s posts publicados onde a palavra-chave principal não aparece no título do post."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:382
+#: includes/modules/seo-analysis/seo-analysis-tests.php:381
 msgid "Focus keywords appear in the titles of published posts where it is set."
 msgstr "As palavras-chave de foco aparecem nos títulos dos posts publicados onde estão definidas."
 
 #. translators: post type links
-#: includes/modules/seo-analysis/seo-analysis-tests.php:365
+#: includes/modules/seo-analysis/seo-analysis-tests.php:364
 msgid "There are %s with no focus keyword set."
 msgstr "Há %s sem nenhuma palavra-chave de foco definida."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:355
+#: includes/modules/seo-analysis/seo-analysis-tests.php:354
 msgid "All published posts have focus keywords set."
 msgstr "Todos os posts publicados têm palavras-chave de foco definidas."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:302
+#: includes/modules/seo-analysis/seo-analysis-tests.php:301
 msgid "You have not linked Google Search Console yet."
 msgstr "Você ainda não vinculou o Google Search Console."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:302
+#: includes/modules/seo-analysis/seo-analysis-tests.php:301
 msgid "Google Search Console has been linked."
 msgstr "O Google Search Console foi vinculado."
 
 #. translators: permalink structure
-#: includes/modules/seo-analysis/seo-analysis-tests.php:279
+#: includes/modules/seo-analysis/seo-analysis-tests.php:278
 msgid "Post permalink structure is set to %s."
 msgstr "A estrutura de link permantente de post está definida como %s."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:272
+#: includes/modules/seo-analysis/seo-analysis-tests.php:271
 msgid "Permalinks are set to a custom structure but the post titles do not appear in the permalinks."
 msgstr "Os links permanentes estão definidos para uma estrutura personalizada, mas os títulos dos posts não aparecem nos links permanentes."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:265
+#: includes/modules/seo-analysis/seo-analysis-tests.php:264
 msgid "Permalinks are set to the default value. <em>Pretty permalinks</em> are disabled. "
 msgstr "Os links permanentes estão definidos como o valor padrão. Os <em>Links permanentes amigáveis (pretty permalinks)</em> estão desativados. "
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:233
+#: includes/modules/seo-analysis/seo-analysis-tests.php:232
 msgid "Your Site Tagline is set to a custom value."
 msgstr "O slogan (frase de efeito) do seu site está definido como um valor personalizado."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:227
+#: includes/modules/seo-analysis/seo-analysis-tests.php:226
 msgid "Your Site Tagline is set to the default value <em>Just another WordPress site</em>."
 msgstr "O slogan (frase de efeito) do seu site está definido como o valor padrão <em>Apenas outro site WordPress</em>."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:135
+#: includes/modules/seo-analysis/seo-analysis-tests.php:134
 msgid "If you don't have an XML sitemap, the best option is to install a plugin that creates sitemaps for you. That way you'll know the sitemap will always be up-to-date. Plugins can also automatically ping the search engines when the XML file is updated. The Rank Math WordPress plugin gives you complete control over your site's XML sitemaps. You can control the settings for each page as you write or edit it, and Rank Math will ping Google as soon as you submit your edits. This results in fast crawls and indexing."
 msgstr "Se você não tiver um sitemap XML, a melhor opção é instalar um plugin que crie sitemaps para você. Desta forma, você saberá que o sitemap estará sempre atualizado. Os plugins também podem enviar automaticamente notificações (pings) aos mecanismos de pesquisa quando o arquivo XML for atualizado. O plugin Rank Math para WordPress oferece controle total sobre os sitemaps XML do seu site. Você pode controlar as configurações de cada página à medida que a escreve ou edita, e o Rank Math enviará um notificação (ping) para o Google assim que você enviar suas edições. Isso resulta em rastreamentos e indexação rápidos."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:134
+#: includes/modules/seo-analysis/seo-analysis-tests.php:133
 msgid "XML sitemaps are a special type of text file that tells search engines about the structure of your site. They're a list of all the resources (pages and files) you would like the search engine to index. You can assign different priorities, so certain pages will be crawled first. Before XML sitemaps, search engines were limited to indexing the content they could find by following links. That's still an important feature for search engine spiders, but XML sitemaps have made it easier for content creators and search engines to collaborate."
 msgstr "Os sitemaps XML são um tipo especial de arquivo de texto que informa aos mecanismos de pesquisa sobre a estrutura do seu site. Eles são uma lista de todos os recursos (páginas e arquivos) que você gostaria que o mecanismo de pesquisa indexasse. Você pode atribuir prioridades diferentes, para que determinadas páginas sejam rastreadas primeiro. Antes dos sitemaps XML, os mecanismos de pesquisa limitavam-se a indexar o conteúdo que podiam encontrar seguindo os links. Esse ainda é um recurso importante para os robôs (spiders) dos mecanismos de pesquisa, mas os sitemaps XML facilitaram a colaboração entre os criadores de conteúdo e os mecanismos de pesquisa."
 
 #. translators: Link to Search Console KB article
-#: includes/modules/seo-analysis/seo-analysis-tests.php:125
+#: includes/modules/seo-analysis/seo-analysis-tests.php:124
 msgid "Read <a href=\"%1$s\" target=\"_blank\">this article</a> for detailed instructions on setting up your Google Webmaster account and getting Rank Math to work with the Google Search Console."
 msgstr "Leia <a href=\"%1$s\" target=\"_blank\">este artigo</a> para obter instruções detalhadas sobre como configurar sua conta do Google Webmaster e fazer com que o Rank Math funcione com o Google Search Console."
 
 #. translators: link to plugin search console setting screen
-#: includes/modules/seo-analysis/seo-analysis-tests.php:123
+#: includes/modules/seo-analysis/seo-analysis-tests.php:122
 msgid "You can integrate the Google Search Console with Rank math in the <a href=\"%1$s\" target=\"_blank\">Search Console tab</a>. of Rank Math's General Settings menu."
 msgstr "Você pode integrar o Google Search Console ao Rank math na aba <a href=\"%1$s\" target=\"_blank\">Search Console</a>. do menu \"Configurações gerais\" do Rank Math."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:121
+#: includes/modules/seo-analysis/seo-analysis-tests.php:120
 msgid "Google's Search Console is a vital source of information concerning your rankings and click-through rates.  Rank Math can import this data, so you don't have to log into your Google account to get the data you need."
 msgstr "O Search Console do Google é uma fonte vital de informações sobre suas classificações e taxas de cliques. O Rank Math pode importar esses dados, para que você não precise acessar a sua conta do Google para obter os dados de que precisa."
 
 #. translators: link to plugin setting screen
-#: includes/modules/seo-analysis/seo-analysis-tests.php:117
+#: includes/modules/seo-analysis/seo-analysis-tests.php:116
 msgid "Register at Google Search Console and verificate your site by adding the code to <a href=\"%1$s\">Settings &gt; Verificate Tools</a>, then navigate to <a href=\"%2$s\">Settings &gt; Search Console</a> to authenticate and link your site."
 msgstr "Cadastre-se no Google Search Console e verifique seu site adicionando o código em <a href=\"%1$s\">Configurações &gt; Ferramentas de verificação</a>, depois vá para <a href=\"%2$s\">Configurações &gt; Search Console</a> para autenticar e vincular seu site."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:88
+#: includes/modules/seo-analysis/seo-analysis-tests.php:87
 msgid "Fixing the issue is simple - just edit the post/page and add the focus keyword(s) to the title."
 msgstr "A correção do problema é simples - basta editar o post/página e adicionar a(s) palavra(s)-chave de foco ao título."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:87
+#: includes/modules/seo-analysis/seo-analysis-tests.php:86
 msgid "HTML Page Titles play a large role in Google's ranking algorithm.  When you add a Focus Keyword to a post or page, Rank Math will check to see that you used the keyword in the title.  If it finds any posts or pages that are missing the keyword in the title, it will tell you here."
 msgstr "Os títulos de páginas em HTML desempenham um papel importante no algoritmo de classificação do Google. Quando você adiciona uma palavra-chave de foco a um post ou página, o Rank Math verifica se você usou a palavra-chave no título. Se ele encontrar algum post ou página que não tenha a palavra-chave no título, ele o informará aqui."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:86
+#: includes/modules/seo-analysis/seo-analysis-tests.php:85
 msgid "Make sure the focus keywords you set for the posts appear in their titles."
 msgstr "Certifique-se de que as palavras-chave de foco que você definiu para os posts apareçam em seus títulos."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:85
+#: includes/modules/seo-analysis/seo-analysis-tests.php:84
 msgid "Post Titles Missing Focus Keywords"
 msgstr "Títulos de posts sem palavras-chave de foco"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:79
+#: includes/modules/seo-analysis/seo-analysis-tests.php:78
 msgid "Fixing this issue is easy - just edit the post, and set a Focus Keyword.  Then follow Rank Math's analysis to improve your rankings."
 msgstr "A correção deste problema é fácil - basta editar o post e definir uma palavra-chave de foco. Em seguida, siga a análise do Rank Math para melhorar suas classificações."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:78
+#: includes/modules/seo-analysis/seo-analysis-tests.php:77
 msgid "Of course, if you don't give Rank Math a focus keyword to work with, it can't give you any useful feedback."
 msgstr "É claro que, se você não der ao Rank Math uma palavra-chave de foco com a qual trabalhar, ele não poderá lhe dar nenhum feedback útil."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:77
+#: includes/modules/seo-analysis/seo-analysis-tests.php:76
 msgid "Rank Math uses these focus keywords to analyze your on-page content.  It can tell if you've done a good job of optimizing your text to rank for these keywords."
 msgstr "O Rank Math usa estas palavras-chave de foco para analisar o conteúdo da sua página. Ele pode dizer se você fez um bom trabalho de otimização do seu texto para se classificar para essas palavras-chave."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:76
+#: includes/modules/seo-analysis/seo-analysis-tests.php:75
 msgid "Rank Math allows you to set a focus keyword for every post and page you write - the option is in the \"Meta Box\", which appears under the text editor in the screen where you write and edit content."
 msgstr "O Rank Math permite que você defina uma palavra-chave de foco para cada post e página que escrever - a opção está na \"Meta caixa\", que aparece abaixo do editor de texto na tela onde você escreve e edita o conteúdo."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:75
+#: includes/modules/seo-analysis/seo-analysis-tests.php:74
 msgid "Setting focus keywords for your posts allows Rank Math to analyse the content."
 msgstr "A definição de palavras-chave de foco para seus posts permite que o Rank Math analise o conteúdo."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:74
+#: includes/modules/seo-analysis/seo-analysis-tests.php:73
 #: includes/replace-variables/class-advanced-variables.php:55
 #: includes/settings/titles/post-types.php:288
 msgid "Focus Keywords"
 msgstr "Palavras-chave de foco"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:68
+#: includes/modules/seo-analysis/seo-analysis-tests.php:67
 msgid "This looks nice for readers - and it gets your keywords into the URL (keywords in the URL is a ranking factor)."
 msgstr "Isso fica agradável aos leitores e inclui suas palavras-chave no URL (palavras-chave no URL são um fator de classificação)."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:67
+#: includes/modules/seo-analysis/seo-analysis-tests.php:66
 msgid "This option will replace the \"?p=99\" part of the URL with the post's title, like this: http://www.yoursite.com/my-amazing-post-title/"
 msgstr "Esta opção irá substituir a parte \"?p=99\" do URL pelo título do post, assim: http://www.seusite.com/meu-incrível-titulo-do-post/"
 
 #. translators: link to permalink setting screen
-#: includes/modules/seo-analysis/seo-analysis-tests.php:66
+#: includes/modules/seo-analysis/seo-analysis-tests.php:65
 msgid "Fortunately, it's very easy to fix.  Just hop on over to <a target=\"_blank\" href=\"%1$s\">Settings - Permalinks</a>.  Then chose the \"Post Name\" option."
 msgstr "Felizmente, é muito fácil de corrigir. Basta acessar <a target=\"_blank\" href=\"%1$s\">Configurações - Links permanentes</a>. Em seguida, escolha a opção “Nome do post”."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:64
+#: includes/modules/seo-analysis/seo-analysis-tests.php:63
 msgid "It's not very kind on the eyes, and it does nothing for your site's SEO.  In fact, it can hurt it - Google's bot is quite cautious about crawling pages that look auto-generated."
 msgstr "Isso não é muito agradável aos olhos e não contribui em nada para o SEO do seu site. Na verdade, isso pode prejudicar. O bot do Google é bastante cauteloso ao rastrear páginas que parecem ser geradas automaticamente."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:63
+#: includes/modules/seo-analysis/seo-analysis-tests.php:62
 msgid "The standard permalink structure is pretty ugly - WordPress generates offputting URLs like: http://www.yoursite.com/?p=99"
 msgstr "A estrutura de links permanentes padrão é muito feia - O WordPress gera URLs desagradáveis como: http://www.seusite.com/?p=99"
 
 #. translators: link to permalink setting screen
-#: includes/modules/seo-analysis/seo-analysis-tests.php:62
+#: includes/modules/seo-analysis/seo-analysis-tests.php:61
 msgid "For the best SEO results, use a custom permalink structure, preferably one that includes the post title (<code>%%postname%%</code>). You can change it by navigating to <a href=\"%s\">Settings &gt; Permalinks</a>"
 msgstr "Para obter os melhores resultados de SEO, use uma estrutura de link permanente personalizada, de preferência uma que inclua o título do post (<code>%%postname%%</code>). Você pode alterá-la navegando até <a href=\"%s\">Configurações > Links permanentes</a>"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:60
+#: includes/modules/seo-analysis/seo-analysis-tests.php:59
 msgid "Permalink Structure"
 msgstr "Estrutura de links permanentes"
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:38
+#: includes/modules/seo-analysis/seo-analysis-tests.php:37
 msgid "The tagline is the second option.  Choose a tagline that summarizes your site in a few words.  The tagline is also a good place to use your main keyword."
 msgstr "O slogan (frase de efeito) é a segunda opção. Escolha um slogan que resuma o seu site em poucas palavras. O slogan também é um bom lugar para usar a sua palavra-chave principal."
 
 #. translators: link to general setting screen
-#: includes/modules/seo-analysis/seo-analysis-tests.php:37
+#: includes/modules/seo-analysis/seo-analysis-tests.php:36
 msgid "Changing your tagline is very easy.  Just head on over to <a target=\"_blank\" href=\"%1$s\">Settings - General</a> in WordPress's admin menu (on the left), or click on the link in this sentence."
 msgstr "Alterar o seu slogan (frase de efeito) é muito fácil. Basta acessar <a target=\"_blank\" href=\"%1$s\">Configurações - Geral</a> no menu administrativo do WordPress (no lado esquerdo), ou clique no link nesta frase."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:35
+#: includes/modules/seo-analysis/seo-analysis-tests.php:34
 msgid "Unfortunately, the standard WordPress tagline is \"Just Another WordPress site.\"  That's pretty sloppy looking, and it does nothing for your SEO.  In fact, it's actually a security risk - it makes it easy for hackers with a WordPress exploit to locate your site with an automated search."
 msgstr "Infelizmente, o slogan (frase de efeito) padrão do WordPress é \"Apenas mais um site WordPress\". Isso tem uma aparência bastante desleixada (pouco profissional) e não contribui em nada para seu SEO. Na verdade, é um risco à segurança, pois facilita que hackers com um exploit do WordPress, localizem seu site com uma pesquisa automatizada."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:34
+#: includes/modules/seo-analysis/seo-analysis-tests.php:33
 msgid "Most WordPress themes place your site's tagline in a prominent position (inside header tags near the top of the page).  Using the right tagline can give your site an SEO boost."
 msgstr "A maioria dos temas do WordPress coloca o slogan (frase de efeito) do seu site em uma posição de destaque (dentro das tags de cabeçalho, perto da parte superior da página). Usar a frase de efeito certa, pode dar ao seu site um impulso de SEO."
 
 #. translators: link to general setting screen
-#: includes/modules/seo-analysis/seo-analysis-tests.php:33
+#: includes/modules/seo-analysis/seo-analysis-tests.php:32
 msgid "Your theme may display the Site Tagline, and it can also be used in SEO titles &amp; descriptions. Set it to something unique. You can change it by navigating to <a href=\"%s\">Settings &gt; General</a>."
 msgstr "Seu tema pode exibir o slogan (frase de efeito) do site e também pode ser usado em títulos e descrições de SEO. Defina algo único. Você pode alterá-lo navegando até <a href=\"%s\">Configurações > Geral</a>."
 
-#: includes/modules/seo-analysis/seo-analysis-tests.php:31
+#: includes/modules/seo-analysis/seo-analysis-tests.php:30
 msgid "Site Tagline"
 msgstr "Slogan (frase de efeito) do site"
 
-#: includes/modules/seo-analysis/class-seo-analyzer.php:641
-msgid "Security"
-msgstr "Segurança"
-
-#: includes/modules/seo-analysis/class-seo-analyzer.php:640
-msgid "Performance"
-msgstr "Desempenho"
-
-#: includes/modules/seo-analysis/class-seo-analyzer.php:638
-msgid "Advanced SEO"
-msgstr "SEO avançado"
-
-#: includes/modules/seo-analysis/class-result.php:179
-msgid "Info"
-msgstr "Informação"
-
-#: includes/modules/seo-analysis/class-result.php:178
-msgid "Warning"
-msgstr "Alerta"
-
-#: includes/modules/seo-analysis/class-result.php:177
-#: includes/modules/content-ai/assets/js/content-ai-media.js:1
-#: includes/modules/content-ai/assets/js/content-ai-page.js:1
-#: includes/modules/content-ai/assets/js/content-ai.js:1
-msgid "Failed"
-msgstr "Reprovado"
-
 #: includes/modules/instant-indexing/views/history.php:32
-#: includes/modules/seo-analysis/class-result.php:176
-#: includes/modules/seo-analysis/views/form.php:24
+#: includes/modules/seo-analysis/assets/js/seo-analysis.js:1
 msgid "OK"
 msgstr "OK"
 
-#: includes/modules/seo-analysis/class-result.php:88
-msgid "How to fix"
-msgstr "Como corrigir"
-
-#: includes/modules/seo-analysis/class-seo-analyzer.php:157
-#: includes/modules/seo-analysis/views/graphs.php:58
-msgid "Failed Tests"
-msgstr "Testes reprovados"
-
-#: includes/modules/seo-analysis/class-seo-analyzer.php:149
-#: includes/modules/seo-analysis/views/graphs.php:40
-msgid "Passed Tests"
-msgstr "Testes aprovados"
-
-#: includes/class-frontend-seo-score.php:174
-#: includes/modules/seo-analysis/views/graphs.php:31
+#: includes/class-frontend-seo-score.php:174 assets/admin/js/components.js:1
 #: includes/modules/analytics/assets/js/admin-bar.js:1
 #: includes/modules/analytics/assets/js/stats.js:1
 msgid "SEO Score"
 msgstr "Pontuação de SEO"
 
-#: includes/modules/seo-analysis/class-seo-analysis.php:76
+#: includes/modules/seo-analysis/class-seo-analysis.php:74
 msgid "SEO Analysis for this page"
 msgstr "Análise de SEO para esta página"
 
-#: includes/modules/seo-analysis/class-seo-analysis.php:74
+#: includes/modules/seo-analysis/class-seo-analysis.php:72
 msgid "Analyze this Page"
 msgstr "Analisar esta página"
 
-#: includes/modules/seo-analysis/class-seo-analysis.php:63
+#: includes/modules/seo-analysis/class-seo-analysis.php:61
 msgid "Site-wide analysis"
 msgstr "Análise em todo o site"
 
@@ -6407,11 +6475,6 @@ msgstr "Atualizar dados manualmente"
 #: includes/opengraph/class-slack.php:334
 msgid "Items"
 msgstr "Ítens"
-
-#: includes/modules/seo-analysis/class-seo-analyzer.php:153
-#: includes/modules/seo-analysis/views/graphs.php:49
-msgid "Warnings"
-msgstr "Alertas"
 
 #: includes/modules/analytics/class-ajax.php:340
 msgid "Google oAuth is not authorized."
@@ -6473,7 +6536,7 @@ msgstr "Páginas"
 msgid "Analytics"
 msgstr "Analytics"
 
-#: includes/admin/class-admin.php:370 includes/traits/class-ajax.php:59
+#: includes/admin/class-admin.php:372 includes/traits/class-ajax.php:59
 msgid "You are not authorized to perform this action."
 msgstr "Você não está autorizado a executar esta ação."
 
@@ -6894,8 +6957,7 @@ msgstr "Esvaziar lixeira"
 
 #: includes/modules/instant-indexing/views/history.php:13
 #: includes/modules/redirections/class-table.php:337
-#: includes/modules/seo-analysis/class-seo-analyzer.php:145
-#: assets/admin/js/rank-math-app.js:1
+#: assets/admin/js/components.js:1 assets/admin/js/rank-math-app.js:1
 #: includes/modules/content-ai/assets/js/content-ai-page.js:1
 #: includes/modules/content-ai/assets/js/content-ai.js:1
 msgid "All"
@@ -7001,7 +7063,7 @@ msgstr "Redirecionamento excluído."
 msgid "Invalid regex pattern: %s"
 msgstr "Padrão de expressão regular (regex) inválido: %s"
 
-#: includes/rest/class-admin.php:304
+#: includes/rest/class-admin.php:307
 msgid "Please add at least one valid source URL."
 msgstr "Adicione pelo menos um URL de origem válido."
 
@@ -7024,7 +7086,7 @@ msgid "Status"
 msgstr "Status"
 
 #: includes/modules/redirections/views/options.php:51
-#: assets/admin/js/rank-math-app.js:1
+#: includes/rest/class-shared.php:292 assets/admin/js/rank-math-app.js:1
 #: includes/modules/redirections/assets/js/redirections.js:1
 msgid "Redirection Type"
 msgstr "Tipo de redirecionamento"
@@ -7452,7 +7514,7 @@ msgstr "Referente"
 msgid "URI"
 msgstr "URI"
 
-#: includes/admin/class-bulk-actions.php:89
+#: includes/admin/class-bulk-actions.php:90
 #: includes/modules/404-monitor/class-table.php:210
 #: includes/modules/404-monitor/class-table.php:273
 #: assets/admin/js/rank-math-app.js:1
@@ -8035,6 +8097,7 @@ msgstr "ID do post/página atual"
 #: includes/modules/sitemap/settings/html-sitemap.php:103
 #: includes/replace-variables/class-advanced-variables.php:32
 #: includes/replace-variables/class-advanced-variables.php:35
+#: includes/rest/class-front.php:151
 msgid "Post ID"
 msgstr "ID do post"
 
@@ -8511,7 +8574,7 @@ msgstr "Prossiga para a página de ajuda"
 msgid "Get 24x7 Support"
 msgstr "Obtenha suporte 24 horas por dia, 7 dias por semana"
 
-#: includes/admin/class-admin-header.php:52
+#: includes/admin/class-admin-header.php:54
 #: includes/admin/wizard/views/ready.php:58
 msgid "Rank Math Knowledge Base"
 msgstr "Base de conhecimento do Rank Math"
@@ -8576,7 +8639,7 @@ msgstr "Seu site está pronto!"
 #: includes/admin/wizard/class-optimization.php:37
 #: includes/modules/404-monitor/class-admin.php:224
 #: includes/modules/redirections/class-admin.php:311
-#: assets/admin/js/post-list.js:1
+#: assets/admin/js/post-list.js:1 assets/admin/js/rank-math-app.js:1
 #: includes/modules/analytics/assets/js/admin-bar.js:1
 #: includes/modules/content-ai/assets/js/content-ai-media.js:1
 #: includes/modules/content-ai/assets/js/content-ai-page.js:1
@@ -9208,13 +9271,13 @@ msgstr "Os sitemaps XML ajudam os mecanismos de pesquisa a indexar o conteúdo d
 
 #: includes/admin/class-setup-wizard.php:125
 #: includes/admin/wizard/class-sitemap.php:66
-#: includes/modules/seo-analysis/seo-analysis-tests.php:133
+#: includes/modules/seo-analysis/seo-analysis-tests.php:132
 msgid "Sitemaps"
 msgstr "Sitemaps"
 
 #: includes/admin/wizard/views/search-console-ui.php:129
 #: includes/modules/analytics/google/class-permissions.php:107
-#: includes/modules/seo-analysis/seo-analysis-tests.php:114
+#: includes/modules/seo-analysis/seo-analysis-tests.php:113
 msgid "Search Console"
 msgstr "Search Console"
 
@@ -9299,20 +9362,10 @@ msgstr "Preço"
 msgid "In stock"
 msgstr "Em estoque"
 
-#: includes/modules/seo-analysis/class-seo-analyzer.php:639
-#: assets/admin/js/rank-math-app.js:1
-msgid "Basic SEO"
-msgstr "SEO básico"
-
-#: includes/admin/class-registration.php:71
 #: includes/admin/wizard/views/content.php:42
 #: includes/admin/wizard/views/ready.php:68
 msgid "Return to dashboard"
 msgstr "Voltar ao painel"
-
-#: includes/admin/class-registration.php:70
-msgid "Rank Math Product Registration"
-msgstr "Cadastro de produto do Rank Math"
 
 #: includes/3rdparty/divi/class-divi.php:157
 #: includes/admin/class-assets.php:132
@@ -9361,9 +9414,9 @@ msgstr "Palavra-chave"
 
 #: includes/admin/class-post-columns.php:178
 #: includes/admin/class-post-columns.php:199
-#: includes/admin/class-post-columns.php:250
-#: includes/admin/class-post-columns.php:270
-#: includes/admin/class-post-columns.php:283
+#: includes/admin/class-post-columns.php:254
+#: includes/admin/class-post-columns.php:274
+#: includes/admin/class-post-columns.php:287
 #: includes/modules/schema/assets/js/schema-gutenberg.js:1
 #: includes/modules/schema/assets/js/schema-template.js:1
 msgid "Save"
@@ -9402,9 +9455,9 @@ msgstr "Pontuação de SEO: Boa"
 
 #: includes/admin/class-post-columns.php:179
 #: includes/admin/class-post-columns.php:200
-#: includes/admin/class-post-columns.php:251
-#: includes/admin/class-post-columns.php:271
-#: includes/admin/class-post-columns.php:284 assets/admin/js/post-list.js:1
+#: includes/admin/class-post-columns.php:255
+#: includes/admin/class-post-columns.php:275
+#: includes/admin/class-post-columns.php:288 assets/admin/js/post-list.js:1
 #: includes/modules/redirections/assets/js/redirections.js:1
 msgid "Cancel"
 msgstr "Cancelar"
@@ -9434,7 +9487,7 @@ msgstr "Configurações do sitemap"
 msgid "General Settings"
 msgstr "Configurações gerais"
 
-#: includes/admin/class-admin-header.php:81
+#: includes/admin/class-admin-header.php:85
 msgid "Search Options"
 msgstr "Opções de pesquisa"
 
@@ -9593,15 +9646,15 @@ msgstr "Ativado"
 msgid "Off"
 msgstr "Desativado"
 
-#: includes/admin/class-admin.php:340
+#: includes/admin/class-admin.php:342
 msgid "Insert Link in Content"
 msgstr "Inserir link no conteúdo"
 
-#: includes/admin/class-admin.php:339
+#: includes/admin/class-admin.php:341
 msgid "Copy Link URL to Clipboard"
 msgstr "Copiar URL do link para a área de transferência"
 
-#: includes/admin/class-admin.php:122
+#: includes/admin/class-admin.php:124
 msgid "The canonical URL you entered does not seem to be a valid URL. Please double check it in the SEO meta box &raquo; Advanced tab."
 msgstr "O URL canônico que você digitou parece não ser um URL válido. Verifique novamente na meta caixa SEO &raquo; aba Avançado."
 
@@ -9645,6 +9698,7 @@ msgstr "Nome de usuário do Twitter (sem @)"
 #: includes/admin/class-admin-breadcrumbs.php:32
 #: includes/admin/class-admin-menu.php:107
 #: includes/modules/version-control/class-version-control.php:234
+#: assets/admin/js/components.js:1
 #: includes/modules/analytics/assets/js/stats.js:1
 msgid "Dashboard"
 msgstr "Painel"

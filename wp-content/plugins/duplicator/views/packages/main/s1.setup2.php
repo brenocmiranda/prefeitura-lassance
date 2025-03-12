@@ -1,5 +1,6 @@
 <?php
 
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Core\Views\TplMng;
 use Duplicator\Utils\Upsell;
 
@@ -71,7 +72,7 @@ defined('ABSPATH') || defined('DUPXABSPATH') || exit;
     div.dup-install-prefill-tab-pnl {min-height:180px !important; }
 </style>
 <?php
-$action_url       = admin_url("admin.php?page=duplicator&tab=new2&retry={$retry_state}");
+$action_url       = ControllersManager::getMenuLink(ControllersManager::PACKAGES_SUBMENU_SLUG, 'new2', null, ['retry' => $retry_state]);
 $action_nonce_url = wp_nonce_url($action_url, 'new2-package');
 $storage_position = DUP_Settings::Get('storage_position');
 ?>
@@ -244,7 +245,7 @@ ARCHIVE -->
                     </div>
                     <div class="dup-tbl-scroll">
                     <?php
-                        $tables    = $wpdb->get_results("SHOW FULL TABLES FROM `" . DB_NAME . "` WHERE Table_Type = 'BASE TABLE' ", ARRAY_N);
+                        $tables    = $wpdb->get_results("SHOW FULL TABLES FROM `" . esc_sql(DB_NAME) . "` WHERE Table_Type = 'BASE TABLE' ", ARRAY_N);
                         $num_rows  = count($tables);
                         $next_row  = round($num_rows / 4, 0);
                         $counter   = 0;

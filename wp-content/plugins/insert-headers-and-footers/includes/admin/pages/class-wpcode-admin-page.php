@@ -564,13 +564,13 @@ abstract class WPCode_Admin_Page {
 	public function page_specific_body_class( $body_class ) {
 
 		$body_class .= ' ' . $this->page_slug . ' ';
-		
+
 		if ( ! class_exists( 'WPCode_Premium' ) ) {
 			$body_class .= ' wpcode-lite-version ';
 		} else {
 			$body_class .= ' wpcode-pro-version ';
 		}
-		
+
 		return $body_class;
 	}
 
@@ -674,7 +674,7 @@ abstract class WPCode_Admin_Page {
 		}
 		$id = ! empty( $id ) ? 'id="' . esc_attr( $id ) . '"' : '';
 		?>
-		<div class="wpcode-metabox-form-row" <?php echo $show_if_rules; ?> <?php echo $id; ?>>
+		<div class="wpcode-metabox-form-row" <?php echo $show_if_rules; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> <?php echo $id; ?>>
 			<div class="wpcode-metabox-form-row-label">
 				<label for="<?php echo esc_attr( $input_id ); ?>">
 					<?php echo esc_html( $label ); ?>
@@ -1123,7 +1123,7 @@ abstract class WPCode_Admin_Page {
 			</div>
 			<div class="wpcode-library-preview-buttons">
 				<a class="wpcode-button wpcode-button-wide" id="wpcode-preview-use-code"><?php esc_html_e( 'Use Snippet', 'insert-headers-and-footers' ); ?></a>
-				<a class="wpcode-button wpcode-button-secondary wpcode-my-library-buttons" id="wpcode-preview-edit-snippet" target="_blank"><?php esc_html_e( 'Edit in Library', 'wpcode-premium' ); ?></a>
+				<a class="wpcode-button wpcode-button-secondary wpcode-my-library-buttons" id="wpcode-preview-edit-snippet" target="_blank"><?php esc_html_e( 'Edit in Library', 'insert-headers-and-footers' ); ?></a>
 				<div class="wpcode-preview-updated wpcode-my-library-buttons" id="wpcode-preview-updated"></div>
 			</div>
 		</div>

@@ -70,7 +70,7 @@ function wpcode_get_auto_insert_location_picker( $selected_location, $code_type 
 					label="<?php echo esc_attr( $type->get_label() ); ?>"
 					data-code-type="<?php echo esc_attr( $type->code_type ); ?>"
 					data-label-pill="<?php echo esc_attr( $type->label_pill ); ?>"
-				<?php echo $extra_data; ?>
+				<?php echo $extra_data; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			>
 				<?php
 				foreach ( $options as $key => $location ) {

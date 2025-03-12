@@ -365,8 +365,10 @@ class DUP_Database
         $info['EasySize']              = DUP_Util::byteSize($info['Size']) or "unknown";
 
         $this->info->viewCount = count($wpdb->get_results("SHOW FULL TABLES WHERE Table_Type = 'VIEW'", ARRAY_A));
-        $this->info->procCount = count($wpdb->get_results("SHOW PROCEDURE STATUS WHERE `Db`='" . DB_NAME . "'", ARRAY_A));
-        $this->info->funcCount = count($wpdb->get_results("SHOW FUNCTION STATUS WHERE `Db`='" . DB_NAME . "'", ARRAY_A));
+        $query                 = $wpdb->prepare("SHOW PROCEDURE STATUS WHERE `Db`            = %s", DB_NAME);
+        $this->info->procCount = count($wpdb->get_results($query, ARRAY_A));
+        $query                 = $wpdb->prepare("SHOW FUNCTION STATUS WHERE `Db`             = %s", DB_NAME);
+        $this->info->funcCount = count($wpdb->get_results($query, ARRAY_A));
 
         return $info;
     }
@@ -651,7 +653,8 @@ class DUP_Database
     private function phpDump($package)
     {
         global $wpdb;
-        $wpdb->query("SET session wait_timeout = " . DUPLICATOR_DB_MAX_TIME);
+        $query = $wpdb->prepare("SET session wait_timeout = %d", DUPLICATOR_DB_MAX_TIME);
+        $wpdb->query($query);
         if (($handle = fopen($this->tempDbPath, 'w+')) == false) {
             DUP_Log::error('[PHP DUMP] ERROR Can\'t open sbStorePath "' . $this->tempDbPath . '"', Dup_ErrorBehavior::ThrowException);
         }
@@ -687,7 +690,9 @@ class DUP_Database
             @fwrite($handle, "{$create_table_query};\n\n");
         }
 
-        $procedures = $wpdb->get_col("SHOW PROCEDURE STATUS WHERE `Db` = '{$wpdb->dbname}'", 1);
+
+        $query      = $wpdb->prepare("SHOW PROCEDURE STATUS WHERE `Db` = %s", $wpdb->dbname);
+        $procedures = $wpdb->get_col($query, 1);
         if (count($procedures)) {
             foreach ($procedures as $procedure) {
                 @fwrite($handle, "DELIMITER ;;\n");
@@ -697,7 +702,8 @@ class DUP_Database
             }
         }
 
-        $functions = $wpdb->get_col("SHOW FUNCTION STATUS WHERE `Db` = '{$wpdb->dbname}'", 1);
+        $query     = $wpdb->prepare("SHOW FUNCTION STATUS WHERE `Db` = %s", $wpdb->dbname);
+        $functions = $wpdb->get_col($query, 1);
         if (count($functions)) {
             foreach ($functions as $function) {
                 @fwrite($handle, "DELIMITER ;;\n");

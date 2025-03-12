@@ -94,7 +94,7 @@ class WPCode_Admin_Page_Click extends WPCode_Admin_Page {
 			if ( isset( $_GET['message'] ) && 'wpcode-deploy' === $_GET['message'] ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 				if ( ! wpcode()->library_auth->has_auth() ) {
 					?>
-					<h3><?php esc_html_e( 'Connect your site to the WPCode Library', 'insert-headers-and-footer' ); ?></h3>
+					<h3><?php esc_html_e( 'Connect your site to the WPCode Library', 'insert-headers-and-footers' ); ?></h3>
 					<p><?php esc_html_e( 'You\'re almost there! To finish installing the snippet, you need to connect your site to your account on the WPCode Library. This will allow you to install snippets directly to your site in the future.', 'insert-headers-and-footers' ); ?></p>
 					<p><?php esc_html_e( 'You\'ll also get access to tens of free expert-curated snippets that can be installed with 1-click from inside the plugin.', 'insert-headers-and-footers' ); ?></p>
 					<div class="wpcode-buttons-row">

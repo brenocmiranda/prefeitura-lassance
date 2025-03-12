@@ -6,6 +6,7 @@
  * @copyright (c) 2023, Snap Creek LLC
  */
 
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Core\Views\TplMng;
 
 defined("ABSPATH") || exit;
@@ -21,10 +22,12 @@ defined("ABSPATH") || exit;
 <div id="duplicator-welcome">
     <div class="container">
         <?php
+        $packageUrl      = ControllersManager::getMenuLink(ControllersManager::PACKAGES_SUBMENU_SLUG, 'new1');
+        $packageNonceUrl = wp_nonce_url($packageUrl, 'new1-package');
         TplMng::getInstance()->render(
             'admin_pages/welcome/intro',
             array(
-                'packageNonceUrl' => wp_nonce_url(admin_url('admin.php?page=duplicator&tab=new1'), 'new1-package'),
+                'packageNonceUrl' => $packageNonceUrl
             )
         );
 
@@ -37,7 +40,7 @@ defined("ABSPATH") || exit;
         TplMng::getInstance()->render(
             'admin_pages/welcome/footer',
             array(
-                'packageNonceUrl' => wp_nonce_url(admin_url('admin.php?page=duplicator&tab=new1'), 'new1-package'),
+                'packageNonceUrl' => $packageNonceUrl
             )
         );
         ?>

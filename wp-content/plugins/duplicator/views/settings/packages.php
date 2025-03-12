@@ -1,5 +1,6 @@
 <?php
 
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Utils\LinkManager;
 use Duplicator\Utils\Upsell;
 use Duplicator\Libs\Snap\SnapIO;
@@ -65,6 +66,7 @@ $mysqlDumpPath          = DUP_DB::getMySqlDumpPath();
 $mysqlDumpFound         = ($mysqlDumpPath) ? true : false;
 $archive_build_mode     = DUP_Settings::Get('archive_build_mode');
 $installerNameMode      = DUP_Settings::Get('installer_name_mode');
+$actionUrl              = ControllersManager::getMenuLink(ControllersManager::SETTINGS_SUBMENU_SLUG, 'package');
 ?>
 
 <style>
@@ -78,7 +80,7 @@ $installerNameMode      = DUP_Settings::Get('installer_name_mode');
     .dup-install-meta {display: inline-block; min-width: 50px}
 </style>
 
-<form id="dup-settings-form" action="<?php echo admin_url('admin.php?page=duplicator-settings&tab=package'); ?>" method="post">
+<form id="dup-settings-form" action="<?php echo esc_url($actionUrl); ?>" method="post">
     <?php wp_nonce_field('dup_settings_save', 'dup_settings_save_nonce_field', false); ?>
     <input type="hidden" name="action" value="save">
     <input type="hidden" name="page"   value="duplicator-settings">

@@ -1427,3 +1427,20 @@ td.dup-store-promo-area i[data-tooltip].fa-question-circle {
     overflow: none;
     height: 7em;
 }
+
+.duplicator-multisite-notice {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.duplicator-multisite-notice .fa-exclamation-triangle {
+    display: none;
+}
+
+.duplicator-multisite-notice .dashicons-warning {
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}

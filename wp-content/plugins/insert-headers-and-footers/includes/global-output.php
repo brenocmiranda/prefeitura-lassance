@@ -74,5 +74,5 @@ function wpcode_global_script_output( $option_name ) {
 		return;
 	}
 
-	echo wp_unslash( $code );
+	echo wp_unslash( $code );  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }

@@ -44,7 +44,8 @@ class DUP_DB extends wpdb
     {
         global $wpdb;
         if (strlen($name)) {
-            $row = $wpdb->get_row("SHOW VARIABLES LIKE '{$name}'", ARRAY_N);
+            $query = $wpdb->prepare("SHOW VARIABLES LIKE %s", $name);
+            $row   = $wpdb->get_row($query, ARRAY_N);
             return isset($row[1]) ? $row[1] : null;
         } else {
             return null;

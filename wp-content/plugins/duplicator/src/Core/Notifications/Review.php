@@ -5,6 +5,7 @@ namespace Duplicator\Core\Notifications;
 use DUP_LITE_Plugin_Upgrade;
 use DUP_Package;
 use Duplicator\Core\MigrationMng;
+use Duplicator\Core\Controllers\ControllersManager;
 
 /**
  * Ask for some love.
@@ -29,6 +30,9 @@ class Review
 
         // Admin footer text.
         add_filter('admin_footer_text', array(__CLASS__, 'adminFooter'), 1, 2);
+
+        // Admin footer version text.
+        add_filter('update_footer', array(__CLASS__, 'adminFooterVersion'), 9999);
     }
 
     /**
@@ -168,6 +172,28 @@ class Review
     public static function getFeedbackUrl()
     {
         return DUPLICATOR_BLOG_URL . "contact/";
+    }
+
+    /**
+     * Updates admin footer text by adding Duplicator version
+     *
+     * @param string $defaultText Default WP footer text
+     *
+     * @return string Modified version text
+     */
+    public static function adminFooterVersion($defaultText)
+    {
+        if (!ControllersManager::isDuplicatorPage()) {
+            return $defaultText;
+        }
+
+        $defaultText = sprintf(
+            '%1$s | Duplicator %2$s',
+            $defaultText,
+            esc_html(DUPLICATOR_VERSION)
+        );
+
+        return $defaultText;
     }
 
     /**

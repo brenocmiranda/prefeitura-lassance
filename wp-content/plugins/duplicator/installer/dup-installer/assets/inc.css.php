@@ -2364,5 +2364,5 @@ div.more-faq-link {
 }
 </style>
 <?php
-require dirname(__FILE__) . '/inc.css.validation.php';
+require __DIR__ . '/inc.css.validation.php';
 DUPX_U_Html::css();

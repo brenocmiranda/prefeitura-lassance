@@ -1414,13 +1414,11 @@ class WPCode_Generator_Hooks extends WPCode_Generator_Type {
 		$priority            = intval( $this->get_value( 'priority' ) );
 		$callback            = str_replace( '-', '_', sanitize_title_with_dashes( $this->get_value( 'callback' ) ) );
 
-		return <<<EOD
-// Add a hook.
-function $callback( $arguments_formatted ) {
-{$this->get_value( 'code' )}
+		return '// Add a hook.
+function ' . $callback . '( ' . $arguments_formatted . ' ) {
+' . $this->get_value( 'code' ) . '
 }
-{$this->get_value( 'hook_type' )}( '{$this->get_value( 'hook_name' )}', '$callback', {$priority}$count );
-EOD;
+' . $this->get_value( 'hook_type' ) . '( \'' . $this->get_value( 'hook_name' ) . '\', \'' . $callback . '\', ' . $priority . $count . ' );';
 	}
 
 }

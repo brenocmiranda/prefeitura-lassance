@@ -85,8 +85,17 @@ class Bootstrap
             $GLOBALS['CTRLS_DUP_CTRL_Tools']   = new DUP_CTRL_Tools();
             $GLOBALS['CTRLS_DUP_CTRL_Package'] = new DUP_CTRL_Package();
 
+            if (is_multisite()) {
+                add_action('network_admin_menu', array(__CLASS__, 'menuInit'));
+                add_filter('network_admin_plugin_action_links', array(__CLASS__, 'manageLink'), 10, 2);
+                add_filter('network_admin_plugin_row_meta', array(__CLASS__, 'metaLinks'), 10, 2);
+            } else {
+                add_action('admin_menu', array(__CLASS__, 'menuInit'));
+                add_filter('plugin_action_links', array(__CLASS__, 'manageLink'), 10, 2);
+                add_filter('plugin_row_meta', array(__CLASS__, 'metaLinks'), 10, 2);
+            }
+
             add_action('admin_init', array(__CLASS__, 'adminInit'));
-            add_action('admin_menu', array(__CLASS__, 'menuInit'));
             add_action('admin_footer', array(__CLASS__, 'adjustProMenuItemClass'));
             add_action('admin_enqueue_scripts', array(__CLASS__, 'adminEqueueScripts'));
 
@@ -97,8 +106,6 @@ class Bootstrap
             add_action('wp_ajax_duplicator_duparchive_package_build', 'duplicator_duparchive_package_build');
 
             add_filter('admin_body_class', array(__CLASS__, 'addBodyClass'));
-            add_filter('plugin_action_links', array(__CLASS__, 'manageLink'), 10, 2);
-            add_filter('plugin_row_meta', array(__CLASS__, 'metaLinks'), 10, 2);
 
             //Init Class
             DUP_Custom_Host_Manager::getInstance()->init();
@@ -382,8 +389,11 @@ class Bootstrap
             'dup-one-click-upgrade-script',
             'dup_one_click_upgrade_script_data',
             array(
-                'nonce_one_click_upgrade' => wp_create_nonce('duplicator_one_click_upgrade_prepare'),
-                'ajaxurl'                 => admin_url('admin-ajax.php')
+                'nonce_one_click_upgrade'   => wp_create_nonce('duplicator_one_click_upgrade_prepare'),
+                'ajaxurl'                   => admin_url('admin-ajax.php'),
+                'fail_notice_title'         => __('Failed to activate license for this website.', 'duplicator'),
+                'fail_notice_message_label' => __('Message: ', 'duplicator'),
+                'fail_notice_suggestion'    => __('Check the license key and try again, if the error persists proceed with manual activation.', 'duplicator'),
             )
         );
 

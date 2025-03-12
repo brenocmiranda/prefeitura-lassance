@@ -5,6 +5,7 @@ namespace Duplicator\Utils\Email;
 use DUP_Package;
 use DUP_Settings;
 use DUP_PackageStatus;
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Libs\Snap\JsonSerialize\JsonSerialize;
 
 /**
@@ -64,7 +65,7 @@ class EmailSummary
      */
     public static function getPreviewLink()
     {
-        return add_query_arg('page', self::PEVIEW_SLUG, admin_url('admin.php'));
+        return ControllersManager::getMenuLink(self::PEVIEW_SLUG);
     }
 
     /**

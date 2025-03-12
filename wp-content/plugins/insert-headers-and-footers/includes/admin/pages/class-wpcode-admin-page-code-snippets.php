@@ -231,7 +231,7 @@ class WPCode_Admin_Page_Code_Snippets extends WPCode_Admin_Page {
 		?>
 		<div id="wpcode-loader">
 			<div class="wpcode-loader-overlay">
-				<img src="<?php echo esc_url( WPCODE_PLUGIN_URL ) . 'admin/images/spinner.svg'; ?>" alt="">
+				<img src="<?php echo esc_url( WPCODE_PLUGIN_URL ) . 'admin/images/spinner.svg'; // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage?>" alt="">
 			</div>
 		</div>
 		<?php
@@ -244,7 +244,7 @@ class WPCode_Admin_Page_Code_Snippets extends WPCode_Admin_Page {
 	 */
 	public function get_snippet_types_for_filters() {
 		$types        = wpcode()->execute->get_types();
-		$snippet_type = isset( $_GET['type'] ) ? sanitize_text_field( wp_unslash( $_GET['type'] ) ) : false;
+		$snippet_type = isset( $_GET['type'] ) ? sanitize_text_field( wp_unslash( $_GET['type'] ) ) : false;  // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 
 		$type_buttons = array(
 			array(
@@ -331,7 +331,7 @@ class WPCode_Admin_Page_Code_Snippets extends WPCode_Admin_Page {
 		?>
 		<div class="wpcode-column wpcode-title-button">
 			<ul id="wpcode-snippet-type-buttons" class="wpcode-admin-tabs">
-				<?php echo $this->get_snippet_type_buttons(); ?>
+				<?php echo $this->get_snippet_type_buttons(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> 
 			</ul>
 			<button class="wpcode-mobile-dropdown-toggle wpcode-button wpcode-button-just-icon" data-target="#wpcode-snippet-type-buttons">
 				<?php wpcode_icon( 'menu', '24', '24', '0 -960 960 960' ); ?>

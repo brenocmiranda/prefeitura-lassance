@@ -33,8 +33,14 @@ class DupxException extends Exception
      * @param type $code
      * @param Exception $previous
      */
-    public function __construct($shortMsg, $longMsg = '', $faqLinkUrl = '', $faqLinkLabel = '', $code = 0, Exception $previous = null)
-    {
+    public function __construct(
+        $shortMsg,
+        $longMsg = '',
+        $faqLinkUrl = '',
+        $faqLinkLabel = '',
+        $code = 0,
+        ?Exception $previous = null
+    ) {
         parent::__construct($shortMsg, $code, $previous);
         $this->longMsg = (string) $longMsg;
         if (!empty($faqLinkUrl)) {

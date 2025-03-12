@@ -22,7 +22,7 @@ $limit = $tplData['limit'];
 ?>
 <div id="dup-cross-promotion">
     <p>
-        <em><?php echo __('Enoying Duplicator? Check out a couple of our other free plugins...', 'duplicator'); ?></em>
+        <em><?php echo __('Enjoying Duplicator? Check out a couple of our other free plugins...', 'duplicator'); ?></em>
     </p>
     <div class="list">
         <?php

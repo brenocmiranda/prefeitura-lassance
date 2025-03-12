@@ -14,6 +14,7 @@ defined("ABSPATH") || exit;
  * @var array<string, mixed> $tplData
  */
 
+use Duplicator\Core\Controllers\ControllersManager;
 use Duplicator\Utils\LinkManager;
 use Duplicator\Libs\Snap\SnapUtil;
 use Duplicator\Core\Views\TplMng;
@@ -85,6 +86,7 @@ $package_debug          = DUP_Settings::Get('package_debug');
 $skip_archive_scan      = DUP_Settings::Get('skip_archive_scan');
 $unhook_third_party_js  = DUP_Settings::Get('unhook_third_party_js');
 $unhook_third_party_css = DUP_Settings::Get('unhook_third_party_css');
+$actionUrl              = ControllersManager::getMenuLink(ControllersManager::SETTINGS_SUBMENU_SLUG, 'general');
 ?>
 
 <style>
@@ -94,7 +96,7 @@ $unhook_third_party_css = DUP_Settings::Get('unhook_third_party_css');
     table.nested-table-data td {padding:5px 5px 5px 0}
 </style>
 
-<form id="dup-settings-form" action="<?php echo admin_url('admin.php?page=duplicator-settings&tab=general'); ?>" method="post">
+<form id="dup-settings-form" action="<?php echo esc_url($actionUrl); ?>" method="post">
 
     <?php wp_nonce_field('dup_settings_save', 'dup_settings_save_nonce_field', false); ?>
     <input type="hidden" name="action" value="save">

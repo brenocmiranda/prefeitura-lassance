@@ -32,7 +32,7 @@ namespace {
         'wp-snapshots'
     );
 
-    if (in_array(basename(dirname(__FILE__)), $disabled_dirs)) {
+    if (in_array(basename(__DIR__), $disabled_dirs)) {
         die;
     }
 
@@ -99,7 +99,7 @@ namespace {
         const SECONDARY_PACKAGE_HASH = '@@SECONDARY_PACKAGE_HASH@@';
         const VERSION            = '@@VERSION@@';
 
-        const MINIMUM_PHP_VERSION = '5.6.20';
+        const MINIMUM_PHP_VERSION = '7.4';
 
         const ZIP_MODE_AUTO    = 0;
         const ZIP_MODE_ARCHIVE = 1;
@@ -114,6 +114,7 @@ namespace {
         public $hasZipArchive         = false;
         public $hasShellExecUnzip     = false;
         public $mainInstallerURL;
+        public $extractionTmpFolder;
         public $archiveExpectedSize   = 0;
         public $archiveActualSize     = 0;
         public $archiveRatio          = 0;
@@ -127,7 +128,7 @@ namespace {
         private function __construct()
         {
             $this->setHTTPHeaders();
-            $this->targetRoot        = self::setSafePath(dirname(__FILE__));
+            $this->targetRoot        = self::setSafePath(__DIR__);
             // clean log file
             $this->log('', true);
 

@@ -106,8 +106,8 @@ class WPCode_Generator_Admin_Bar extends WPCode_Generator_Type {
 								'1100' => __( 'Last item on the left', 'insert-headers-and-footers' ),
 								'30'   => __( 'Before Site Name', 'insert-headers-and-footers' ),
 								'50'   => __( 'After Site Name', 'insert-headers-and-footers' ),
-								'70'   => __( 'Before "New" Button' ),
-								'80'   => __( 'After "New" Button' ),
+								'70'   => __( 'Before "New" Button', 'insert-headers-and-footers' ),
+								'80'   => __( 'After "New" Button', 'insert-headers-and-footers' ),
 							),
 						),
 					),
@@ -235,26 +235,24 @@ class WPCode_Generator_Admin_Bar extends WPCode_Generator_Type {
 			}
 		}
 
-		return <<<EOD
-// Add a custom menu item.
+		return '// Add a custom menu item.
 
-function {$this->get_value( 'function_name' )}( \$admin_bar ) {
-	\$admin_bar->add_menu(
+function ' . $this->get_value( 'function_name' ) . '( $admin_bar ) {
+	$admin_bar->add_menu(
 		array(
-			'id'     => '{$this->get_value( 'menu_id' )}',
-			'title'  => '{$this->get_value( 'menu_title' )}',
-			'href'   => '{$this->get_value( 'menu_href' )}',
-			'meta'   => array(
-				'target' => '{$this->get_value( 'menu_target' )}',
+			\'id\'     => \'' . $this->get_value( 'menu_id' ) . '\',
+			\'title\'  => \'' . $this->get_value( 'menu_title' ) . '\',
+			\'href\'   => \'' . $this->get_value( 'menu_href' ) . '\',
+			\'meta\'   => array(
+				\'target\' => \'' . $this->get_value( 'menu_target' ) . '\',
 			),
 		)
 	);
-	$submenus_code
+	' . $submenus_code . '
 }
 
-add_action( 'admin_bar_menu', '{$this->get_value( 'function_name' )}', {$this->get_value( 'priority' )} );
-
-EOD;
+add_action( \'admin_bar_menu\', \'' . $this->get_value( 'function_name' ) . '\', ' . $this->get_value( 'priority' ) . ' );
+';
 	}
 
 }

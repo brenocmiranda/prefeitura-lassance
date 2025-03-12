@@ -49,7 +49,7 @@ class WPCode_Admin_Page_Pixel extends WPCode_Admin_Page {
 			echo '<div class="wpcode-blur-area">';
 			call_user_func( array( $this, 'output_view_' . $this->view ) );
 			echo '</div>';
-			echo $this->get_pixel_overlay();
+			echo $this->get_pixel_overlay(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 
@@ -785,12 +785,12 @@ class WPCode_Admin_Page_Pixel extends WPCode_Admin_Page {
 							);
 							foreach ( $pixels as $pixel ) {
 								echo '<div class="wpcode-checkbox-row">';
-								echo $this->get_checkbox_toggle(
+								echo $this->get_checkbox_toggle( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 									true,
 									'',
 									'',
 									1,
-									$pixel
+									$pixel // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 								);
 								echo '</div>';
 							}

@@ -45,7 +45,6 @@ trait WPCode_Revisions_Display_Lite {
 	 */
 	public function get_revision_item( $author_id, $date, $actions = array() ) {
 		$list_item = '<li class="wpcode-revision-list-item">';
-
 		if ( ! empty( $author_id ) ) {
 			$list_item .= get_avatar( $author_id, 30 );
 			$list_item .= sprintf(
@@ -53,11 +52,11 @@ trait WPCode_Revisions_Display_Lite {
 				get_the_author_meta( 'display_name', $author_id )
 			);
 		} else {
-			$list_item .= '<span class="wpcode-remote-icon">' . get_wpcode_icon( 'cloud', 16, 12, '0 0 16 12' ) . '</span>';
 			$list_item .= sprintf(
-				'<span class="wpcode-revision-list-author">%s</span>',
-				esc_html__( 'Updated Remotely', 'insert-headers-and-footers' )
+				'<img src="%s" class="avatar avatar-30 photo" alt="Avatar" width="30" height="30" />',
+				esc_url( WPCODE_PLUGIN_URL . 'admin/images/default-user-icon.png' )
 			);
+			$list_item .= '<span class="wpcode-revision-list-author">John Doe</span>';
 		}
 		$list_item .= sprintf(
 			'<span class="wpcode-revision-list-date">%s</span>',
@@ -109,7 +108,7 @@ trait WPCode_Revisions_Display_Lite {
 			);
 
 			$list[] = $this->get_revision_item(
-				$snippet_author,
+				0,
 				$updated,
 				array(
 					$compare,

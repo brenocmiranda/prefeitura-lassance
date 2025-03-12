@@ -232,9 +232,6 @@ class TestsErrorHandler
             default:
                 break;
         }
-        if (defined('E_STRICT') && $errno === E_STRICT) {
-            return self::ERR_TYPE_WARNING;
-        }
         if (defined('E_RECOVERABLE_ERROR') && $errno === E_RECOVERABLE_ERROR) {
             return self::ERR_TYPE_WARNING;
         }
@@ -280,9 +277,6 @@ class TestsErrorHandler
                 return 'EXCEPTION';
             default:
                 break;
-        }
-        if (defined('E_STRICT') && $errno === E_STRICT) {
-            return 'E_STRICT';
         }
         if (defined('E_RECOVERABLE_ERROR') && $errno === E_RECOVERABLE_ERROR) {
             return 'E_RECOVERABLE_ERROR';

@@ -527,46 +527,44 @@ class WPCode_Generator_Widget extends WPCode_Generator_Type {
 			$widget_output .= "\t\techo '</ul>';\n";
 		}
 
-		return <<<EOD
-class {$this->get_value( 'class_name' )} extends WP_Widget {
+		return 'class ' . $this->get_value( 'class_name' ) . ' extends WP_Widget {
 
-	public function __construct() {
-		parent::__construct(
-			'{$this->get_value( 'widget_id' )}',
-			__( '{$this->get_value( 'widget_title' )}', '{$this->get_value( 'text_domain' )}' ),
-			array(
-				'description' => __( '{$this->get_value( 'description' )}', '{$this->get_value( 'text_domain' )}' ),
-				'classname' => '{$this->get_value( 'css_class' )}',
-			)
-		);
-	}
-	
-	public function widget( \$args, \$instance ) {
-			\$instance = wp_parse_args( (array) \$instance, array(
-$instance_defaults\t\t) );
-		// Before widget tag
-		echo \$args['before_widget'];
-{$widget_output}
-		// After widget tag
-		echo \$args['after_widget'];
-	}
-	
-	public function form( \$instance ) {
-			// Set default values
-		\$instance = wp_parse_args( (array) \$instance, array(
-$instance_defaults\t\t) );
-		
-		$fields_markup
-	}
+    public function __construct() {
+        parent::__construct(
+            \'' . $this->get_value( 'widget_id' ) . '\',
+            __( \'' . $this->get_value( 'widget_title' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+            array(
+                \'description\' => __( \'' . $this->get_value( 'description' ) . '\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+                \'classname\' => \'' . $this->get_value( 'css_class' ) . '\',
+            )
+        );
+    }
+    
+    public function widget( $args, $instance ) {
+            $instance = wp_parse_args( (array) $instance, array(
+' . $instance_defaults . '		) );
+        // Before widget tag
+        echo $args[\'before_widget\'];
+' . $widget_output . '
+        // After widget tag
+        echo $args[\'after_widget\'];
+    }
+    
+    public function form( $instance ) {
+            // Set default values
+        $instance = wp_parse_args( (array) $instance, array(
+' . $instance_defaults . '		) );
+        
+        ' . $fields_markup . '
+    }
 }
 
 
-function {$this->get_value( 'prefix' )}register_widgets() {
-	register_widget( '{$this->get_value( 'class_name' )}' );
+function ' . $this->get_value( 'prefix' ) . 'register_widgets() {
+    register_widget( \'' . $this->get_value( 'class_name' ) . '\' );
 }
-add_action( 'widgets_init', '{$this->get_value( 'prefix' )}register_widgets' );
-
-EOD;
+add_action( \'widgets_init\', \'' . $this->get_value( 'prefix' ) . 'register_widgets\' );
+';
 	}
 
 }

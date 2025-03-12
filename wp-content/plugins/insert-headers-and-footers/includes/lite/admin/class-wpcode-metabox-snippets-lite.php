@@ -309,7 +309,7 @@ class WPCode_Metabox_Snippets_Lite extends WPCode_Metabox_Snippets {
 			esc_html__( 'As you make changes to your page scripts and save, you will get a list of previous versions with all the changes made in each revision. You can compare revisions to the current version or see changes as they have been saved by going through each revision. Any of the revisions can then be restored as needed without interfering with your post/page.', 'insert-headers-and-footers' )
 		);
 
-		echo $this->code_revisions_list_with_notice(
+		echo $this->code_revisions_list_with_notice( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			esc_html__( 'Code Revisions is a Pro Feature', 'insert-headers-and-footers' ),
 			sprintf(
 				'<p>%s</p>',
@@ -317,11 +317,11 @@ class WPCode_Metabox_Snippets_Lite extends WPCode_Metabox_Snippets {
 			),
 			array(
 				'text' => esc_html__( 'Upgrade to Pro and Unlock Revisions', 'insert-headers-and-footers' ),
-				'url'  => wpcode_utm_url( 'https://wpcode.com/lite/', 'post-editor-metabox', 'revisions', 'upgrade-to-pro' ),
+				'url'  => esc_url( wpcode_utm_url( 'https://wpcode.com/lite/', 'post-editor-metabox', 'revisions', 'upgrade-to-pro' ) ),
 			),
 			array(
 				'text' => esc_html__( 'Learn more about all the features', 'insert-headers-and-footers' ),
-				'url'  => wpcode_utm_url( 'https://wpcode.com/lite/', 'post-editor-metabox', 'revisions', 'features' ),
+				'url'  => esc_url( wpcode_utm_url( 'https://wpcode.com/lite/', 'post-editor-metabox', 'revisions', 'features' ) ),
 			)
 		);
 	}

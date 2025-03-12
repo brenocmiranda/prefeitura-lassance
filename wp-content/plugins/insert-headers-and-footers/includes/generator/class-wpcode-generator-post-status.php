@@ -126,7 +126,7 @@ class WPCode_Generator_Post_Status extends WPCode_Generator_Type {
 						array(
 							'type'        => 'text',
 							'label'       => __( 'Name', 'insert-headers-and-footers' ),
-							'description' => __( 'The singular name that will be displayed in the admin. ' ),
+							'description' => __( 'The singular name that will be displayed in the admin. ', 'insert-headers-and-footers' ),
 							'id'          => 'label',
 							'placeholder' => 'Pending',
 							'default'     => 'Pending',
@@ -134,7 +134,7 @@ class WPCode_Generator_Post_Status extends WPCode_Generator_Type {
 						array(
 							'type'        => 'text',
 							'label'       => __( 'Name (Plural)', 'insert-headers-and-footers' ),
-							'description' => __( 'The post status plural name. For example: Drafts.' ),
+							'description' => __( 'The post status plural name. For example: Drafts.', 'insert-headers-and-footers' ),
 							'id'          => 'label_count',
 							'placeholder' => 'Pending',
 							'default'     => 'Pending',
@@ -209,23 +209,21 @@ class WPCode_Generator_Post_Status extends WPCode_Generator_Type {
 	 * @return string
 	 */
 	public function get_snippet_code() {
-		return <<<EOD
-// Register Custom Status
-function {$this->get_value( 'function_name' )}() {
+		return '// Register Custom Status
+function '. $this->get_value( 'function_name' ) . '() {
 
-	\$args = array(
-		'label'                     => _x( '{$this->get_value( 'label' )}', 'Post Status Name', '{$this->get_value( 'text_domain' )}' ),
-		'label_count'               => _n_noop( '{$this->get_value( 'label' )} (%s)',  '{$this->get_value( 'label_count' )} (%s)', '{$this->get_value( 'text_domain' )}' ), 
-		'public'                    => {$this->get_value( 'public' )},
-		'show_in_admin_all_list'    => {$this->get_value( 'show_in_admin_all_list' )},
-		'show_in_admin_status_list' => {$this->get_value( 'show_in_admin_status_list' )},
-		'exclude_from_search'       => {$this->get_value( 'exclude_from_search' )},
+	$args = array(
+		\'label\'                     => _x( \'' . $this->get_value( 'label' ) . '\', \'Post Status Name\', \'' . $this->get_value( 'text_domain' ) . '\' ),
+		\'label_count\'               => _n_noop( \'' . $this->get_value( 'label' ) . ' (%s)\',  \'' . $this->get_value( 'label_count' ) . ' (%s)\', \'' . $this->get_value( 'text_domain' ) . '\' ), 
+		\'public\'                    => ' . $this->get_value( 'public' ) . ',
+		\'show_in_admin_all_list\'    => ' . $this->get_value( 'show_in_admin_all_list' ) . ',
+		\'show_in_admin_status_list\' => ' . $this->get_value( 'show_in_admin_status_list' ) . ',
+		\'exclude_from_search\'       => ' . $this->get_value( 'exclude_from_search' ) . ',
 	);
-	register_post_status( '{$this->get_value( 'post_status' )}', \$args );
+	register_post_status( \'' . $this->get_value( 'post_status' ) . '\', $args );
 
 }
-add_action( 'init', '{$this->get_value( 'function_name' )}', 5 );
-EOD;
+add_action( \'init\', \'' . $this->get_value( 'function_name' ) . '\', 5 );';
 	}
 
 }

@@ -33,6 +33,6 @@ defined('ABSPATH') || defined('DUPXABSPATH') || exit;
 
     Additional FAQ resources for this issue can be found here:<br/>
     <a href="<?php echo InstallerLinkManager::getDocUrl('digital-ocean-digitalocean-com', 'install', 'validation digital ocean'); ?>" target="_blank">
-        Digital Ocean --  digitalocean.com
+        DigitalOcean --  digitalocean.com
     </a>
 </p>

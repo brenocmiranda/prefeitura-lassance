@@ -54,7 +54,7 @@ switch ($section) {
             esc_html($txt_log) . "</a> &nbsp;|&nbsp; <a href='" .
             esc_url($tools_url . "&section=support") . "'>" .
             esc_html($txt_support) . "</a></div>";
-        include(dirname(__FILE__) . '/information.php');
+        include(__DIR__ . '/information.php');
         break;
 
     case 'log':
@@ -64,7 +64,7 @@ switch ($section) {
             esc_html($txt_log) . "</b>  &nbsp;|&nbsp; <a href='" .
             esc_url($tools_url . "&section=support") . "'>" .
             esc_html($txt_support) . "</a></div>";
-        include(dirname(__FILE__) . '/logging.php');
+        include(__DIR__ . '/logging.php');
         break;
 
     case 'support':
@@ -74,7 +74,7 @@ switch ($section) {
             esc_url($tools_url . "&section=log") . "'>" .
             esc_html($txt_log) . "</a> &nbsp;|&nbsp; <b>" .
             esc_html($txt_support) . "</b> </div>";
-        include(dirname(__FILE__) . '/support.php');
+        include(__DIR__ . '/support.php');
         break;
 }
 ?>

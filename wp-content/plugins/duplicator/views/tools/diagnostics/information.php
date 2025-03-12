@@ -1,4 +1,7 @@
 <?php
+
+use Duplicator\Core\Controllers\ControllersManager;
+
 defined('ABSPATH') || defined('DUPXABSPATH') || exit;
 wp_enqueue_script('dup-handlebars');
 require_once(DUPLICATOR_PLUGIN_PATH . '/classes/utilities/class.u.scancheck.php');
@@ -46,9 +49,15 @@ if ($section == "info" || $section == '') {
             break;
     }
 }
+$actionUrl = ControllersManager::getMenuLink(
+    ControllersManager::TOOLS_SUBMENU_SLUG,
+    'diagnostics',
+    null,
+    ['section' => 'info']
+);
 ?>
 
-<form id="dup-settings-form" action="<?php echo admin_url('admin.php?page=duplicator-tools&tab=diagnostics&section=info'); ?>" method="post">
+<form id="dup-settings-form" action="<?php echo esc_url($actionUrl); ?>" method="post">
     <?php
     wp_nonce_field('duplicator_settings_page', '_wpnonce', false);
     include_once 'inc.data.php';

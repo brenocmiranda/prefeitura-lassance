@@ -586,7 +586,7 @@ class DUP_Archive
 
         $this->listDirObj->addEntry($relativePath, $size, $nodes);
         $this->Dirs[] = $dirPath;
-        $this->dirsCount ++;
+        $this->dirsCount++;
     }
 
     private function addToFileList($filePath, $relativePath, $fileSize)
